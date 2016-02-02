@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Scale Your Code Podcast</title>
+    <link>https://scaleyourcode.com/</link>
+    <language>en-us</language>
+    <copyright>℗ &amp; © 2015 ScaleYourCode</copyright>
+    <itunes:author>Christophe Limpalair</itunes:author>
+    <itunes:subtitle>Interviews of proven developers</itunes:subtitle>
+    <itunes:summary>This podcast asks technical and philosophical questions to programmers who have put in the 10,000+ hours of hard work so that you can learn from their mistakes and successes. Topics include but are not limited to: scaling web apps to millions of users, securing servers, automation, building APIs, building WordPress plugins, JavaScript, etc...</itunes:summary>
+    <description>Learn from proven developers through interviews.</description>
+    <itunes:owner>
+      <itunes:name>Christophe Limpalair</itunes:name>
+      <itunes:email>chris@scaleyourcode.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://d1ngwfo98ojxvt.cloudfront.net/public/itunes/cover_art.jpg"/>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <item>
+      <title>Large scale image processing on the fly in 25ms with Google's first Network Engineer</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>We talk about his experience at Google, ImageShack, and how his engine can process images in 25ms on the cloud.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jack_levin/jack-levin_opt_hi.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3</guid>
+      <itunes:summary>We talk about his experience at Google, ImageShack, and how his engine can process images in 25ms on the cloud.</itunes:summary>
+      <description>We talk about his experience at Google, ImageShack, and how his engine can process images in 25ms on the cloud.</description>
+      <pubDate>Tue, 02 Feb 2016 01:05:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building an API for many devices and choosing native vs. web apps at Plex.tv</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Should you still build apps natively, or can you use web apps? What about building an API that can support all of these different devices? Schuyler from Plex.tv joins us to explain their decision making.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/schuyler_ullman/profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/schuyler_ullman_22.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/schuyler_ullman_22.mp3</guid>
+      <itunes:summary>Should you still build apps natively, or can you use web apps? What about building an API that can support all of these different devices? Schuyler from Plex.tv joins us to explain their decision making.</itunes:summary>
+      <description>Should you still build apps natively, or can you use web apps? What about building an API that can support all of these different devices? Schuyler from Plex.tv joins us to explain their decision making.</description>
+      <pubDate>Mon, 18 Jan 2016 23:26:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building SaaS apps that scale, and building great teams with Heroku co-founder</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>This episode covers principles to build SaaS apps that scale. We also talk about building strong teams with hiring, onboarding, and culture tips.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/adam_wiggins/awiggins.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/adam_wiggins_21.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/adam_wiggins_21.mp3</guid>
+      <itunes:summary>This episode covers principles to build SaaS apps that scale. We also talk about building strong teams with hiring, onboarding, and culture tips.</itunes:summary>
+      <description>This episode covers principles to build SaaS apps that scale. We also talk about building strong teams with hiring, onboarding, and culture tips.</description>
+      <pubDate>Mon, 04 Jan 2016 23:08:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Speed up your web apps with Google web performance engineer, Ilya Grigorik</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>This episode explains: what developers should know to speed up their web apps, how to read the Chrome DevTools waterfall, and how HTTP/2 works.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/ilya_grigorik/profile.jpeg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/ilya_grigorik_20.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/ilya_grigorik_20.mp3</guid>
+      <itunes:summary>This episode explains: what developers should know to speed up their web apps, how to read the Chrome DevTools waterfall, and how HTTP/2 works.</itunes:summary>
+      <description>This episode explains: what developers should know to speed up their web apps, how to read the Chrome DevTools waterfall, and how HTTP/2 works.</description>
+      <pubDate>Mon, 14 Dec 2015 22:00:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to optimize images for faster load times with Kelly Sutton</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Optimizing images can result in the largest byte savings and performance improvements for your websites. This interview answers the big question: &quot;How do you optimize images?&quot;</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/kelly_sutton/profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/kelly_sutton_19.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/kelly_sutton_19.mp3</guid>
+      <itunes:summary>Optimizing images can result in the largest byte savings and performance improvements for your websites. This interview answers the big question: &quot;How do you optimize images?&quot;</itunes:summary>
+      <description>Optimizing images can result in the largest byte savings and performance improvements for your websites. This interview answers the big question: &quot;How do you optimize images?&quot;</description>
+      <pubDate>Mon, 30 Nov 2015 21:46:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Millions of requests per hour and processing rich video analytics at Wistia</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Streaming videos is difficult enough, but it gets even more complicated when you start collecting very detailed stats. See how Wistia's different layers handle intense processing. Max also gives us a sneak peek of new projects they're working on.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/max_schnur/max_schnur_profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/max_schnur_18.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/max_schnur_18.mp3</guid>
+      <itunes:summary>Streaming videos is difficult enough, but it gets even more complicated when you start collecting very detailed stats. See how Wistia's different layers handle intense processing. Max also gives us a sneak peek of new projects they're working on.</itunes:summary>
+      <description>Streaming videos is difficult enough, but it gets even more complicated when you start collecting very detailed stats. See how Wistia's different layers handle intense processing. Max also gives us a sneak peek of new projects they're working on.</description>
+      <pubDate>Mon, 16 Nov 2015 22:18:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Handling trillions of events daily and conquering scaling issues with Keen CTO</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Dan knows a thing or two about scaling APIs. This episode teaches how to avoid outages and how Keen processes a lot of critical data using queues, stream processing, and scalable storage</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/dan_kador/profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/dan_kador_17.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/dan_kador_17.mp3</guid>
+      <itunes:summary>Dan knows a thing or two about scaling APIs. This episode teaches how to avoid outages and how Keen processes a lot of critical data using queues, stream processing, and scalable storage</itunes:summary>
+      <description>Dan knows a thing or two about scaling APIs. This episode teaches how to avoid outages and how Keen processes a lot of critical data using queues, stream processing, and scalable storage</description>
+      <pubDate>Sat, 31 Oct 2015 21:20:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Scaling Basecamp and making it insanely fast with CTO and Rails Founder, David H. Hansson</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>From serving 2,000 reqs/second and thwarting DDoS attacks, to techniques used in making Basecamp insanely fast and adapting Rails to thicker JS clients, David drops knowledge you do not want to miss.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/dhh/profile_image.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/david_heinemeier_hansson_16.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/david_heinemeier_hansson_16.mp3</guid>
+      <itunes:summary>From serving 2,000 reqs/second and thwarting DDoS attacks, to techniques used in making Basecamp insanely fast and adapting Rails to thicker JS clients, David drops knowledge you do not want to miss.</itunes:summary>
+      <description>From serving 2,000 reqs/second and thwarting DDoS attacks, to techniques used in making Basecamp insanely fast and adapting Rails to thicker JS clients, David drops knowledge you do not want to miss.</description>
+      <pubDate>Mon, 19 Oct 2015 19:15:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to automate the right tasks so you can focus on development</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>From a better onboarding process to making your life easier, automating is an investment that makes a big difference. Kate shares how she automates with one-click deploy and one-click test environment examples.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/kate_heddleston/kate_mic_opt.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/kate_heddleston_15.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/kate_heddleston_15.mp3</guid>
+      <itunes:summary>From a better onboarding process to making your life easier, automating is an investment that makes a big difference. Kate shares how she automates with one-click deploy and one-click test environment examples.</itunes:summary>
+      <description>From a better onboarding process to making your life easier, automating is an investment that makes a big difference. Kate shares how she automates with one-click deploy and one-click test environment examples.</description>
+      <pubDate>Mon, 05 Oct 2015 19:43:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Shopify handles 300M uniques a month running Rails, Docker, and MySQL</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Simon explains how Shopify handles flash sales where thousands of people rush in at the same time. He talks about scaling databases, making apps resilient, and tips for companies looking to run Docker in production.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/simon_eskildsen/simon_profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/simon_eskildsen_14.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/simon_eskildsen_14.mp3</guid>
+      <itunes:summary>Simon explains how Shopify handles flash sales where thousands of people rush in at the same time. He talks about scaling databases, making apps resilient, and tips for companies looking to run Docker in production.</itunes:summary>
+      <description>Simon explains how Shopify handles flash sales where thousands of people rush in at the same time. He talks about scaling databases, making apps resilient, and tips for companies looking to run Docker in production.</description>
+      <pubDate>Mon, 21 Sep 2015 17:00:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Easily Setup and Manage Live Infrastructure with Chef's Own, Nathen Harvey</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Push your infrastructure live and manage your nodes with a special guest from Chef's team. This is a sequel to the first popular Chef episode with Nathen Harvey. If you've ever watched Nathen's work, you already know this is a great episode.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/nathen_harvey/sequel/nh_profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/nathen_harvey_13.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/nathen_harvey_13.mp3</guid>
+      <itunes:summary>Push your infrastructure live and manage your nodes with a special guest from Chef's team. This is a sequel to the first popular Chef episode with Nathen Harvey. If you've ever watched Nathen's work, you already know this is a great episode.</itunes:summary>
+      <description>Push your infrastructure live and manage your nodes with a special guest from Chef's team. This is a sequel to the first popular Chef episode with Nathen Harvey. If you've ever watched Nathen's work, you already know this is a great episode.</description>
+      <pubDate>Mon, 31 Aug 2015 19:36:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Docker, The Art of Monitoring, and Kickstarter Engineering with James Turnbull</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Get a sneak peak into his upcoming book The Art of Monitoring and answers to what you should be monitoring (and how). We also talk about Docker in production and how Kickstarter monitors to give users a better experience.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/james_turnbull/james_turnbull.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/james_turnbull_12.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/james_turnbull_12.mp3</guid>
+      <itunes:summary>Get a sneak peak into his upcoming book The Art of Monitoring and answers to what you should be monitoring (and how). We also talk about Docker in production and how Kickstarter monitors to give users a better experience.</itunes:summary>
+      <description>Get a sneak peak into his upcoming book The Art of Monitoring and answers to what you should be monitoring (and how). We also talk about Docker in production and how Kickstarter monitors to give users a better experience.</description>
+      <pubDate>Mon, 17 Aug 2015 17:30:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Netflix handles 36% of the U.S. bandwidth, and how reddit handles 160M users</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Netflix accounts for over 36% of North America's downstream traffic during peak hours. Reddit has over 160M unique visitors a month and billions of page views. Jeremy teaches us how they've scaled to such heights.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jeremy_edberg/jeremy.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jeremy_edberg_11.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jeremy_edberg_11.mp3</guid>
+      <itunes:summary>Netflix accounts for over 36% of North America's downstream traffic during peak hours. Reddit has over 160M unique visitors a month and billions of page views. Jeremy teaches us how they've scaled to such heights.</itunes:summary>
+      <description>Netflix accounts for over 36% of North America's downstream traffic during peak hours. Reddit has over 160M unique visitors a month and billions of page views. Jeremy teaches us how they've scaled to such heights.</description>
+      <pubDate>Tue, 28 Jul 2015 18:28:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jeff Atwood on building Discourse, Stack Exchange, and Coding Horror</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Building great products requires great developers and community building skills. Jeff Atwood explains how he finds talent and how he builds massive communities like Coding Horror and Stack Exchange. He also talks about the stack powering Discourse.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jeff_atwood/jeff_profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jeff_atwood_10.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jeff_atwood_10.mp3</guid>
+      <itunes:summary>Building great products requires great developers and community building skills. Jeff Atwood explains how he finds talent and how he builds massive communities like Coding Horror and Stack Exchange. He also talks about the stack powering Discourse.</itunes:summary>
+      <description>Building great products requires great developers and community building skills. Jeff Atwood explains how he finds talent and how he builds massive communities like Coding Horror and Stack Exchange. He also talks about the stack powering Discourse.</description>
+      <pubDate>Wed, 08 Jul 2015 19:20:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>How CodePen handles 32M page views a month</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>CodePen's server master tells us everything about their stack and how they handle 12,000 requests per minute.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/tim_sabat/profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/tim_sabat_9.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/tim_sabat_9.mp3</guid>
+      <itunes:summary>CodePen's server master tells us everything about their stack and how they handle 12,000 requests per minute.</itunes:summary>
+      <description>CodePen's server master tells us everything about their stack and how they handle 12,000 requests per minute.</description>
+      <pubDate>Fri, 26 Jun 2015 21:08:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>JavaScript best practices, Node.js, and ending poverty with Eric Elliott</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Whether you are new or experienced with JS, Eric explains how to make your apps more scalable. We talk about performance, what we can do with Node.js, and how Eric is working to end poverty with code.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/eric_elliott/eric_profile.jpeg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/eric_elliott_8.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/eric_elliott_8.mp3</guid>
+      <itunes:summary>Whether you are new or experienced with JS, Eric explains how to make your apps more scalable. We talk about performance, what we can do with Node.js, and how Eric is working to end poverty with code.</itunes:summary>
+      <description>Whether you are new or experienced with JS, Eric explains how to make your apps more scalable. We talk about performance, what we can do with Node.js, and how Eric is working to end poverty with code.</description>
+      <pubDate>Wed, 17 Jun 2015 23:24:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codeship CTO explains Continuous Integration and the technology behind it, and shares the company story</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Florian explains how they are able to quickly boot up containers to build, run, and deploy applications. We also talk about the company's experience at Techstars, what it's like to be CTO, and why CI is important for small as well as big teams.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/florian_motlik/florian_motlik.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/florian_motlik_7.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/florian_motlik_7.mp3</guid>
+      <itunes:summary>Florian explains how they are able to quickly boot up containers to build, run, and deploy applications. We also talk about the company's experience at Techstars, what it's like to be CTO, and why CI is important for small as well as big teams.</itunes:summary>
+      <description>Florian explains how they are able to quickly boot up containers to build, run, and deploy applications. We also talk about the company's experience at Techstars, what it's like to be CTO, and why CI is important for small as well as big teams.</description>
+      <pubDate>Wed, 27 May 2015 18:51:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Automate and scale your infrastructure with Chef</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>How much time have you spent configuring your server just to forget all the details? Forget it all and let Chef manage your infrastructure. Nathen walks us through the first steps in getting started with a webserver example and testing workflow.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/nathen_harvey/profile_picture.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/nathen_harvey_6.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/nathen_harvey_6.mp3</guid>
+      <itunes:summary>How much time have you spent configuring your server just to forget all the details? Forget it all and let Chef manage your infrastructure. Nathen walks us through the first steps in getting started with a webserver example and testing workflow.</itunes:summary>
+      <description>How much time have you spent configuring your server just to forget all the details? Forget it all and let Chef manage your infrastructure. Nathen walks us through the first steps in getting started with a webserver example and testing workflow.</description>
+      <pubDate>Wed, 13 May 2015 00:32:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Phil Sturgeon on building APIs in any language and PHP 7</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Have you ever built or used an API before? APIs either save you a lot of time or give you nightmares. Take your skills to the next level and learn how to build APIs the right way with Phil.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/phil_sturgeon/phil_picture.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/phil_sturgeon_5.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/phil_sturgeon_5.mp3</guid>
+      <itunes:summary>Have you ever built or used an API before? APIs either save you a lot of time or give you nightmares. Take your skills to the next level and learn how to build APIs the right way with Phil.</itunes:summary>
+      <description>Have you ever built or used an API before? APIs either save you a lot of time or give you nightmares. Take your skills to the next level and learn how to build APIs the right way with Phil.</description>
+      <pubDate>Thu, 09 Apr 2015 13:22:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Servers for Hackers author Chris Fidao on securing servers and deploying to them</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Chris shares his config files to secure and configure his servers, and he explains why Vagrant is useful to learn server configuration and to create development environments. He also explains how Nginx and PHP-FPM work, and deploying code to live servers.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/chris_fidao/chris_f_profile.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/chris_fidao_4.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/chris_fidao_4.mp3</guid>
+      <itunes:summary>Chris shares his config files to secure and configure his servers, and he explains why Vagrant is useful to learn server configuration and to create development environments. He also explains how Nginx and PHP-FPM work, and deploying code to live servers.</itunes:summary>
+      <description>Chris shares his config files to secure and configure his servers, and he explains why Vagrant is useful to learn server configuration and to create development environments. He also explains how Nginx and PHP-FPM work, and deploying code to live servers.</description>
+      <pubDate>Fri, 27 Mar 2015 19:20:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Scaling expert and former CTO of Twitpic teaches us how to scale our web apps</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Steve Corona explains how to scale from a few users to millions. He also shares his personal story and college advice. This is the interview I wish I could have watched 5 years ago.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/steve_corona/portrait.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/steve_corona_3.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/steve_corona_3.mp3</guid>
+      <itunes:summary>Steve Corona explains how to scale from a few users to millions. He also shares his personal story and college advice. This is the interview I wish I could have watched 5 years ago.</itunes:summary>
+      <description>Steve Corona explains how to scale from a few users to millions. He also shares his personal story and college advice. This is the interview I wish I could have watched 5 years ago.</description>
+      <pubDate>Sat, 07 Mar 2015 22:15:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Michael walks us through MVC frameworks with CakePHP and Backbone.js, and deploying with Capistrano</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Tired of messy jQuery code? Michael shows on screen how Backbone.js solves that issue, and how to speed up development with CakePHP and Vagrant. To wrap up, Michael easily deploys using Capistrano.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/michael_oostdyk/portrait.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/michael_oostdyk_2.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/michael_oostdyk_2.mp3</guid>
+      <itunes:summary>Tired of messy jQuery code? Michael shows on screen how Backbone.js solves that issue, and how to speed up development with CakePHP and Vagrant. To wrap up, Michael easily deploys using Capistrano.</itunes:summary>
+      <description>Tired of messy jQuery code? Michael shows on screen how Backbone.js solves that issue, and how to speed up development with CakePHP and Vagrant. To wrap up, Michael easily deploys using Capistrano.</description>
+      <pubDate>Mon, 02 Mar 2015 03:32:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Learn how Thomas builds fast WordPress plugins that solve user's problems</title>
+      <itunes:author>Christophe Limpalair</itunes:author>
+      <itunes:subtitle>Thomas talks about challenges he faced writing plugins and how he overcame them. We also go over his WordPress core contributions. To wrap up, we go over his workflow (how he tackles big coding projects), and how to find the right business partner.</itunes:subtitle>
+      <itunes:image href="https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/thomas_griffin/photo.jpg"/>
+      <enclosure type="audio/x-mp3" url="https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/thomas_griffin_1.mp3"/>
+      <guid>https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/thomas_griffin_1.mp3</guid>
+      <itunes:summary>Thomas talks about challenges he faced writing plugins and how he overcame them. We also go over his WordPress core contributions. To wrap up, we go over his workflow (how he tackles big coding projects), and how to find the right business partner.</itunes:summary>
+      <description>Thomas talks about challenges he faced writing plugins and how he overcame them. We also go over his WordPress core contributions. To wrap up, we go over his workflow (how he tackles big coding projects), and how to find the right business partner.</description>
+      <pubDate>Mon, 16 Feb 2015 22:00:38 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

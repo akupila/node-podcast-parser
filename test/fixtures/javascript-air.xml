@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="podbean/3.2" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>JavaScript Air</title>
+    <atom:link href="http://audio.javascriptair.com/feed/" rel="self" type="application/rss+xml"/>
+    <link>http://javascriptair.podbean.com</link>
+    <description>The live broadcast podcast all about JavaScript and the Web</description>
+    <pubDate>Thu, 28 Jan 2016 00:21:35 +0000</pubDate>
+    <generator>http://podbean.com/?v=3.2</generator>
+    <language>en</language>
+    <!-- podcast_generator="Podbean Engine/5.0" -->
+    <copyright>Copyright 2015 All rights reserved.</copyright>
+    <category>Technology:Podcasting</category>
+    <ttl>1440</ttl>
+    <itunes:subtitle>The live broadcast podcast all about JavaScript    </itunes:subtitle>
+    <itunes:summary>JavaScript Air is a live video broadcast podcast all about JavaScript. After the show, it is made available on YouTube and the audio is available on iTunes and as part of an RSS feed.</itunes:summary>
+    <itunes:author>Kent C. Dodds</itunes:author>
+    <itunes:category text="Technology">
+      <itunes:category text="Podcasting"/>
+    </itunes:category>
+    <itunes:owner>
+      <itunes:name>Kent C. Dodds</itunes:name>
+      <itunes:email>javascriptair@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:block>No</itunes:block>
+    <itunes:explicit>Clean</itunes:explicit>
+    <itunes:image href="http://imglogo.podbean.com/image-logo/862611/2048.png"/>
+    <image>
+      <url>http://imglogo.podbean.com/image-logo/862611/2048.png</url>
+      <title>JavaScript Air</title>
+      <link>http://javascriptair.podbean.com</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <item>
+      <title>007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco</title>
+      <link>http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/</link>
+      <comments>http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/#comments</comments>
+      <pubDate>Thu, 28 Jan 2016 00:21:35 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-27">Chakra, Microsoft’s Open Source JavaScript Engine</a>
+              with
+              <span>
+                <a href="https://twitter.com/undefined">Ed Maurer</a>
+                ,
+                <a href="https://twitter.com/gauravseth">Gaurav Seth</a>
+                , and
+                <a href="https://twitter.com/undefined">Steve Lucco</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Microsoft has been making some pretty awesome
+moves in the world of open source recently.
+At JSConf in early December, it was announced that
+Chakra, Microsoft’s JavaScript Engine
+that powers the Microsoft Edge browser
+(with better support for ES6 than babel or Chrome),
+will be open sourced. Join us as we talk about
+Chakra with some of the subject matter experts!</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="http://jsair.io/eggheadio">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="http://jsair.io/frontendmasters">Frontend Masters</a>- Expert front-en [...]</li>
+            </ul>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-27">Chakra, Microsoft’s Open Source JavaScript Engine</a>
+              with
+              <span>
+                <a href="https://twitter.com/undefined">Ed Maurer</a>
+                ,
+                <a href="https://twitter.com/gauravseth">Gaurav Seth</a>
+                , and
+                <a href="https://twitter.com/undefined">Steve Lucco</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Microsoft has been making some pretty awesome
+moves in the world of open source recently.
+At JSConf in early December, it was announced that
+Chakra, Microsoft’s JavaScript Engine
+that powers the Microsoft Edge browser
+(with better support for ES6 than babel or Chrome),
+will be open sourced. Join us as we talk about
+Chakra with some of the subject matter experts!</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="http://jsair.io/eggheadio">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="http://jsair.io/frontendmasters">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="http://jsair.io/trackjs">{Track:js}</a>- JavaScript Error Monitoring</li>
+              <li>
+                <a href="http://jsair.io/wallabyjs">Wallaby.js</a>- Realtime code coverage</li>
+              <li>
+                <a href="http://jsair.io/codecov">Codecov.io</a>- Code coverage done right</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/undefined">Ed Maurer</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Check out
+                    <a href="http://www.typescriptlang.org/">TypeScript</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.juliashammasholter.com/">Julia Holter</a>
+                    album -
+                    <a href="http://www.amazon.com/Have-You-In-My-Wilderness/dp/B011DHCNTE">Have You in my Wilderness</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/gauravseth">Gaurav Seth</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    We’re new to open source, but we’d love to hear your feedback (
+                    <a href="https://github.com/Microsoft/ChakraCore">ChakraCore</a>
+                    )!</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/undefined">Steve Lucco</a>
+              <ul>
+                <li>Tips:
+                  <span>Use the web programming model for as much as we can</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://electron.atom.io/">Electron</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/yelouafi/redux-saga">Redux Saga</a>
+                    ,
+                    <a href="https://github.com/fantasyland/fantasy-frees">Simon Richardson’s Free Monad implementation</a>
+                    , and
+                    <a href="https://vimeo.com/98096838">Brian McKenna on fantasyland</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="http://v8project.blogspot.com/2016/01/v8-release-49.html">v8 gets ES6!</a>
+                    ,
+                    <a href="http://www.heydonworks.com/article/developer-fallacies">Developer Fallacies</a>
+                    by
+                    <a href="http://twitter.com/heydonworks">@heydonworks</a>
+                    , and
+                    <a href="http://www.ember-cli-mirage.com/">Ember-CLI-Mirage</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://jsair.io/wallabyjs-sublime">Wallaby.js Sublime Plugin</a>
+                    and
+                    <a href="https://medium.com/@kentcdodds/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4">What open source project should I contribute to?</a></span>
+                </li>
+                <li>Tips:
+                  <span>Get involved open source</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://glebbahmutov.com/blog/better-hacker/">How to become a better hacker</a>
+                    by
+                    <a href="https://twitter.com/bahmutov">Gleb Bahmutov</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://code-cartoons.com/">Code Cartoons series on Relay</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://calendar.perfplanet.com/2013/diff/">React’s diff algorithm</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/pamasaur">Pam Selle</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/higgsjs/Higgs">Higgs JavaScript VM</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/feed/</wfw:commentRss>
+      <enclosure length="56787979" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/dk3eif/JavaScriptAirEpisode007-ChakraMicrosoftsOpenSourceJavaScriptEngine.mp3"/>
+      <itunes:subtitle>Chakra, Microsoft's Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve LuccoDescription:Microsoft has been making some pretty awesome
+moves in the world of open ...</itunes:subtitle>
+      <itunes:summary>Chakra, Microsoft's Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve LuccoDescription:Microsoft has been making some pretty awesome
+moves in the world of open source recently.
+At JSConf in early December, it was announced that
+Chakra, Microsoft's JavaScript Engine
+that powers the Microsoft Edge browser
+(with better support for ES6 than babel or Chrome),
+will be open sourced. Join us as we talk about
+Chakra with some of the subject matter experts!Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringWallaby.js - Realtime code coverageCodecov.io - Code coverage done rightLinks, Picks, and Tips:Ed MaurerTips: Check out TypeScriptPicks: Julia Holter album - Have You in my WildernessGaurav SethTips: We’re new to open source, but we’d love to hear your feedback (ChakraCore)!Steve LuccoTips: Use the web programming model for as much as we canPicks: ElectronBrian LonsdorfPicks: Redux Saga, Simon Richardson’s Free Monad implementation, and Brian McKenna on fantasylandKyle SimpsonPicks: v8 gets ES6!, Developer Fallacies by @heydonworks, and Ember-CLI-MirageKent C. DoddsLinks: Wallaby.js Sublime Plugin and What open source project should I contribute to?Tips: Get involved open sourcePicks: How to become a better hacker by Gleb BahmutovLin ClarkLinks: Code Cartoons series on RelayPicks: React’s diff algorithmPam SellePicks: Higgs JavaScript VMAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>00:59:10</itunes:duration>
+    </item>
+    <item>
+      <title>006 jsAir - Introducing the JavaScript Air Panel with Dan Abramov, Brian Lonsdorf, Kyle Simpson, Iheanyi Ekechukwu, Lin Clark, Matt Zabriskie, Pam Selle, and Tyler McGinnis</title>
+      <link>http://audio.javascriptair.com/e/006-jsairintroducing-the-javascript-air-panel-with-dan-abramovbrian-lonsdorf-kyle-simpsoniheanyiekechukwulinclarkmatt-zabriskie-pam-selle-and-tyler-m/</link>
+      <comments>http://audio.javascriptair.com/e/006-jsairintroducing-the-javascript-air-panel-with-dan-abramovbrian-lonsdorf-kyle-simpsoniheanyiekechukwulinclarkmatt-zabriskie-pam-selle-and-tyler-m/#comments</comments>
+      <pubDate>Thu, 21 Jan 2016 04:21:32 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/006-jsairintroducing-the-javascript-air-panel-with-dan-abramovbrian-lonsdorf-kyle-simpsoniheanyiekechukwulinclarkmatt-zabriskie-pam-selle-and-tyler-m/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-20">Introducing the JavaScript Air Panel</a>
+              with
+              <span>
+                <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+                ,
+                <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+                ,
+                <a href="https://twitter.com/getify">Kyle Simpson</a>
+                ,
+                <a href="https://twitter.com/kwuchu">Iheanyi Ekechukwu</a>
+                ,
+                <a href="https://twitter.com/linclark">Lin Clark</a>
+                ,
+                <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>
+                ,
+                <a href="https://twitter.com/pamasaur">Pam Selle</a>
+                , and
+                <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>We have some solid developers on the JavaScript Air panel working on some amazing things. This is your chance to get to know them!</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="http://jsair.io/eggheadio">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="http://jsair.io/frontendmasters%20%5B...%5D"/>
+              </li>
+            </ul>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-20">Introducing the JavaScript Air Panel</a>
+              with
+              <span>
+                <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+                ,
+                <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+                ,
+                <a href="https://twitter.com/getify">Kyle Simpson</a>
+                ,
+                <a href="https://twitter.com/kwuchu">Iheanyi Ekechukwu</a>
+                ,
+                <a href="https://twitter.com/linclark">Lin Clark</a>
+                ,
+                <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>
+                ,
+                <a href="https://twitter.com/pamasaur">Pam Selle</a>
+                , and
+                <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>We have some solid developers on the JavaScript Air panel working on some amazing things. This is your chance to get to know them!</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="http://jsair.io/eggheadio">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="http://jsair.io/frontendmasters">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="http://jsair.io/trackjs">{Track:js}</a>- JavaScript Error Monitoring</li>
+              <li>
+                <a href="http://jsair.io/wallabyjs">Wallaby.js</a>- Realtime code coverage</li>
+              <li>
+                <a href="http://jsair.io/codecov">Codecov.io</a>- Code coverage done right</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://gaearon.github.io/react-hot-loader/">React Hot Loader</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/Jam3/devtool">devtool</a>
+                    ,
+                    <a href="https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f#.a6h48jrtg">React.js pure render performance anti-pattern</a>
+                    ,
+                    <a href="https://twitter.com/fullstackreact">Fullstack React</a>
+                    ,
+                    <a href="https://code-cartoons.com/a-cartoon-intro-to-facebook-s-relay-part-1-3ec1a127bca5">Code Cartoons - Relay</a>
+                    , and
+                    <a href="https://www.reddit.com/r/reactjs/comments/418spy/redux_2_in_the_works_with_dan_and_contra/">Redux 2 in the works</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://joneshf.github.io/programming/2015/12/19/Lenses-and-Virtual-DOM-Support-Open-Closed.html">Hardy Jones on lenses + virtual dom</a>
+                    and
+                    <a href="https://www.youtube.com/watch?v=JxC1ExlLjgw&amp;list=PLE7tQUdRKcybh21_zOg8_y4f2oMKDHpUS">Lamda Conf vids</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.dreamingwithjeff.com">Jeff Bridges: The sleeping tapes</a>
+                    and
+                    <a href="https://vimeo.com/ondemand/worldoftomorrow">Don Hertzfeldt: World of Tomorrow</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://youdontknowjs.com">You Don’t Know JS book series</a>
+                    ,
+                    <a href="http://makersquare.com">MakerSquare</a>
+                    ,
+                    <a href="http://frontendmasters.com">Frontend Masters</a>
+                    ,
+                    <a href="http://forwardjs.com/workshops">ForwardJS Workshops</a>
+                    ,
+                    <a href="https://attendee.gotowebinar.com/register/7996879282595345666">ForwardJS free webinar: “Blocking Across The Wire”</a>
+                    Tue Jan 25, 12pm CST,
+                    <a href="http://conferences.oreilly.com/fluent/javascript-html-us/public/schedule/detail/47782">FluentConf Workshops</a>
+                    ,
+                    <a href="http://github.com/getify/asynquence">asynquence</a>
+                    , and
+                    <a href="http://github.com/getify/a-tale-of-three-lists">A Tale Of Three Lists</a>
+                    The “TodoMVC” of async programming</span>
+                </li>
+                <li>Tips:
+                  <span>Pair program with a friend on a couch.</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/contra/rtc-everywhere">RTC Everywhere</a>
+                    P2P cross-platform,
+                    <a href="https://blogs.windows.com/msedgedev/2016/01/19/nodejs-chakracore-mainline/">ChakraCore in Node.js</a>
+                    , and
+                    <a href="https://brave.com/">Brave Browser</a>
+                    by
+                    <a href="http://twitter.com/brendaneich">@BrendanEich</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kwuchu">Iheanyi Ekechukwu</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://www.ibmchefwatson.com/">IBM Chef Watson</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://leanpub.com/ember-cli-101">Ember-CLI 101</a>
+                    - Really good book for getting started with learning Ember!</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://code-cartoons.com/a-cartoon-intro-to-facebook-s-relay-part-1-3ec1a127bca5#.ak19gbh26">A cartoon guide to Facebook’s Relay, part 1</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    Learn keyboard commands for your favorite web apps like Gmail. Flash cards can be really helpful for this.
+                    <a href="https://www.brainscape.com/">Brainscape</a>
+                    has a few different decks.</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://learn.dvorak.nl/">Dvorak keyboard training</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://twitter.com/zabriskiesbeard">@zabriskiesbeard</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    <a href="https://github.com/search?utf8=%E2%9C%93&amp;q=language%3AJavaScript+state%3Aopen+label%3Afirst-timers-only">First Timers Only</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://shop.oreilly.com/product/0636920041511.do">Learning React Native</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/pamasaur">Pam Selle</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://bleedingedgepress.com/our-books/choosing-javascript-framework/">Choosing a JavaScript Framework</a>
+                    and
+                    <a href="http://thewebivore.com/when-computing-hurts/">When the computing</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://pixelart-to-css-react.herokuapp.com/">Pixel Art to CSS</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="http://headspace.com">Headspace</a>
+                    ,
+                    <a href="http://frontendnewsletter.com">Front End Newsletter</a>
+                    , and
+                    <a href="http://www.react.run/">React.run</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://talks.kcd.im">My Talks and Workshops</a>
+                    ,
+                    <a href="https://egghead.io/instructors/kentcdodds">My Egghead lessons</a>
+                    ,
+                    <a href="http://blog.kcd.im">My Blog</a>
+                    ,
+                    <a href="http://ama.kcd.im">My AMA</a>
+                    and my answer to
+                    <a href="https://github.com/kentcdodds/ama/issues/41">what’s your favorite/most-effective learning method?</a>
+                    , and
+                    <a href="https://medium.com/@kentcdodds/first-timers-only-78281ea47455">First Timers Only</a>
+                    - My original blogpost about the concept</span>
+                </li>
+                <li>Tips:
+                  <span>Take chances, make mistakes, and get messy! -Miss Frizzle, Magic School Bus</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/bahmutov/babel-service">Babel Service</a>
+                    by
+                    <a href="https://twitter.com/bahmutov">Gleb Bahmutov</a>
+                    and
+                    <a href="http://www.scholastic.com/magicschoolbus/">The Magic School Bus</a>
+                    (warning! Video auto-plays)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/006-jsairintroducing-the-javascript-air-panel-with-dan-abramovbrian-lonsdorf-kyle-simpsoniheanyiekechukwulinclarkmatt-zabriskie-pam-selle-and-tyler-m/feed/</wfw:commentRss>
+      <enclosure length="66252234" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/j4hztd/JavaScriptAirEpisode006-IntroducingtheJavaScriptAirPanel.mp3"/>
+      <itunes:subtitle>Introducing the JavaScript Air Panel with Dan Abramov, Brian Lonsdorf, Kyle Simpson, Iheanyi Ekechukwu, Lin Clark, Matt Zabriskie, Pam Selle, and Tyler McGinnisDescription:We have some ...</itunes:subtitle>
+      <itunes:summary>Introducing the JavaScript Air Panel with Dan Abramov, Brian Lonsdorf, Kyle Simpson, Iheanyi Ekechukwu, Lin Clark, Matt Zabriskie, Pam Selle, and Tyler McGinnisDescription:We have some solid developers on the JavaScript Air panel working on some amazing things. This is your chance to get to know them!Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringWallaby.js - Realtime code coverageCodecov.io - Code coverage done rightLinks, Picks, and Tips:Dan AbramovLinks: React Hot LoaderPicks: devtool, React.js pure render performance anti-pattern, Fullstack React, Code Cartoons - Relay, and Redux 2 in the worksBrian LonsdorfLinks: Hardy Jones on lenses + virtual dom and Lamda Conf vidsPicks: Jeff Bridges: The sleeping tapes and Don Hertzfeldt: World of TomorrowKyle SimpsonLinks: You Don’t Know JS book series, MakerSquare, Frontend Masters, ForwardJS Workshops, ForwardJS free webinar: “Blocking Across The Wire” Tue Jan 25, 12pm CST, FluentConf Workshops, asynquence, and A Tale Of Three Lists The “TodoMVC” of async programmingTips: Pair program with a friend on a couch.Picks: RTC Everywhere P2P cross-platform, ChakraCore in Node.js, and Brave Browser by @BrendanEichIheanyi EkechukwuLinks: IBM Chef WatsonPicks: Ember-CLI 101 - Really good book for getting started with learning Ember!Lin ClarkLinks: A cartoon guide to Facebook’s Relay, part 1Tips: Learn keyboard commands for your favorite web apps like Gmail. Flash cards can be really helpful for this. Brainscape has a few different decks.Picks: Dvorak keyboard trainingMatt ZabriskieLinks: @zabriskiesbeardTips: First Timers OnlyPicks: Learning React NativePam SelleLinks: Choosing a JavaScript Framework and When the computingPicks: Pixel Art to CSSTyler McGinnisPicks: Headspace, Front End Newsletter, and React.runKent C. DoddsLinks: My Talks and Workshops, My Egghead lessons, My Blog, My AMA and my answer to what's your favorite/most-effective learning method?, and First Timers Only - My original blogpost about the conceptTips: Take chances, make mistakes, and get messy! -Miss Frizzle, Magic School BusPicks: Babel Service by Gleb Bahmutov and The Magic School Bus (warning! Video auto-plays)About JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:09:01</itunes:duration>
+    </item>
+    <item>
+      <title>005 jsAir - Firefox DevTools, React, and Redux with James Long, Jordan Santell, and Lin Clark</title>
+      <link>http://audio.javascriptair.com/e/005-jsair-firefox-devtools-react-and-redux-with-james-long-jordan-santell-and-lin-clark/</link>
+      <comments>http://audio.javascriptair.com/e/005-jsair-firefox-devtools-react-and-redux-with-james-long-jordan-santell-and-lin-clark/#comments</comments>
+      <pubDate>Fri, 15 Jan 2016 02:29:17 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/005-jsair-firefox-devtools-react-and-redux-with-james-long-jordan-santell-and-lin-clark/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-13">Firefox DevTools, React, and Redux</a>
+              with
+              <span>
+                <a href="https://twitter.com/jlongster">James Long</a>
+                ,
+                <a href="https://twitter.com/jsantell">Jordan Santell</a>
+                , and
+                <a href="https://twitter.com/linclark">Lin Clark</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>React is in your browser. Not just in web pages, but in the browser itself! Join us as we talk with developers from Firefox’s Developer Tools team about how they’re using React and Redux to build developer tools, and how the two make the DX (developer experience) of building developer tools better.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monit [...]</li>
+            </ul>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-13">Firefox DevTools, React, and Redux</a>
+              with
+              <span>
+                <a href="https://twitter.com/jlongster">James Long</a>
+                ,
+                <a href="https://twitter.com/jsantell">Jordan Santell</a>
+                , and
+                <a href="https://twitter.com/linclark">Lin Clark</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>React is in your browser. Not just in web pages, but in the browser itself! Join us as we talk with developers from Firefox’s Developer Tools team about how they’re using React and Redux to build developer tools, and how the two make the DX (developer experience) of building developer tools better.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/jlongster">James Long</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL">XUL</a>
+                    and
+                    <a href="https://github.com/gaearon/react-proxy">react-proxy</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    Use
+                    <a href="https://developer.mozilla.org/en-US/docs/Tools">Firefox DevTools</a>
+                    and
+                    <a href="https://twitter.com/FirefoxDevTools">tell us</a>
+                    how we can do better!</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/omcljs/om/wiki/Quick-Start-%28om.next%29">Om Next</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/jsantell">Jordan Santell</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    <a href="https://wiki.mozilla.org/DevTools/GetInvolved">Get involved with Firefox Developer Tools!</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://jlongster.com/On-the-Road-to-Better-Sourcemaps-in-the-Firefox-Developer-Tools">Sourcemaps in Firefox</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/">The five keys to a successful Google team</a>
+                    and
+                    <a href="http://www.amazon.com/Consensus-Through-Conversations-High-Commitment-Decisions/dp/1576754197">Consensus through Conversations</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://github.com/petehunt/react-howto">React Howto</a>
+                    ,
+                    <a href="http://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html">React Components, Elements, and Instances</a>
+                    , and
+                    <a href="https://www.youtube.com/watch?v=4anAwXYqLG8">Minimal API Surface Area</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/lodash/lodash/releases/tag/4.0.0">Lodash 4 is out!</a>
+                    and
+                    <a href="https://www.youtube.com/watch?v=y-JqH1M4Ya8">Lazarus</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1000780#c38">SpiderMonkey improves Function.prototype.bind</a>
+                    and
+                    <a href="http://benediktmeurer.de/2015/12/25/a-new-approach-to-function-prototype-bind/">v8 improves Function.prototype.bind</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    use “palm pads” to support your wrists while using laptop keyboards (
+                    <a href="http://www.amazon.com/GRIFITI-Notebook-Silicone-Reposition-Travelling/dp/B00897D3OQ/">like these</a>
+                    )</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/Microsoft/ChakraCore">Microsoft Chakra is OSS now!</a>
+                    and
+                    <a href="https://devspace.io/">Github Social Client</a>
+                    <a href="https://blog.devspace.io/the-problems-with-github-s-news-feed-abf5e1a7aefd">blog post</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Tips:
+                  <span>Watch your analytics. Encourage your customers to get off an unsupported, insecure browser &gt;IE11</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://medium.com/@dan_abramov/react-components-elements-and-instances-90800811f8ca">Elements Components and Instances</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>: No links, tips, or picks this week</div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/005-jsair-firefox-devtools-react-and-redux-with-james-long-jordan-santell-and-lin-clark/feed/</wfw:commentRss>
+      <enclosure length="66248480" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/z82wud/JavaScriptAirEpisode005-FirefoxDevTools2CReact2CandRedux.mp3"/>
+      <itunes:subtitle>Firefox DevTools, React, and Redux with James Long, Jordan Santell, and Lin ClarkDescription:React is in your browser. Not just in web pages, but in the ...</itunes:subtitle>
+      <itunes:summary>Firefox DevTools, React, and Redux with James Long, Jordan Santell, and Lin ClarkDescription:React is in your browser. Not just in web pages, but in the browser itself! Join us as we talk with developers from Firefox's Developer Tools team about how they're using React and Redux to build developer tools, and how the two make the DX (developer experience) of building developer tools better.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:James LongLinks: XUL and react-proxyTips: Use Firefox DevTools and tell us how we can do better!Picks: Om NextJordan SantellTips: Get involved with Firefox Developer Tools!Picks: Sourcemaps in FirefoxLin ClarkPicks: The five keys to a successful Google team and Consensus through ConversationsDan AbramovLinks: React Howto, React Components, Elements, and Instances, and Minimal API Surface AreaPicks: Lodash 4 is out! and LazarusKyle SimpsonLinks: SpiderMonkey improves Function.prototype.bind and v8 improves Function.prototype.bindTips: use “palm pads” to support your wrists while using laptop keyboards (like these)Picks: Microsoft Chakra is OSS now! and Github Social Client blog postKent C. DoddsTips: Watch your analytics. Encourage your customers to get off an unsupported, insecure browser IE11Picks: Elements Components and InstancesMatt Zabriskie: No links, tips, or picks this weekAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:09:01</itunes:duration>
+    </item>
+    <item>
+      <title>004 jsAir - Unit Testing JavaScript with Christian Johansen, Joe Eames, and Ward Bell</title>
+      <link>http://audio.javascriptair.com/e/004-jsair-unit-testing-javascript-with-christian-johansen-joe-eames-and-ward-bell/</link>
+      <comments>http://audio.javascriptair.com/e/004-jsair-unit-testing-javascript-with-christian-johansen-joe-eames-and-ward-bell/#comments</comments>
+      <pubDate>Thu, 07 Jan 2016 14:16:37 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/004-jsair-unit-testing-javascript-with-christian-johansen-joe-eames-and-ward-bell/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-06">Unit Testing JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/cjno">Christian Johansen</a>
+                ,
+                <a href="https://twitter.com/josepheames">Joe Eames</a>
+                , and
+                <a href="https://twitter.com/wardbell">Ward Bell</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Testing in JavaScript comes with its own set of challenges.
+But in recent years, tools and patterns have been developed
+to make writing unit tests and tracking coverage much simpler
+than ever before. Join us as we talk with Ward Bell,
+Joe Eames, and Christian Johansen about unit testing JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>[...]</div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2016-01-06">Unit Testing JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/cjno">Christian Johansen</a>
+                ,
+                <a href="https://twitter.com/josepheames">Joe Eames</a>
+                , and
+                <a href="https://twitter.com/wardbell">Ward Bell</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Testing in JavaScript comes with its own set of challenges.
+But in recent years, tools and patterns have been developed
+to make writing unit tests and tracking coverage much simpler
+than ever before. Join us as we talk with Ward Bell,
+Joe Eames, and Christian Johansen about unit testing JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/cjno">Christian Johansen</a>
+              <ul>
+                <li>Tips:
+                  <span>Learn about Functional Programming and Learn about loose coupling</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.infoq.com/presentations/Simple-Made-Easy">Simple made easy</a>
+                    and
+                    <a href="http://www.audible.com/pd/Sci-Fi-Fantasy/Off-to-Be-the-Wizard-Audiobook/B00IIS32NI">Off to be the wizard</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/josepheames">Joe Eames</a>
+              <ul>
+                <li>Tips:
+                  <span>Learn to TDD and do it for a year</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://lambdaconf.us/">Lambda conf</a>
+                    ,
+                    <a href="http://www.imdb.com/title/tt1475582/">Sherlock</a>
+                    ,
+                    <a href="http://www.amazon.com/gp/product/B014V6JIQK?tag=gm-search-20">Soundtrack to Star Wars Episode 7</a>
+                    , and
+                    <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/wardbell">Ward Bell</a>
+              <ul>
+                <li>Tips:
+                  <span>Avoid seeing Star Wars and Think of tests as a feature</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://amzn.com/0374533555">Thinking fast and slow</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Tips:
+                  <span>Use as many pure functions as possible. Easier to test. and Test at the highest level possible to get coverage and flexibility on implementation</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://jsverify.github.io/">jsverify</a>
+                    ,
+                    <a href="https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.azdssvmzn">Eric Elliot’s blog posts in general</a>
+                    , and
+                    <a href="https://www.youtube.com/watch?v=GqmsQeSzMdw">Constraints Liberate, Liberties Constrain — Runar Bjarnason</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Tips:
+                  <span>When building a complex thing with parts that are unknown, focus first on mini prototypes of each of those unknowns. and Mentoring / coaching is essential to learning. Self-driven learning is good but only goes part of the way.</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://www.youtube.com/watch?v=UD2dZw9iHCc">Fun Fun Function - Streams</a>
+                    by
+                    <a href="https://twitter.com/mpjme">@mpjme</a>
+                    and
+                    <a href="https://youtu.be/rI8tNMsozo0">Simplicity Matters</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Test your code and Try out
+                    <a href="http://npm.im/ava">AVA</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://www.youtube.com/watch?v=hwJUuN3JUPE">Predictable Sherlock Holmes - Studio C</a>
+                    ,
+                    <a href="https://libraries.io/">Libraries.io</a>
+                    , and
+                    <a href="https://allremoteconfs.com/js-2016">JS Remote Conf</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a>
+              <ul>
+                <li>Tips:
+                  <span>console.time &amp; console.timeEnd</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://gist.github.com/diegoconcha/8918294bb9df69876b22">Egghead Redux Series Notes</a>
+                    and
+                    <a href="https://medium.com/@puppybits/the-revolution-of-pure-views-aed339db7da4#.ku57c7wxr">The Revolution of Pure Views</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/004-jsair-unit-testing-javascript-with-christian-johansen-joe-eames-and-ward-bell/feed/</wfw:commentRss>
+      <enclosure length="70147594" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/dr692j/JavaScriptAirEpisode004-UnitTestingJavaScript.mp3"/>
+      <itunes:subtitle>Unit Testing JavaScript with Christian Johansen, Joe Eames, and Ward BellDescription:Testing in JavaScript comes with its own set of challenges.
+But in recent years, tools and ...</itunes:subtitle>
+      <itunes:summary>Unit Testing JavaScript with Christian Johansen, Joe Eames, and Ward BellDescription:Testing in JavaScript comes with its own set of challenges.
+But in recent years, tools and patterns have been developed
+to make writing unit tests and tracking coverage much simpler
+than ever before. Join us as we talk with Ward Bell,
+Joe Eames, and Christian Johansen about unit testing JavaScript.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:Christian JohansenTips: Learn about Functional Programming and Learn about loose couplingPicks: Simple made easy and Off to be the wizardJoe EamesTips: Learn to TDD and do it for a yearPicks: Lambda conf, Sherlock, Soundtrack to Star Wars Episode 7, and Kent C. DoddsWard BellTips: Avoid seeing Star Wars and Think of tests as a featurePicks: Thinking fast and slowBrian LonsdorfTips: Use as many pure functions as possible. Easier to test. and Test at the highest level possible to get coverage and flexibility on implementationPicks: jsverify, Eric Elliot’s blog posts in general, and Constraints Liberate, Liberties Constrain — Runar BjarnasonKyle SimpsonTips: When building a complex thing with parts that are unknown, focus first on mini prototypes of each of those unknowns. and Mentoring / coaching is essential to learning. Self-driven learning is good but only goes part of the way.Picks: Fun Fun Function - Streams by @mpjme and Simplicity MattersKent C. DoddsTips: Test your code and Try out AVAPicks: Predictable Sherlock Holmes - Studio C, Libraries.io, and JS Remote ConfTyler McGinnisTips: console.time  console.timeEndPicks: Egghead Redux Series Notes and The Revolution of Pure ViewsAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:13:05</itunes:duration>
+    </item>
+    <item>
+      <title>003 jsAir - Functional and Immutable Design Patterns in JavaScript with Dan Abramov and Brian Lonsdorf</title>
+      <link>http://audio.javascriptair.com/e/003-jsair-functional-and-immutable-design-patterns-in-javascript-with-dan-abramov-and-brian-lonsdorf/</link>
+      <comments>http://audio.javascriptair.com/e/003-jsair-functional-and-immutable-design-patterns-in-javascript-with-dan-abramov-and-brian-lonsdorf/#comments</comments>
+      <pubDate>Wed, 30 Dec 2015 21:00:51 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/003-jsair-functional-and-immutable-design-patterns-in-javascript-with-dan-abramov-and-brian-lonsdorf/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-30">Functional and Immutable Design Patterns in JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+                and
+                <a href="https://twitter.com/drboolean">Brian Lonsdorf</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Functional programming have been greatly facilitated with ES6.
+We’re going to talk about the how and why of functional
+programming and immutable design patterns in JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a/></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-30">Functional and Immutable Design Patterns in JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+                and
+                <a href="https://twitter.com/drboolean">Brian Lonsdorf</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Functional programming have been greatly facilitated with ES6.
+We’re going to talk about the how and why of functional
+programming and immutable design patterns in JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/kriskowal/gtor">A General Theory of Reactivity</a>
+                    ,
+                    <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">The Future of JavaScript MVC Frameworks</a>
+                    ,
+                    <a href="http://prog21.dadgum.com/archives.html">Programming in the 21st Century</a>
+                    , and
+                    <a href="https://github.com/yelouafi/redux-saga">Redux Saga</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="http://degoes.net/articles/modern-fp/">A Modern Architecture for FP</a>
+                    and
+                    <a href="https://twitter.com/drboolean/status/682059953708773377">Crazy FP words tweet</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    Watch
+                    <a href="https://twitter.com/dan_abramov">Dan’s</a>
+                    <a href="https://egghead.io/series/getting-started-with-redux">Redux videos</a>
+                    , Experiment with
+                    <a href="http://ramdajs.com">ramda</a>
+                    ,
+                    <a href="https://facebook.github.io/immutable-js/">immutable.js</a>
+                    , and the Maybe Functor, and If you want to read the white papers, checkout
+                    <a href="http://www.amazon.com/Haskell-Programming-Second-Edition-Computing/dp/0954300696">The Haskell Road to Logic, Maths and Programming</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://forwardjs.com/">ForwardJS</a>
+                    Feb 10th @Regency Ballroom SF</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    <a href="http://www.smashingmagazine.com/2015/12/revisiting-firefox-devtools/">Rediscover devtools in Firefox, you’ll be pleasantly surprised </a>
+                    — specifically WebIDE/Valence and CSS Transforms Previewer</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://leanpub.com/javascriptallongesix">JavaScript Allongé (book)</a>
+                    by
+                    <a href="http://twitter.com/raganwald">@raganwald</a>
+                    , Kris Jenkins’ blog posts on FP:
+                    <a href="http://blog.jenkster.com/2015/12/what-is-functional-programming.html">Part 1</a>
+                    ,
+                    <a href="http://blog.jenkster.com/2015/12/which-programming-languages-are-functional.html">Part 2</a>
+                    ,
+                    <a href="https://medium.com/@yelouafi/from-callback-to-future-functor-monad-6c86d9c16cb5">The FP side of async programming</a>
+                    , and
+                    <a href="https://medium.com/@cramforce/2016-will-be-the-year-of-concurrency-on-the-web-c39b1e99b30f">Concurrency’s future on the web</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Tips:
+                  <span>Try a standing desk</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.lowes.com/">Lowes</a>
+                    ,
+                    <a href="https://github.com/mindeavor/es-pipeline-operator">The ES2016 Pipe Operator</a>
+                    , and
+                    <a href="https://egghead.io/playlists/learn-javascript-arrays-in-depth-dbe40331">Learn JavaScript Arrays in Depth</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    When running git checkout, using ‘-’ as the argument (git checkout -) takes you back to the branch you were last on,
+                    <a href="https://github.com/github/hub">hub</a>
+                    makes it easier to work with github on the command line.
+                    <a href="https://github.com/github/hub#shell-tab-completion">Tab completion</a>
+                    is especially helpful, and
+                    <a href="https://gist.github.com/piscisaureus/3342247">fetch all PRs</a>
+                    if you do a lot of PR reviews, this can be really helpful. It downloads all new PRs as branches whenever you fetch</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://www.youtube.com/watch?v=1uRC3hmKQnM">Jessica Kerr - Functional Principles In React</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="http://jlongster.com/Starters-and-Maintainers">Starters and Maintainers</a>
+                    and
+                    <a href="https://www.youtube.com/watch?v=h_tkIpwbsxY&amp;list=PLK_hdtAJ4KqX0JOs_KMAmUNTNMRYhWEaC">Classroom Coding with Prof. Frisby</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/003-jsair-functional-and-immutable-design-patterns-in-javascript-with-dan-abramov-and-brian-lonsdorf/feed/</wfw:commentRss>
+      <enclosure length="69207216" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/qp3r7h/JavaScriptAirEpisode003-FunctionalandImmutableDesignPatternsinJavaScript.mp3"/>
+      <itunes:subtitle>Functional and Immutable Design Patterns in JavaScript with Dan Abramov and Brian LonsdorfDescription:Functional programming have been greatly facilitated with ES6.
+We're going to talk about the ...</itunes:subtitle>
+      <itunes:summary>Functional and Immutable Design Patterns in JavaScript with Dan Abramov and Brian LonsdorfDescription:Functional programming have been greatly facilitated with ES6.
+We're going to talk about the how and why of functional
+programming and immutable design patterns in JavaScript.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:Dan AbramovPicks: A General Theory of Reactivity, The Future of JavaScript MVC Frameworks, Programming in the 21st Century, and Redux SagaBrian LonsdorfLinks: A Modern Architecture for FP and Crazy FP words tweetTips: Watch Dan's Redux videos, Experiment with ramda, immutable.js, and the Maybe Functor, and If you want to read the white papers, checkout The Haskell Road to Logic, Maths and ProgrammingPicks: ForwardJS Feb 10th @Regency Ballroom SFKyle SimpsonTips: Rediscover devtools in Firefox, you’ll be pleasantly surprised  -- specifically WebIDE/Valence and CSS Transforms PreviewerPicks: JavaScript Allongé (book) by @raganwald, Kris Jenkins’ blog posts on FP: Part 1, Part 2, The FP side of async programming, and Concurrency’s future on the webKent C. DoddsTips: Try a standing deskPicks: Lowes, The ES2016 Pipe Operator, and Learn JavaScript Arrays in DepthLin ClarkTips: When running git checkout, using '-' as the argument (git checkout -) takes you back to the branch you were last on, hub makes it easier to work with github on the command line. Tab completion is especially helpful, and fetch all PRs if you do a lot of PR reviews, this can be really helpful. It downloads all new PRs as branches whenever you fetchPicks: Jessica Kerr - Functional Principles In ReactTyler McGinnisPicks: Starters and Maintainers and Classroom Coding with Prof. FrisbyAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:12:06</itunes:duration>
+    </item>
+    <item>
+      <title>002 jsAir - Babel, the JavaScript Compiler with Henry Zhu, Amjad Masad, Logan Smyth, and Sebastian McKenzie</title>
+      <link>http://audio.javascriptair.com/e/02-jsair-babel-the-javascript-compiler-with-henry-zhu-amjad-masad-logan-smyth-and-sebastian-mckenzie/</link>
+      <comments>http://audio.javascriptair.com/e/02-jsair-babel-the-javascript-compiler-with-henry-zhu-amjad-masad-logan-smyth-and-sebastian-mckenzie/#comments</comments>
+      <pubDate>Wed, 23 Dec 2015 20:03:52 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/02-jsair-babel-the-javascript-compiler-with-henry-zhu-amjad-masad-logan-smyth-and-sebastian-mckenzie/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-23">Babel, the JavaScript Compiler</a>
+              with
+              <span>
+                <a href="https://twitter.com/_henryzhu">Henry Zhu</a>
+                ,
+                <a href="https://twitter.com/amasad">Amjad Masad</a>
+                ,
+                <a href="https://twitter.com/loganfsmyth">Logan Smyth</a>
+                , and
+                <a href="https://twitter.com/sebmck">Sebastian McKenzie</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Tons of people use Babel. With the release of Babel 6,
+it is now a language platform as well as a transpiler.
+Join us as we talk about the ecosystem of Babel plugins,
+ASTs, and all of the neat stuff that you can do with this
+amazing tool with some of the core contributors to the project.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track [...]</a>
+              </li>
+            </ul>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-23">Babel, the JavaScript Compiler</a>
+              with
+              <span>
+                <a href="https://twitter.com/_henryzhu">Henry Zhu</a>
+                ,
+                <a href="https://twitter.com/amasad">Amjad Masad</a>
+                ,
+                <a href="https://twitter.com/loganfsmyth">Logan Smyth</a>
+                , and
+                <a href="https://twitter.com/sebmck">Sebastian McKenzie</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Tons of people use Babel. With the release of Babel 6,
+it is now a language platform as well as a transpiler.
+Join us as we talk about the ecosystem of Babel plugins,
+ASTs, and all of the neat stuff that you can do with this
+amazing tool with some of the core contributors to the project.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/_henryzhu">Henry Zhu</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://github.com/jscs-dev/node-jscs">JSCS</a>
+                    and
+                    <a href="https://www.youtube.com/watch?v=rKuNbEwoQfQ">Sebastian’s JSConf Talk</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://astexplorer.net/">AST Explorer</a>
+                    and
+                    <a href="https://github.com/babel/babel-eslint">babel-eslint</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/amasad">Amjad Masad</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://meteorhacks.com/fibers-eventloop-and-meteor">Meteor Fibers</a></span>
+                </li>
+                <li>Tips:
+                  <span>Use interface-like design and dependency injection for testing and Promises / async functions</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.amazon.com/dp/1400067820/">Antifragile by Nassim Nicholas Taleb</a>
+                    ,
+                    <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+                    , and
+                    <a href="https://repl.it">repl.it</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/loganfsmyth">Logan Smyth</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Join us on the
+                    <a href="https://slack.babeljs.io/">Babel Slack</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/sebmck">Sebastian McKenzie</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://youtu.be/1w_W5cd8qRE?t=1h6m54s">Sainsbury’s Chocolate Flavoured British 1% Fat Milk</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="http://www.2ality.com/2015/12/webpack-tree-shaking.html">Tree-shaking with webpack 2 and Babel 6</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="http://wesbos.com/learn-javascript">Matt Mullenweg to WordPress Community: “Learn JavaScript, Deeply”. Here are some resources for doing that.</a>
+                    and
+                    <a href="https://www.reddit.com/r/ProgrammerHumor/comments/3xyaos/well_f_you_too_kyle_simpson/">Reddit Thread</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://github.com/babel/babel/blob/master/doc/design/monorepo.md">Why is Babel a Monorepo?</a>
+                    and
+                    <a href="https://github.com/thejameskyle/babel-plugin-handbook">The Babel Plugin Handbook</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    Create dev tools for your work project. and Look into
+                    <a href="http://www.2ality.com/2015/12/babel6-loose-mode.html">babel loose mode</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://medium.com/@kentcdodds/misunderstanding-es6-modules-upgrading-babel-tears-and-a-solution-ad2d5ab93ce0#.h01yzretx">Misunderstanding ES6 Modules, Upgrading Babel, tears, and a solution</a>
+                    ,
+                    <a href="https://medium.com/@jcse/clearing-up-the-babel-6-ecosystem-c7678a314bf3#.ntennmo73">Clearing up the Babel 6 Ecosystem</a>
+                    , and
+                    <a href="https://music.google.com">Google Music</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/pamasaur">Pam Selle</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Take some time to reflect on the past year/2015,
+                    <a href="http://jes.sica.me/post/135727838328/2015-year-in-review">Jessica Paoli recently published hers</a>
+                    .</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://adventofcode.com/">Advent of code</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/02-jsair-babel-the-javascript-compiler-with-henry-zhu-amjad-masad-logan-smyth-and-sebastian-mckenzie/feed/</wfw:commentRss>
+      <enclosure length="132963110" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/jzinwe/JavaScriptAirEpisode02-BabeltheJavaScriptCompiler.mp3"/>
+      <itunes:subtitle>Babel, the JavaScript Compiler with Henry Zhu, Amjad Masad, Logan Smyth, and Sebastian McKenzieDescription:Tons of people use Babel. With the release of Babel 6,
+it is ...</itunes:subtitle>
+      <itunes:summary>Babel, the JavaScript Compiler with Henry Zhu, Amjad Masad, Logan Smyth, and Sebastian McKenzieDescription:Tons of people use Babel. With the release of Babel 6,
+it is now a language platform as well as a transpiler.
+Join us as we talk about the ecosystem of Babel plugins,
+ASTs, and all of the neat stuff that you can do with this
+amazing tool with some of the core contributors to the project.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:Henry ZhuLinks: JSCS and Sebastian’s JSConf TalkPicks: AST Explorer and babel-eslintAmjad MasadLinks: Meteor FibersTips: Use interface-like design and dependency injection for testing and Promises / async functionsPicks: Antifragile by Nassim Nicholas Taleb, Emacs, and repl.itLogan SmythTips: Join us on the Babel SlackSebastian McKenziePicks: Sainsbury's Chocolate Flavoured British 1% Fat MilkDan AbramovPicks: Tree-shaking with webpack 2 and Babel 6Kyle SimpsonPicks: Matt Mullenweg to WordPress Community: “Learn JavaScript, Deeply”. Here are some resources for doing that. and Reddit ThreadKent C. DoddsLinks: Why is Babel a Monorepo? and The Babel Plugin HandbookTips: Create dev tools for your work project. and Look into babel loose modePicks: Misunderstanding ES6 Modules, Upgrading Babel, tears, and a solution, Clearing up the Babel 6 Ecosystem, and Google MusicPam SelleTips: Take some time to reflect on the past year/2015, Jessica Paoli recently published hers.Picks: Advent of codeAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:09:16</itunes:duration>
+    </item>
+    <item>
+      <title>001 jsAir - Learning and Developing JavaScript with Ashley G. Williams and Kyle Simpson</title>
+      <link>http://audio.javascriptair.com/e/01-jsair-learning-and-developing-javascript-with-ashley-g-williams-and-kyle-simpson/</link>
+      <comments>http://audio.javascriptair.com/e/01-jsair-learning-and-developing-javascript-with-ashley-g-williams-and-kyle-simpson/#comments</comments>
+      <pubDate>Thu, 17 Dec 2015 00:05:32 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/01-jsair-learning-and-developing-javascript-with-ashley-g-williams-and-kyle-simpson/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-16">Learning and Developing JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/ag_dubs">Ashley G. Williams</a>
+                and
+                <a href="https://twitter.com/getify">Kyle Simpson</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Ashley and Kyle know a thing or two about teaching JavaScript.
+These two wonderful people will jump on and chat with us about
+learning and developing this wonky language called JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/ag_dubs">Ashley G. Williams</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a/></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-16">Learning and Developing JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/ag_dubs">Ashley G. Williams</a>
+                and
+                <a href="https://twitter.com/getify">Kyle Simpson</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Ashley and Kyle know a thing or two about teaching JavaScript.
+These two wonderful people will jump on and chat with us about
+learning and developing this wonky language called JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/ag_dubs">Ashley G. Williams</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://www.youtube.com/watch?v=DN4yLZB1vUQ">If you wish to learn ES6 from scratch you must first invent the universe</a>
+                    at
+                    <a href="http://2015.jsconf.us/">JSconf2015</a>
+                    and
+                    <a href="https://github.com/ashleygwilliams/breakfast-repo">Breakfast Repo</a></span>
+                </li>
+                <li>Tips:
+                  <span>Investigate the programming languages you use as tools and Learn about different programming paradigms and translate side projects into them</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://leanpub.com/javascript-allonge">Javascript Allonge</a>
+                    ,
+                    <a href="http://codon.com/hello-declarative-world">Hello Declarative World!</a>
+                    <a href="https://github.com/ashleygwilliams/relational-node">my ES6 implementation</a>
+                    ,
+                    <a href="http://www.infoq.com/presentations/Simple-Made-Easy">Simple Made Easy, Rich Hickey</a>
+                    , and
+                    <a href="https://www.youtube.com/watch?v=_ahvzDzKdB0">Growing a Language, Guy Steele</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://twitter.com/MakerSquare">MakerSquare</a>
+                    ,
+                    <a href="http://teropa.info/build-your-own-angular">Build Your Own Angular</a>
+                    ,
+                    <a href="http://www.nand2tetris.org/">BannerFrom NAND to Tetris</a>
+                    , and
+                    <a href="http://thunderplainsconf.com/">Thunder Plains Conference</a></span>
+                </li>
+                <li>Tips:
+                  <span>Give yourself deadlines to learn stuff (talk to give or blog to post) and Unplug and sharpen the ax</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://blog.cognitect.com/cognicast/093">David Nolen (cognicast episode)</a>
+                    ,
+                    <a href="http://blissfuljs.com/">BlissfulJS</a>
+                    , and
+                    <a href="http://shop.oreilly.com/product/0636920033769.do">ES6 &amp; Beyond</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Tips:
+                  <span>Start procedural =&gt; Learn OO =&gt; Learn FP</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="https://medium.com/@jaredtobin/a-tour-of-some-useful-recursive-types-8fa8e423b5b9#.gwhpp43bj">Jared Tobin Recursive Types</a>
+                    and
+                    <a href="https://github.com/computational-effects/free/blob/master/examples/http/index.js">Hard Jones’ Computational Effects</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Contribute to Open Source (
+                    <a href="https://medium.com/@kentcdodds/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4">What open source project should I contribute to?</a>
+                    )</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://slides.com">Slides.com</a>
+                    and
+                    <a href="http://todomvc.com/">TodoMVC</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    <a href="http://eslint.org/">ESLint</a>
+                    use it! To start using it on large codebases, add all files to
+                    <code>.eslintignore</code>
+                    and then tackle files one by one. This cuts down on the number of collisions with other PRs. Look for additional plugins, like the React ESLint plugin, and you can create your own</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance">Async &amp; Performance</a>
+                    (plus the whole
+                    <a href="https://github.com/getify/You-Dont-Know-JS">YDKJS</a>
+                    series) and
+                    <a href="https://leanpub.com/understandinges6/read">Understanding ES6</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Use
+                    <a href="http://eslint.org/">ESLint</a>
+                    to enforce code style.</span>
+                </li>
+                <li>Picks:
+                  <span>
+                    Foo Fighters Saint Cecilia EP (free
+                    <a href="https://itunes.apple.com/us/album/saint-cecilia-ep/id1059042560">on iTunes</a>
+                    )</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/01-jsair-learning-and-developing-javascript-with-ashley-g-williams-and-kyle-simpson/feed/</wfw:commentRss>
+      <enclosure length="138268688" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/t8v4ke/JavaScriptAirEpisode01-LearningandDevelopingJavaScript.mp3"/>
+      <itunes:subtitle>Learning and Developing JavaScript with Ashley G. Williams and Kyle SimpsonDescription:Ashley and Kyle know a thing or two about teaching JavaScript.
+These two wonderful people will ...</itunes:subtitle>
+      <itunes:summary>Learning and Developing JavaScript with Ashley G. Williams and Kyle SimpsonDescription:Ashley and Kyle know a thing or two about teaching JavaScript.
+These two wonderful people will jump on and chat with us about
+learning and developing this wonky language called JavaScript.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:Ashley G. WilliamsLinks: If you wish to learn ES6 from scratch you must first invent the universe at JSconf2015 and Breakfast RepoTips: Investigate the programming languages you use as tools and Learn about different programming paradigms and translate side projects into themPicks: Javascript Allonge, Hello Declarative World!my ES6 implementation, Simple Made Easy, Rich Hickey, and Growing a Language, Guy SteeleKyle SimpsonLinks: MakerSquare, Build Your Own Angular, BannerFrom NAND to Tetris, and Thunder Plains ConferenceTips: Give yourself deadlines to learn stuff (talk to give or blog to post) and Unplug and sharpen the axPicks: David Nolen (cognicast episode), BlissfulJS, and ES6  BeyondBrian LonsdorfTips: Start procedural = Learn OO = Learn FPPicks: Jared Tobin Recursive Types and Hard Jones’ Computational EffectsKent C. DoddsTips: Contribute to Open Source (What open source project should I contribute to?)Picks: Slides.com and TodoMVCLin ClarkTips: ESLint use it! To start using it on large codebases, add all files to .eslintignore and then tackle files one by one. This cuts down on the number of collisions with other PRs. Look for additional plugins, like the React ESLint plugin, and you can create your ownPicks: Async  Performance (plus the whole YDKJS series) and Understanding ES6Matt ZabriskieTips: Use ESLint to enforce code style.Picks: Foo Fighters Saint Cecilia EP (free on iTunes)About JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:12:01</itunes:duration>
+    </item>
+    <item>
+      <title>000 jsAir - The Past, Present, and Future of JavaScript with Brendan Eich</title>
+      <link>http://audio.javascriptair.com/e/00-jsair-the-past-present-and-future-of-javascript/</link>
+      <comments>http://audio.javascriptair.com/e/00-jsair-the-past-present-and-future-of-javascript/#comments</comments>
+      <pubDate>Wed, 09 Dec 2015 21:24:13 +0000</pubDate>
+      <dc:creator>javascriptair</dc:creator>
+      <category>Uncategorized</category>
+      <guid isPermaLink="false">http://audio.javascriptair.com/e/00-jsair-the-past-present-and-future-of-javascript/</guid>
+      <description><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-09">The past, present, and future of JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/brendaneich">Brendan Eich</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Kicking off JavaScript Air with our first guest Brendan Eich
+(original creator of JavaScript) to talk about the past, present, and future of JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/brendaneich">Brendan Eich</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://www.brave.com/">Brave</a></span>
+                </li>
+                <li>Tips:
+                  <span>Learn JavaScript</span></li>
+                <li>Pick [...]</li>
+              </ul>
+            </div>
+          </div>
+        </div>]]></description>
+      <content:encoded><![CDATA[
+        <div>
+          <div>
+            <span>
+              <a href="http://javascriptair.com/episodes/2015-12-09">The past, present, and future of JavaScript</a>
+              with
+              <span>
+                <a href="https://twitter.com/brendaneich">Brendan Eich</a></span>
+            </span>
+          </div>
+          <div>
+            <strong>Description:</strong>
+            <span/>
+            <p>Kicking off JavaScript Air with our first guest Brendan Eich
+(original creator of JavaScript) to talk about the past, present, and future of JavaScript.</p>
+          </div>
+          <div>
+            <strong>Show sponsors:</strong>
+            <ul>
+              <li>
+                <a href="https://egghead.io/">Egghead.io</a>- Bite-sized web development video training</li>
+              <li>
+                <a href="https://frontendmasters.com/">Frontend Masters</a>- Expert front-end training</li>
+              <li>
+                <a href="https://trackjs.com/">{Track:js}</a>- JavaScript Error Monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Links, Picks, and Tips:</strong>
+            <div>
+              <a href="https://twitter.com/brendaneich">Brendan Eich</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://www.brave.com/">Brave</a></span>
+                </li>
+                <li>Tips:
+                  <span>Learn JavaScript</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://elijahmanor.com/javascript-smells/">JavaScript Code Smells</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/dan_abramov">Dan Abramov</a>: No links, tips, or picks this week</div>
+            <div>
+              <a href="https://twitter.com/drboolean">Brian Lonsdorf</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Try elm and wait for the video from
+
+                    <a href="http://www.meetup.com/jsmeetup/events/227204005">this</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://devchat.tv/js-jabber/189-jsj-purescript-with-john-a-de-goes-and-phil-freeman">JSJabber about PureScript</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/getify">Kyle Simpson</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://hourofcode.com">Hour of Code</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+              <ul>
+                <li>Tips:
+                  <span>
+                    Learn JavaScript with
+                    <a href="https://developer.mozilla.org/en-US/">MDN</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="http://npm.im/plop">plop</a>
+                    , Christmas Lights, and
+                    <a href="http://forwardjs.com/summit">Forward Web Summit</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/kwuchu">Iheanyi Ekechukwu</a>: No links, tips, or picks this week</div>
+            <div>
+              <a href="https://twitter.com/linclark">Lin Clark</a>
+              <ul>
+                <li>Tips:
+                  <span>Dead code elimination (in Webpack)</span></li>
+                <li>Picks:
+                  <span>
+                    Dan Abramov’s
+
+                    <a href="https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree">Redux videos</a>
+                    on
+                    <a href="https://egghead.io">egghead.io</a>
+                    and
+                    <a href="http://www.amazon.com/Ancillary-Justice-Imperial-Radch-Book-ebook/dp/B00BAXFDLM/">Ancillary Justice</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/mzabriskie">Matt Zabriskie</a>
+              <ul>
+                <li>Links:
+                  <span>
+                    <a href="https://twitter.com/zabriskiesbeard">Matt’s beard on Twitter</a></span>
+                </li>
+                <li>Tips:
+                  <span>
+                    Use the future of JavaScript with
+                    <a href="http://babeljs.io/">Babel</a></span>
+                </li>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/ProjectSeptemberInc/gl-react">gl-react</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/pamasaur">Pam Selle</a>
+              <ul>
+                <li>Picks:
+                  <span>
+                    <a href="https://github.com/ReactiveX/RxJS">RxJS 5</a></span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://twitter.com/tylermcginnis33">Tyler McGinnis</a>
+              <ul>
+                <li>Tips:
+                  <span>Find people smarter than you and copy what they do.</span></li>
+                <li>Picks:
+                  <span>
+                    <a href="http://flexboxfroggy.com/">Flexbox Foggy</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <strong>About JavaScript Air:</strong>
+            <div>
+              <span>
+                <a href="http://javascriptair.com">JavaScriptAir</a>is the live broadcast podcast all about JavaScript hosted by
+                <a href="https://egghead.io/instructors/kentcdodds">egghead.io instructor</a>
+                <a href="https://twitter.com/kentcdodds">Kent C. Dodds</a>
+                . Please visit the JavaScript Air website (
+                <a href="http://javascriptair.com">javascriptair.com</a>
+                ) to see upcoming and past episodes. Also be sure to follow JavaScript Air on
+                <a href="https://twitter.com/JavaScriptAir">Twitter</a>
+                and
+                <a href="https://plus.google.com/105493143005968326308">Google+</a>
+                to stay up to date with future episodes. Also, all episodes are on the
+                <a href="http://video.javascriptair.com">YouTube</a>
+                channel as well.</span>
+            </div>
+          </div>
+        </div>]]></content:encoded>
+      <wfw:commentRss>http://audio.javascriptair.com/e/00-jsair-the-past-present-and-future-of-javascript/feed/</wfw:commentRss>
+      <enclosure length="131836305" type="audio/mpeg" url="http://javascriptair.podbean.com/mf/feed/uaidqf/JavaScriptAirEpisode00-ThepastpresentandfutureofJavaScript.mp3"/>
+      <itunes:subtitle>The past, present, and future of JavaScript with Brendan EichDescription:Kicking off JavaScript Air with our first guest Brendan Eich
+(original creator of JavaScript) to talk about ...</itunes:subtitle>
+      <itunes:summary>The past, present, and future of JavaScript with Brendan EichDescription:Kicking off JavaScript Air with our first guest Brendan Eich
+(original creator of JavaScript) to talk about the past, present, and future of JavaScript.Show sponsors:Egghead.io - Bite-sized web development video trainingFrontend Masters - Expert front-end training{Track:js} - JavaScript Error MonitoringLinks, Picks, and Tips:Brendan EichLinks: BraveTips: Learn JavaScriptPicks: JavaScript Code SmellsDan Abramov: No links, tips, or picks this weekBrian LonsdorfTips: Try elm and wait for the video from
+thisPicks: JSJabber about PureScriptKyle SimpsonPicks: Hour of CodeKent C. DoddsTips: Learn JavaScript with MDNPicks: plop, Christmas Lights, and Forward Web SummitIheanyi Ekechukwu: No links, tips, or picks this weekLin ClarkTips: Dead code elimination (in Webpack)Picks: Dan Abramov's
+Redux videos
+on egghead.io
+and Ancillary JusticeMatt ZabriskieLinks: Matt's beard on TwitterTips: Use the future of JavaScript with BabelPicks: gl-reactPam SellePicks: RxJS 5Tyler McGinnisTips: Find people smarter than you and copy what they do.Picks: Flexbox FoggyAbout JavaScript Air:JavaScriptAir is the live broadcast podcast all about JavaScript hosted by egghead.io instructor Kent C. Dodds. Please visit the JavaScript Air website (javascriptair.com) to see upcoming and past episodes. Also be sure to follow JavaScript Air on Twitter and Google+ to stay up to date with future episodes. Also, all episodes are on the YouTube channel as well.</itunes:summary>
+      <itunes:author>Kent C. Dodds</itunes:author>
+      <itunes:explicit>Clean</itunes:explicit>
+      <itunes:block>No</itunes:block>
+      <itunes:duration>01:08:40</itunes:duration>
+    </item>
+  </channel>
+</rss>

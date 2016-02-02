@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <itunes:category text="A1">
+      <itunes:category text="B1">
+        <itunes:category text="C1"/>
+      </itunes:category>
+      <itunes:category text="B2"/>
+      <itunes:category text="B3">
+        <itunes:category text="C1"/>
+        <itunes:category text="C2"/>
+        <itunes:category text="C3">
+          <itunes:category text="D1"/>
+        </itunes:category>
+      </itunes:category>
+    </itunes:category>
+  </channel>
+</rss>
