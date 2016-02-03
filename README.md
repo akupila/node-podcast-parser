@@ -15,7 +15,7 @@ Takes an opinionated view on what should be included so not everything is. The g
   },
   "link":        "<Podcast link (usually website for podcast)>",
   "image":       "<Podcast image>",
-  "language":    "<ISO 639 language>", // http://www.loc.gov/standards/iso639-2/php/code_list.php
+  "language":    "<ISO 639 language>",
   "copyright":   "<Podcast copyright>",
   "categories": [{
     "Category",
@@ -31,14 +31,14 @@ Takes an opinionated view on what should be included so not everything is. The g
       "guid":        "<Unique id>",
       "title":       "<Episode title>",
       "description": "<Episode description>",
-      "image":       "<Episode image>", // if available
+      "image":       "<Episode image>",
       "published":   "<date>",
-      "duration":    120 // duration in seconds
+      "duration":    120
       "categories":  [
         "Category"
       ],
       "enclosure": {
-        "filesize": 5650889, // bytes
+        "filesize": 5650889,
         "type":     "audio/mpeg",
         "url":      "<mp3 file>"
       }
