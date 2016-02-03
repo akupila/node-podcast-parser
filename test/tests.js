@@ -48,6 +48,8 @@ describe('Podcast feed parser', () => {
       expect(data).to.have.property('categories');
       expect(data).to.have.property('explicit');
       expect(data).to.have.property('owner');
+      expect(data).to.have.property('ttl');
+      expect(data).to.have.property('updated');
       expect(data).to.have.property('episodes');
 
       expect(data.title).to.be.a('string');
@@ -59,6 +61,8 @@ describe('Podcast feed parser', () => {
       expect(data.copyright).to.be.a('string');
       expect(data.categories).to.be.an(Array);
       expect(data.explicit).to.be.a('boolean');
+      expect(data.ttl).to.be.a('number');
+      expect(data.updated).to.be.a(Date);
       expect(data.episodes).to.be.an(Array);
 
       expect(data.owner).to.have.property('name');
@@ -141,7 +145,7 @@ describe('Podcast feed parser', () => {
       expect(data.link).to.equal('http://javascriptair.podbean.com');
       expect(data.language).to.equal('en-us');
       expect(data.copyright).to.equal('Copyright 2015 All rights reserved.');
-      expect(data.subtitle).to.equal('The live broadcast podcast all about JavaScript');
+      expect(data.subtitle).to.equal('The live broadcast podcast all about JavaScript'); // note trimmed output
       expect(data.description).to.equal('The live broadcast podcast all about JavaScript and the Web');
       expect(data.owner.name).to.equal('Kent C. Dodds');
       expect(data.owner.email).to.equal('javascriptair@gmail.com');

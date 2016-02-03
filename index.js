@@ -7,6 +7,7 @@ module.exports = function parse(feedXML, callback) {
   // -----------------------------------------------------
 
   const result = {
+    ttl: 3600, // default
     explicit: false,
     categories: [],
     episodes: []
@@ -47,7 +48,9 @@ module.exports = function parse(feedXML, callback) {
         'copyright': true,
         'itunes:subtitle': 'subtitle',
         'description': true,
-        'itunes:explicit': text => { return { explicit: text === 'yes' }}
+        'itunes:explicit': text => { return { explicit: text === 'yes' }},
+        'ttl': text => { return { ttl: parseInt(text) }; },
+        'pubDate': text => { return { updated: new Date(text) }; },
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
       result.image = attrs.href;
@@ -125,6 +128,19 @@ module.exports = function parse(feedXML, callback) {
     }
 
     if (node === null) {
+      // sort by date descending
+      result.episodes = result.episodes.sort((item1, item2) => {
+        return item2.published.getTime() - item1.published.getTime();
+      });
+
+      if (!result.pubDate) {
+        if (result.episodes.length > 0) {
+          result.updated = result.episodes[0].published;
+        } else {
+          result.pubDate = null;
+        }
+      }
+
       result.categories = _.uniq(result.categories.sort());
 
       callback(null, result);
