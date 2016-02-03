@@ -7,8 +7,6 @@ module.exports = function parse(feedXML, callback) {
   // -----------------------------------------------------
 
   const result = {
-    ttl: 3600, // default
-    explicit: false,
     categories: [],
     episodes: []
   };
@@ -45,10 +43,8 @@ module.exports = function parse(feedXML, callback) {
             }
           }
           return { language: lang.toLowerCase() }; },
-        'copyright': true,
-        'itunes:subtitle': 'subtitle',
-        'description': true,
-        'itunes:explicit': text => { return { explicit: text === 'yes' }},
+        'itunes:subtitle': 'description.short',
+        'description': 'description.long',
         'ttl': text => { return { ttl: parseInt(text) }; },
         'pubDate': text => { return { updated: new Date(text) }; },
       };
@@ -69,14 +65,13 @@ module.exports = function parse(feedXML, callback) {
         tmp = tmp.parent;
       }
 
+      if (!result.categories) {
+        result.categories = [];
+      }
       result.categories.push(path.join('>'));
     } else if (name === 'item' && node.parent.name === 'channel') {
       // New item
       tmpEpisode = {
-        // optional field have reasonable defaults
-        image: null,
-        categories: [],
-        explicit: false
       };
       node.target = tmpEpisode;
       node.textMap = {
@@ -84,7 +79,6 @@ module.exports = function parse(feedXML, callback) {
         'guid': true,
         'itunes:summary': 'description',
         'pubDate': text => { return { published: new Date(text) }; },
-        'itunes:author': 'author',
         'itunes:duration': text => {
           return {
             // parse '1:03:13' into 3793 seconds
@@ -100,9 +94,7 @@ module.exports = function parse(feedXML, callback) {
                 return acc + parseInt(val) * muliplier;
               }, 0)
           };
-        },
-        'itunes:author': 'author',
-        'itunes:explicit': text => { return { explicit: text === 'yes' }; }
+        }
       };
     } else if (tmpEpisode) {
       // Episode specific attributes
@@ -133,11 +125,11 @@ module.exports = function parse(feedXML, callback) {
         return item2.published.getTime() - item1.published.getTime();
       });
 
-      if (!result.pubDate) {
+      if (!result.updated) {
         if (result.episodes.length > 0) {
           result.updated = result.episodes[0].published;
         } else {
-          result.pubDate = null;
+          result.updated = null;
         }
       }
 
@@ -171,12 +163,15 @@ module.exports = function parse(feedXML, callback) {
           const prevValue = node.parent.target[keyName];
           // ontext can fire multiple times, if so append to previous value
           // this happens with "text &amp; other text"
-          node.parent.target[keyName] = prevValue ? `${prevValue} ${text}` : text;
+          _.set(node.parent.target, keyName, prevValue ? `${prevValue} ${text}` : text);
         }
       }
     }
 
     if (tmpEpisode && node.name === 'category') {
+      if (!tmpEpisode.categories) {
+        tmpEpisode.categories = [];
+      }
       tmpEpisode.categories.push(text);
     }
   })
