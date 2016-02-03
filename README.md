@@ -134,4 +134,6 @@ These properties include:
 
 ### Generic RSS feeds
 
+This module is specifically aimed at parsing RSS feeds and doesn't cater for more generic feeds from blogs etc.
+
 Use [node-feedparser](https://github.com/danmactough/node-feedparser)
