@@ -294,6 +294,44 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse neo4j feed', done => {
+    parse(fixtures['neo4j'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      expect(data.title).to.equal('Podcast on Graph Databases and Neo4j');
+      expect(data.link).to.equal('http://blog.bruggen.com');
+      expect(data.language).to.equal('en-us');
+      expect(data.copyright).to.equal('All rights reserved');
+      expect(data.subtitle).to.equal('Podcast by The Neo4j Graph Database Community');
+      expect(data.description).to.equal('Podcast by The Neo4j Graph Database Community');
+      expect(data.owner.name).to.equal('Graphistania');
+      expect(data.owner.email).to.equal('rik@neotechnology.com');
+      expect(data.image).to.equal('http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png');
+      expect(data.categories).to.eql([
+        'Technology'
+      ]);
+      expect(data.explicit).to.equal(false);
+      expect(data.episodes).to.have.length(54);
+
+      const firstEpisode = data.episodes[0];
+      expect(firstEpisode.title).to.equal('Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis');
+      expect(firstEpisode.author).to.equal('The Neo4j Graph Database Community');
+      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 29, 0, 0, 0)); // GMT time
+      expect(firstEpisode.image).to.equal('http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png');
+      expect(firstEpisode.guid).to.equal('tag:soundcloud,2010:tracks/244374452');
+      expect(firstEpisode.categories).to.eql([]);
+      expect(firstEpisode.duration).to.equal(638);
+      expect(firstEpisode.explicit).to.equal(false);
+      expect(firstEpisode.enclosure.filesize).to.equal(6381794);
+      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
+      expect(firstEpisode.enclosure.url).to.equal('http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/244374452-graphistania-podcast-recording-with-stuart-begg-and-matt-byrne-independent-contractors-at-sensis.mp3');
+
+      done();
+    });
+  });
+
   it('should parse complex genres', function(done) {
     parse(fixtures['complex-genre'], (err, data) => {
       if (err) {

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:141739624/sounds.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:141739624/sounds.rss?before=194400106" rel="next" type="application/rss+xml"/>
+    <title>Podcast on Graph Databases and Neo4j</title>
+    <link>http://blog.bruggen.com</link>
+    <pubDate>Fri, 29 Jan 2016 08:44:00 +0000</pubDate>
+    <lastBuildDate>Fri, 29 Jan 2016 08:44:00 +0000</lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
+    <description>Podcast by The Neo4j Graph Database Community</description>
+    <itunes:subtitle>Podcast by The Neo4j Graph Database Community</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>Graphistania</itunes:name>
+      <itunes:email>rik@neotechnology.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>The Neo4j Graph Database Community</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    <image>
+      <url>http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png</url>
+      <title>Graphistania</title>
+      <link>http://blog.bruggen.com</link>
+    </image>
+    <itunes:category text="Technology"/>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/244374452</guid>
+      <title>Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis</title>
+      <pubDate>Fri, 29 Jan 2016 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-recording-with-stuart-begg-and-matt-byrne-independent-contractors-at-sensis</link>
+      <itunes:duration>00:10:38</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Stuart Begg And Matt Byrne…</itunes:subtitle>
+      <description>Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/244374452-graphistania-podcast-recording-with-stuart-begg-and-matt-byrne-independent-contractors-at-sensis.mp3" length="6381794"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/242895344</guid>
+      <title>Podcast Interview With Paul Jongsma, Webtic</title>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-paul-jongsma-webtic</link>
+      <itunes:duration>00:10:16</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Paul Jongsma, Webtic by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Paul Jongsma, Webtic by Th…</itunes:subtitle>
+      <description>Podcast Interview With Paul Jongsma, Webtic by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/242895344-graphistania-podcast-interview-with-paul-jongsma-webtic.mp3" length="6163387"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/238931679</guid>
+      <title>Podcast Interview With Andreas B Kollegger, Neo Technology</title>
+      <pubDate>Thu, 24 Dec 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-andreas-b-kollegger-neo-technology</link>
+      <itunes:duration>00:13:06</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Andreas B Kollegger, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Andreas B Kollegger, Neo T…</itunes:subtitle>
+      <description>Podcast Interview With Andreas B Kollegger, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/238931679-graphistania-podcast-interview-with-andreas-b-kollegger-neo-technology.mp3" length="7868954"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/238113651</guid>
+      <title>Podcast Interview With John Mark Suhy, Purethink</title>
+      <pubDate>Fri, 18 Dec 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-john-mark-suhy-purethink</link>
+      <itunes:duration>00:12:10</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With John Mark Suhy, Purethink by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With John Mark Suhy, Purethink …</itunes:subtitle>
+      <description>Podcast Interview With John Mark Suhy, Purethink by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/238113651-graphistania-podcast-interview-with-john-mark-suhy-purethink.mp3" length="7303916"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/236930104</guid>
+      <title>Podcast Interview with Ashley Sun, LendingClub</title>
+      <pubDate>Thu, 10 Dec 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-ashley-sun-lendingclub</link>
+      <itunes:duration>00:11:08</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Ashley Sun, LendingClub by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Ashley Sun, LendingClub by…</itunes:subtitle>
+      <description>Podcast Interview with Ashley Sun, LendingClub by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/236930104-graphistania-podcast-interview-with-ashley-sun-lendingclub.mp3" length="6685573"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/235873454</guid>
+      <title>Podcast Interview With Will Lyon, Neo Technology</title>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-will-lyon-neo-technology</link>
+      <itunes:duration>00:08:41</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Will Lyon, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Will Lyon, Neo Technology …</itunes:subtitle>
+      <description>Podcast Interview With Will Lyon, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/235873454-graphistania-podcast-interview-with-will-lyon-neo-technology.mp3" length="5211769"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/234776505</guid>
+      <title>Podcast Interview With Karl Urich, Datafoxtrot</title>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-karl-urich-datafoxtrot</link>
+      <itunes:duration>00:12:54</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Karl Urich, Datafoxtrot by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Karl Urich, Datafoxtrot by…</itunes:subtitle>
+      <description>Podcast Interview With Karl Urich, Datafoxtrot by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/234776505-graphistania-podcast-interview-with-karl-urich-datafoxtrot.mp3" length="7745383"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/233445923</guid>
+      <title>Podcast Interview With Felienne Hermans, TU Delft</title>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-felienne-hermans-tu-delft</link>
+      <itunes:duration>00:11:03</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Felienne Hermans, TU Delft by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Felienne Hermans, TU Delft…</itunes:subtitle>
+      <description>Podcast Interview With Felienne Hermans, TU Delft by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/233445923-graphistania-podcast-interview-with-felienne-hermans-tu-delft.mp3" length="6632831"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/232887277</guid>
+      <title>Podcast Interview With Chris Daly</title>
+      <pubDate>Fri, 13 Nov 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-chris-daly</link>
+      <itunes:duration>00:11:16</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Chris Daly by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Chris Daly by The Neo4j Gr…</itunes:subtitle>
+      <description>Podcast Interview With Chris Daly by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/232887277-graphistania-podcast-interview-with-chris-daly.mp3" length="6761337"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/231479606</guid>
+      <title>Podcast Interview with David Meza, NASA</title>
+      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-david-meza-nasa</link>
+      <itunes:duration>00:09:30</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with David Meza, NASA by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with David Meza, NASA by The Ne…</itunes:subtitle>
+      <description>Podcast Interview with David Meza, NASA by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/231479606-graphistania-podcast-interview-with-david-meza-nasa.mp3" length="5709392"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/230204927</guid>
+      <title>Pocast Interview with Luanne Misquita, GraphAware</title>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/pocast-interview-with-luanne-misquita-graphaware</link>
+      <itunes:duration>00:12:16</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Pocast Interview with Luanne Misquita, GraphAware by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Pocast Interview with Luanne Misquita, GraphAware…</itunes:subtitle>
+      <description>Pocast Interview with Luanne Misquita, GraphAware by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/230204927-graphistania-pocast-interview-with-luanne-misquita-graphaware.mp3" length="7370006"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/229407310</guid>
+      <title>Podcast Summary - part 3 - the best thing about Neo4j</title>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-summary-part-3-the-best-thing-about-neo4j</link>
+      <itunes:duration>00:03:53</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Summary - part 3 - the best thing about Neo4j by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Summary - part 3 - the best thing about N…</itunes:subtitle>
+      <description>Podcast Summary - part 3 - the best thing about Neo4j by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/229407310-graphistania-podcast-summary-part-3-the-best-thing-about-neo4j.mp3" length="3727359"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/229245561</guid>
+      <title>Podcast Summary - part 2 - the best thing about Neo4j</title>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/the-best-thing-about-neo4j-part-2</link>
+      <itunes:duration>00:03:51</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Summary - part 2 - the best thing about Neo4j by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Summary - part 2 - the best thing about N…</itunes:subtitle>
+      <description>Podcast Summary - part 2 - the best thing about Neo4j by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/229245561-graphistania-the-best-thing-about-neo4j-part-2.mp3" length="3701863"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/229078437</guid>
+      <title>Podcast Summary - part 1 - the best thing about Neo4j</title>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-summary-part-1-the-best-thing-about-neo4j</link>
+      <itunes:duration>00:03:49</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Summary - part 1 - the best thing about Neo4j by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Summary - part 1 - the best thing about N…</itunes:subtitle>
+      <description>Podcast Summary - part 1 - the best thing about Neo4j by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/229078437-graphistania-podcast-summary-part-1-the-best-thing-about-neo4j.mp3" length="4597596"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/228065381</guid>
+      <title>Podcast Interview with Chris Skardon, Tournr</title>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/20150924-podcast-interview-chris-skardon-tournr</link>
+      <itunes:duration>00:11:17</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Chris Skardon, Tournr by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Chris Skardon, Tournr by T…</itunes:subtitle>
+      <description>Podcast Interview with Chris Skardon, Tournr by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/228065381-graphistania-20150924-podcast-interview-chris-skardon-tournr.mp3" length="6773882"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/227024006</guid>
+      <title>Podcast Interview With Jesus Barrasa, Neo Technology</title>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-jesus-barrasa-neo-technology</link>
+      <itunes:duration>00:11:20</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Jesus Barrasa, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Jesus Barrasa, Neo Technol…</itunes:subtitle>
+      <description>Podcast Interview With Jesus Barrasa, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/227024006-graphistania-podcast-interview-with-jesus-barrasa-neo-technology.mp3" length="6811250"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/226095936</guid>
+      <title>Podcast Interview With Tim Nash, Independent "Wordpress &amp; more" developer</title>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-tim-nash-independent-wordpress-more-developer</link>
+      <itunes:duration>00:11:29</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Tim Nash, Independent "Wordpress &amp; more" developer by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Tim Nash, Independent "Wor…</itunes:subtitle>
+      <description>Podcast Interview With Tim Nash, Independent "Wordpress &amp; more" developer by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/226095936-graphistania-podcast-interview-with-tim-nash-independent-wordpress-more-developer.mp3" length="6891425"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/224330877</guid>
+      <title>Podcast Interview With Axel Morgner, Structr</title>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-axel-morgner-structr</link>
+      <itunes:duration>00:13:18</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Axel Morgner, Structr by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Axel Morgner, Structr by T…</itunes:subtitle>
+      <description>Podcast Interview With Axel Morgner, Structr by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/224330877-graphistania-podcast-interview-with-axel-morgner-structr.mp3" length="7987797"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/223186154</guid>
+      <title>Podcast Interview With Petra Selmer, Neo Technology</title>
+      <pubDate>Thu, 10 Sep 2015 05:55:19 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-petra-selmer-neo-technology</link>
+      <itunes:duration>00:11:15</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Petra Selmer, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Petra Selmer, Neo Technolo…</itunes:subtitle>
+      <description>Podcast Interview With Petra Selmer, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/223186154-graphistania-podcast-interview-with-petra-selmer-neo-technology.mp3" length="6759763"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/221982717</guid>
+      <title>Podcast Interview With Eddy Wong, Wanderu</title>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-eddy-wong-wanderu</link>
+      <itunes:duration>00:09:47</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Eddy Wong, Wanderu by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Eddy Wong, Wanderu by The …</itunes:subtitle>
+      <description>Podcast Interview With Eddy Wong, Wanderu by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/221982717-graphistania-podcast-interview-with-eddy-wong-wanderu.mp3" length="5873966"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/220844428</guid>
+      <title>Podcast Interview with Emil Eifrem, Neo Technology Über Boss</title>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-emil-eifrem-neo-technology-uber-boss</link>
+      <itunes:duration>00:18:51</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Emil Eifrem, Neo Technology Über Boss by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Emil Eifrem, Neo Technolog…</itunes:subtitle>
+      <description>Podcast Interview with Emil Eifrem, Neo Technology Über Boss by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/220844428-graphistania-podcast-interview-with-emil-eifrem-neo-technology-uber-boss.mp3" length="11315778"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/219773874</guid>
+      <title>Podcast Interview With Prashant Yadav, Kincards</title>
+      <pubDate>Tue, 18 Aug 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-prashant-yadav-kincards</link>
+      <itunes:duration>00:10:03</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Prashant Yadav, Kincards by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Prashant Yadav, Kincards b…</itunes:subtitle>
+      <description>Podcast Interview With Prashant Yadav, Kincards by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/219773874-graphistania-podcast-interview-with-prashant-yadav-kincards.mp3" length="6038263"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/216700692</guid>
+      <title>Podcast Interview With Max De Marzi, Neo Technology</title>
+      <pubDate>Tue, 28 Jul 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-max-de-marzi-neo-technology</link>
+      <itunes:duration>00:10:20</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Max De Marzi, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Max De Marzi, Neo Technolo…</itunes:subtitle>
+      <description>Podcast Interview With Max De Marzi, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/216700692-graphistania-podcast-interview-with-max-de-marzi-neo-technology.mp3" length="6209389"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/215727031</guid>
+      <title>Podcast Interview with Stefan Armbruster, Neo Technology</title>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-stefan-armbruster-neo-technology</link>
+      <itunes:duration>00:10:23</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Stefan Armbruster, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Stefan Armbruster, Neo Tec…</itunes:subtitle>
+      <description>Podcast Interview with Stefan Armbruster, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/215727031-graphistania-podcast-interview-with-stefan-armbruster-neo-technology.mp3" length="6232878"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/213921227</guid>
+      <title>Podcast Interview with Jaroslaw Palka, Allegro Group</title>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-jaroslaw-palka-allegro-group</link>
+      <itunes:duration>00:12:56</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Jaroslaw Palka, Allegro Group by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Jaroslaw Palka, Allegro Gr…</itunes:subtitle>
+      <description>Podcast Interview with Jaroslaw Palka, Allegro Group by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/213921227-graphistania-podcast-interview-with-jaroslaw-palka-allegro-group.mp3" length="7763413"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212518329</guid>
+      <title>Podcast Interview with Javier De La Rosa, SylvaDB</title>
+      <pubDate>Tue, 30 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-javier-de-la-rosa-sylvadb</link>
+      <itunes:duration>00:08:58</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>You can find the transcription for this track on http://blog.bruggen.com/2015/06/i-had-great-conversation-with-javier-de.html. Other tracks are on http://blog.bruggen.com/search/label/podcast.</itunes:summary>
+      <itunes:subtitle>You can find the transcription for this track on …</itunes:subtitle>
+      <description>You can find the transcription for this track on http://blog.bruggen.com/2015/06/i-had-great-conversation-with-javier-de.html. Other tracks are on http://blog.bruggen.com/search/label/podcast.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212518329-graphistania-podcast-interview-with-javier-de-la-rosa-sylvadb.mp3" length="8608642"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/211420427</guid>
+      <title>Podcast Interview with Pieter Cailliau And Luke Gannon</title>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-ith-pieter-cailliau-and-luke-gannon</link>
+      <itunes:duration>00:11:32</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Pieter Cailliau And Luke Gannon by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Pieter Cailliau And Luke G…</itunes:subtitle>
+      <description>Podcast Interview with Pieter Cailliau And Luke Gannon by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/211420427-graphistania-podcast-interview-ith-pieter-cailliau-and-luke-gannon.mp3" length="6926172"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/210386966</guid>
+      <title>Podcast Interview with Nat Pryce, independent software engineer</title>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-nat-pryce-author-independent-software-engineer</link>
+      <itunes:duration>00:12:52</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Nat Pryce, independent software engineer by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Nat Pryce, independent sof…</itunes:subtitle>
+      <description>Podcast Interview with Nat Pryce, independent software engineer by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/210386966-graphistania-podcast-interview-with-nat-pryce-author-independent-software-engineer.mp3" length="7726561"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/209490860</guid>
+      <title>Podcast Interview with Tom Zeppenfeldt, Ophileon</title>
+      <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-tom-zeppenfeldt-ophileon</link>
+      <itunes:duration>00:11:38</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Tom Zeppenfeldt, Ophileon by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Tom Zeppenfeldt, Ophileon …</itunes:subtitle>
+      <description>Podcast Interview with Tom Zeppenfeldt, Ophileon by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/209490860-graphistania-podcast-interview-with-tom-zeppenfeldt-ophileon.mp3" length="22409164"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/208892483</guid>
+      <title>Podcast Interview With Tobias Lindaaker, Neo Technology</title>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-tobias-lindaaker-neo-technology</link>
+      <itunes:duration>00:08:50</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Tobias Lindaaker, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Tobias Lindaaker, Neo Tech…</itunes:subtitle>
+      <description>Podcast Interview With Tobias Lindaaker, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/208892483-graphistania-podcast-interview-with-tobias-lindaaker-neo-technology.mp3" length="5302937"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/208136218</guid>
+      <title>Podcast Interview With Aseem Kishore, 53</title>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-aseem-kishore-53</link>
+      <itunes:duration>00:09:42</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Aseem Kishore, 53 by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Aseem Kishore, 53 by The N…</itunes:subtitle>
+      <description>Podcast Interview With Aseem Kishore, 53 by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/208136218-graphistania-podcast-interview-with-aseem-kishore-53.mp3" length="5829034"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/207254521</guid>
+      <title>Podcast Interview With Johan Svensson, Neo Technology</title>
+      <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-johan-svensson-neo-technology</link>
+      <itunes:duration>00:12:12</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Johan Svensson, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Johan Svensson, Neo Techno…</itunes:subtitle>
+      <description>Podcast Interview With Johan Svensson, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/207254521-graphistania-podcast-interview-with-johan-svensson-neo-technology.mp3" length="7321407"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/206226540</guid>
+      <title>Podcast Interview With Nigel Small, Neo Technology</title>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-nigel-small-neo-technology</link>
+      <itunes:duration>00:09:00</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Nigel Small, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Nigel Small, Neo Technolog…</itunes:subtitle>
+      <description>Podcast Interview With Nigel Small, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/206226540-graphistania-podcast-interview-with-nigel-small-neo-technology.mp3" length="5405322"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/205557812</guid>
+      <title>Podcast Interview with Nicole White, Neo Technology</title>
+      <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-nicole-white-neo-technology</link>
+      <itunes:duration>00:10:11</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Nicole White, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Nicole White, Neo Technolo…</itunes:subtitle>
+      <description>Podcast Interview with Nicole White, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/205557812-graphistania-podcast-interview-with-nicole-white-neo-technology.mp3" length="6112971"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/204913186</guid>
+      <title>Podcast Interview with Wes Freeman, Information Analysis Inc.</title>
+      <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-wes-freeman-information-analysis-inc</link>
+      <itunes:duration>00:07:56</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Wes Freeman, Information Analysis Inc. by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Wes Freeman, Information A…</itunes:subtitle>
+      <description>Podcast Interview with Wes Freeman, Information Analysis Inc. by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/204913186-graphistania-podcast-interview-with-wes-freeman-information-analysis-inc.mp3" length="4763223"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/203310576</guid>
+      <title>Podcast Interview with Alistair Jones, Neo Technology</title>
+      <pubDate>Thu, 30 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-alistair-jones-neo-technology</link>
+      <itunes:duration>00:06:43</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Alistair Jones, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Alistair Jones, Neo Techno…</itunes:subtitle>
+      <description>Podcast Interview with Alistair Jones, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/203310576-graphistania-podcast-interview-with-alistair-jones-neo-technology.mp3" length="4040945"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/202841847</guid>
+      <title>Podcast Interview Lorenzo Speranzoni, Larus Business Automation</title>
+      <pubDate>Tue, 28 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-lorenzo-speranzoni-larus-business-automation</link>
+      <itunes:duration>00:06:43</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview Lorenzo Speranzoni, Larus Business Automation by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview Lorenzo Speranzoni, Larus Busin…</itunes:subtitle>
+      <description>Podcast Interview Lorenzo Speranzoni, Larus Business Automation by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/202841847-graphistania-podcast-interview-lorenzo-speranzoni-larus-business-automation.mp3" length="4038336"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/202236854</guid>
+      <title>Podcast Interview with Michal Bachman, GraphAware</title>
+      <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-michal-bachman-graphaware</link>
+      <itunes:duration>00:06:38</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Michal Bachman, GraphAware by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Michal Bachman, GraphAware…</itunes:subtitle>
+      <description>Podcast Interview with Michal Bachman, GraphAware by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/202236854-graphistania-podcast-interview-with-michal-bachman-graphaware.mp3" length="3989878"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/201819644</guid>
+      <title>Podcast Interview With Peter Neubauer, Mapillary</title>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-peter-neubauer-mapillary</link>
+      <itunes:duration>00:10:20</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview With Peter Neubauer, Mapillary by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview With Peter Neubauer, Mapillary …</itunes:subtitle>
+      <description>Podcast Interview With Peter Neubauer, Mapillary by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/201819644-graphistania-podcast-interview-with-peter-neubauer-mapillary.mp3" length="6210419"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/200968455</guid>
+      <title>Podcast Interview with Chris Gioran, Neo Technology</title>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-chris-gioran-neo-technology</link>
+      <itunes:duration>00:11:30</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Chris Gioran, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Chris Gioran, Neo Technolo…</itunes:subtitle>
+      <description>Podcast Interview with Chris Gioran, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/200968455-graphistania-podcast-interview-with-chris-gioran-neo-technology.mp3" length="6907364"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/200654029</guid>
+      <title>Podcast Interview with Brian Underwood</title>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-brian-underwood</link>
+      <itunes:duration>00:07:24</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Brian Underwood by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Brian Underwood by The Neo…</itunes:subtitle>
+      <description>Podcast Interview with Brian Underwood by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/200654029-graphistania-podcast-interview-with-brian-underwood.mp3" length="4449758"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/200118975</guid>
+      <title>Podcast Interview with Philip Rathle, VP Products of Neo Technology</title>
+      <pubDate>Fri, 10 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-philip-rathle-vp-products-of-neo-technology</link>
+      <itunes:duration>00:19:17</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Philip Rathle, VP Products of Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Philip Rathle, VP Products…</itunes:subtitle>
+      <description>Podcast Interview with Philip Rathle, VP Products of Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/200118975-graphistania-podcast-interview-with-philip-rathle-vp-products-of-neo-technology.mp3" length="11578311"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/199619405</guid>
+      <title>Podcast Interview with Andres Taylor, Neo Technology</title>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-andres-taylor-neo-technology</link>
+      <itunes:duration>00:12:49</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Andres Taylor, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Andres Taylor, Neo Technol…</itunes:subtitle>
+      <description>Podcast Interview with Andres Taylor, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/199619405-graphistania-podcast-interview-with-andres-taylor-neo-technology.mp3" length="15399241"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/199027540</guid>
+      <title>Podcast interview with Ralf Becher, TIQ Solutions</title>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-ralf-becher-tiq-solutions</link>
+      <itunes:duration>00:07:40</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast interview with Ralf Becher, TIQ Solutions by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast interview with Ralf Becher, TIQ Solutions…</itunes:subtitle>
+      <description>Podcast interview with Ralf Becher, TIQ Solutions by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/199027540-graphistania-podcast-interview-with-ralf-becher-tiq-solutions.mp3" length="9201943"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/198638259</guid>
+      <title>Podcast Interview with Ian Robinson, Neo Technology</title>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-ian-robinson-neo-technology</link>
+      <itunes:duration>00:14:03</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Ian Robinson, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Ian Robinson, Neo Technolo…</itunes:subtitle>
+      <description>Podcast Interview with Ian Robinson, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/198638259-graphistania-podcast-interview-with-ian-robinson-neo-technology.mp3" length="16866269"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/198365958</guid>
+      <title>Podcast interview with Matt Wright, Stitched.io</title>
+      <pubDate>Mon, 30 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-matt-wright-stitchedio</link>
+      <itunes:duration>00:06:55</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast interview with Matt Wright, Stitched.io by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast interview with Matt Wright, Stitched.io b…</itunes:subtitle>
+      <description>Podcast interview with Matt Wright, Stitched.io by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/198365958-graphistania-podcast-interview-with-matt-wright-stitchedio.mp3" length="8318482"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/197938260</guid>
+      <title>Podcast Interview with Dirk Mahler, Buschmais</title>
+      <pubDate>Fri, 27 Mar 2015 12:14:21 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-dirk-mahler-buschmais</link>
+      <itunes:duration>00:07:58</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Dirk Mahler, Buschmais by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Dirk Mahler, Buschmais by …</itunes:subtitle>
+      <description>Podcast Interview with Dirk Mahler, Buschmais by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/197938260-graphistania-podcast-interview-with-dirk-mahler-buschmais.mp3" length="9571837"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/197580285</guid>
+      <title>Podcast Interview with Jean Villedieu, Linkurio.us</title>
+      <pubDate>Wed, 25 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/20150319-podcast-jean-villedieu-linkurious</link>
+      <itunes:duration>00:08:39</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Interview with Jean Villedieu of Linkurio.us</itunes:summary>
+      <itunes:subtitle>Interview with Jean Villedieu of Linkurio.us</itunes:subtitle>
+      <description>Interview with Jean Villedieu of Linkurio.us</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/197580285-graphistania-20150319-podcast-jean-villedieu-linkurious.mp3" length="10381116"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/197153015</guid>
+      <title>Podcast Interview with Dr. Jim Webber, Neo Technology</title>
+      <pubDate>Sun, 22 Mar 2015 18:39:06 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-dr-jim-webber-neo-technology</link>
+      <itunes:duration>00:07:58</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Dr. Jim Webber, Neo Technology by The Neo4j Graph Database Community</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Dr. Jim Webber, Neo Techno…</itunes:subtitle>
+      <description>Podcast Interview with Dr. Jim Webber, Neo Technology by The Neo4j Graph Database Community</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/197153015-graphistania-podcast-interview-with-dr-jim-webber-neo-technology.mp3" length="9575507"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/196696512</guid>
+      <title>Podcast Interview with Ron Van Weverwijk, GoDataDriven</title>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-ron-van-weverwijk-godatadriven</link>
+      <itunes:duration>00:08:03</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast Interview with Ron Van Weverwijk, GoDataDriven</itunes:summary>
+      <itunes:subtitle>Podcast Interview with Ron Van Weverwijk, GoDataD…</itunes:subtitle>
+      <description>Podcast Interview with Ron Van Weverwijk, GoDataDriven</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/196696512-graphistania-podcast-interview-with-ron-van-weverwijk-godatadriven.mp3" length="9662146"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000110588357-73ymzk-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/196380399</guid>
+      <title>Podcast Interview with Ryan Boyd, Neo Technology</title>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-ryan-boyd-neo-technology</link>
+      <itunes:duration>00:03:22</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Interview with Ryan Boyd, Developer Evangelist at Neo Technology</itunes:summary>
+      <itunes:subtitle>Interview with Ryan Boyd, Developer Evangelist at…</itunes:subtitle>
+      <description>Interview with Ryan Boyd, Developer Evangelist at Neo Technology</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/196380399-graphistania-podcast-interview-with-ryan-boyd-neo-technology.mp3" length="3214101"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/196115841</guid>
+      <title>Podcast interview with Yan Cui, GameSys</title>
+      <pubDate>Mon, 16 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-interview-with-yan-cui-gamesys</link>
+      <itunes:duration>00:05:03</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Podcast interview with Yan Cui of GameSys on their use of Neo4j for managing Game Economics</itunes:summary>
+      <itunes:subtitle>Podcast interview with Yan Cui of GameSys on thei…</itunes:subtitle>
+      <description>Podcast interview with Yan Cui of GameSys on their use of Neo4j for managing Game Economics</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/196115841-graphistania-podcast-interview-with-yan-cui-gamesys.mp3" length="4306017"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000110186564-femkep-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/194400109</guid>
+      <title>Podcast Interview with Mark Needham, Neo Technology</title>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-mark-needham</link>
+      <itunes:duration>00:04:51</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>A podcast about graph databases and the Neo4j ecosystem. Updated weekly or when we feel like it.</itunes:summary>
+      <itunes:subtitle>A podcast about graph databases and the Neo4j eco…</itunes:subtitle>
+      <description>A podcast about graph databases and the Neo4j ecosystem. Updated weekly or when we feel like it.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/194400109-graphistania-podcast-mark-needham.mp3" length="4008633"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000109022549-0zvngg-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/194400106</guid>
+      <title>Podcast Interview with Michael Hunger, Neo Technology</title>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+      <link>https://soundcloud.com/graphistania/podcast-michael-hunger</link>
+      <itunes:duration>00:05:04</itunes:duration>
+      <itunes:author>The Neo4j Graph Database Community</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>A podcast about graph databases and the Neo4j ecosystem. Updated weekly or when we feel like it.</itunes:summary>
+      <itunes:subtitle>A podcast about graph databases and the Neo4j eco…</itunes:subtitle>
+      <description>A podcast about graph databases and the Neo4j ecosystem. Updated weekly or when we feel like it.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/194400106-graphistania-podcast-michael-hunger.mp3" length="0"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000109022620-xza3io-original.png"/>
+    </item>
+  </channel>
+</rss>
