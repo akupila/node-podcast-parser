@@ -82,7 +82,7 @@ module.exports = function parse(feedXML, callback) {
         'guid': true,
         'itunes:summary': 'description',
         'pubDate': text => { return { published: new Date(text) }; },
-        'itunes:author|author': 'author',
+        'itunes:author': 'author',
         'itunes:duration': text => {
           return {
             // parse '1:03:13' into 3793 seconds
