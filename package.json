@@ -29,5 +29,12 @@
   },
   "engines": {
     "node": ">= 4.0.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/akupila/node-podcast-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/akupila/node-podcast-parser/issues"
   }
 }
