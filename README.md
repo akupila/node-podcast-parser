@@ -1,6 +1,51 @@
 # node-podcast-parser
 
-Parses a podcast RSS feed and returns easy to use result
+Parses a podcast RSS feed and returns easy to use object
+
+## Output format
+
+Takes an opinionated view on what should be included so not everything is. The goal is to have the result be as normalized as possible across multiple feeds.
+
+```json
+{
+  "title":       "<Podcast title>",
+  "description": {
+    "short": "<Podcast subtitle>",
+    "description": "<Podcast description>"
+  },
+  "link":        "<Podcast link (usually website for podcast)>",
+  "image":       "<Podcast image>",
+  "language":    "<ISO 639 language>", // http://www.loc.gov/standards/iso639-2/php/code_list.php
+  "copyright":   "<Podcast copyright>",
+  "categories": [{
+    "Category",
+    "Category>Subcategory",
+  }],
+  "explicit": false,
+  "owner": {
+    "name":  "<Author name>",
+    "email": "<Author email>"
+  },
+  "episodes": [
+    {
+      "guid":        "<Unique id>",
+      "title":       "<Episode title>",
+      "description": "<Episode description>",
+      "image":       "<Episode image>", // if available
+      "published":   "<date>",
+      "duration":    120 // duration in seconds
+      "categories":  [
+        "Category"
+      ],
+      "enclosure": {
+        "filesize": 5650889, // bytes
+        "type":     "audio/mpeg",
+        "url":      "<mp3 file>"
+      }
+    }
+  ]
+}
+```
 
 ## Usage
 
@@ -13,7 +58,7 @@ parsePodcast('<podcast xml>', (err, data) => {
     return;
   }
 
-  // data looks like the format below
+  // data looks like the format above
   console.log(data);
 });
 ```
@@ -47,54 +92,48 @@ request('<podcast url>', (err, res, data) => {
 });
 ```
 
-Output format:
+## Testing
 
-```json
-{
-  "title":       "<Podcast title>",
-  "description": {
-    "short": "<Podcast subtitle>",
-    "description": "<Podcast description>"
-  },
-  "link":        "<Podcast link (usually website for podcast)>",
-  "image":       "<Podcast image>",
-  "language":    "<ISO 639 language>", // http://www.loc.gov/standards/iso639-2/php/code_list.php
-  "copyright":   "<Podcast copyright>",
-  "categories": [{
-    "Category",
-    "Category>Subcategory",
-  }],
-  "explicit": false,
-  "owner": {
-    "name":  "<Author name>",
-    "email": "<Author email>"
-  },
-  "episodes": [
-    {
-      "guid":        "<Unique id>",
-      "title":       "<Episode title>",
-      "description": "<Episode description>",
-      "image":       "<Episode image>", // if available
-      "published":   "<date>",
-      "author":      "<Author name>",
-      "duration":    120 // duration in seconds
-      "categories":  [
-        "Category"
-      ],
-      "enclosure": {
-        "filesize": 5650889, // bytes
-        "type":     "audio/mpeg",
-        "url":      "<mp3 file>"
-      }
-    }
-  ]
-}
+```js
+npm install
+npm run test
 ```
 
-## Note for Windows users
+## Test coverage
+
+```js
+npm install
+npm run coverage
+```
+
+## Special notes
+
+### Language
+
+A lot of podcasts have the language set something like `en`. 
+The spec requires the language to be [ISO 639](www.loc.gov/standards/iso639-2/php/code_list.php) so it will be convered to `en-us`.
+A non-English language will be `lang-lang` such as `de-de`.
+The language is always lowercase.
+
+### Cleanup
+
+Most content is left as it is but whitespace at beginning and end of strings is trimmed.
+
+### Missing properties
+
+Unfortunately not all podcasts contain all properties. If so they are simply ommited from the output.
+
+These properties include:
+
+- feed TTL
+- episode categories
+- episode image
+- etc
+
+### Windows users
 
 Under the hood this depends on `expat` for RSS parsing. Apparently there are some issues here on Windows but i'm not sure what they are & not able to test on Windows. Your milage may vary..
 
-## Generic RSS feeds
+### Generic RSS feeds
 
 Use [node-feedparser](https://github.com/danmactough/node-feedparser)
