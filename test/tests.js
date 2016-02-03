@@ -41,27 +41,22 @@ describe('Podcast feed parser', () => {
       expect(data).to.have.property('title');
       expect(data).to.have.property('link');
       expect(data).to.have.property('language');
-      expect(data).to.have.property('subtitle');
       expect(data).to.have.property('description');
+      expect(data.description).to.have.property('short');
+      expect(data.description).to.have.property('long');
       expect(data).to.have.property('image');
-      expect(data).to.have.property('copyright');
       expect(data).to.have.property('categories');
-      expect(data).to.have.property('explicit');
       expect(data).to.have.property('owner');
-      expect(data).to.have.property('ttl');
       expect(data).to.have.property('updated');
       expect(data).to.have.property('episodes');
 
       expect(data.title).to.be.a('string');
       expect(data.link).to.be.a('string');
       expect(data.language).to.be.a('string');
-      expect(data.subtitle).to.be.a('string');
-      expect(data.description).to.be.a('string');
+      expect(data.description.short).to.be.a('string');
+      expect(data.description.long).to.be.a('string');
       expect(data.image).to.be.a('string');
-      expect(data.copyright).to.be.a('string');
       expect(data.categories).to.be.an(Array);
-      expect(data.explicit).to.be.a('boolean');
-      expect(data.ttl).to.be.a('number');
       expect(data.updated).to.be.a(Date);
       expect(data.episodes).to.be.an(Array);
 
@@ -74,21 +69,15 @@ describe('Podcast feed parser', () => {
       expect(episode).to.have.property('description');
       expect(episode).to.have.property('published');
       expect(episode).to.have.property('image');
-      expect(episode).to.have.property('author');
       expect(episode).to.have.property('duration');
-      expect(episode).to.have.property('categories');
       expect(episode).to.have.property('enclosure');
-      expect(episode).to.have.property('explicit');
 
       expect(episode.guid).to.be.a('string');
       expect(episode.title).to.be.a('string');
       expect(episode.description).to.be.a('string');
       expect(episode.published).to.be.a(Date);
       expect(episode.image).to.be.a('string');
-      expect(episode.author).to.be.a('string');
       expect(episode.duration).to.be.a('number');
-      expect(episode.categories).to.be.an(Array);
-      expect(episode.explicit).to.be.a('boolean');
 
       expect(episode.enclosure).to.have.property('filesize');
       expect(episode.enclosure).to.have.property('type');
@@ -104,32 +93,46 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('All About Everything');
-      expect(data.link).to.equal('http://www.example.com/podcasts/everything/index.html');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('℗ & © 2014 John Doe & Family');
-      expect(data.subtitle).to.equal('A show about everything');
-      expect(data.description).to.equal('All About Everything is a show about everything. Each week we dive into any subject known to man and talk about it as much as we can. Look for our podcast in the Podcasts app or in the iTunes Store');
-      expect(data.owner.name).to.equal('John Doe');
-      expect(data.owner.email).to.equal('john.doe@example.com');
-      expect(data.image).to.equal('http://example.com/podcasts/everything/AllAboutEverything.jpg');
-      expect(data.categories).to.eql([
-        'TV & Film',
-        'Technology',
-        'Technology>Gadgets'
-      ]);
-      expect(data.explicit).to.equal(false);
-      expect(data.episodes).to.have.length(3);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'All About Everything',
+        description: {
+          short: 'A show about everything',
+          long: 'All About Everything is a show about everything. Each week we dive into any subject known to man and talk about it as much as we can. Look for our podcast in the Podcasts app or in the iTunes Store',
+        },
+        link: 'http://www.example.com/podcasts/everything/index.html',
+        image: 'http://example.com/podcasts/everything/AllAboutEverything.jpg',
+        language: 'en-us',
+        updated: utcDate(2014, 5, 15, 19, 0, 0),
+        owner: {
+          name: 'John Doe',
+          email: 'john.doe@example.com'
+        },
+        categories: [
+          'TV & Film',
+          'Technology',
+          'Technology>Gadgets'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(3);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('Shake Shake Shake Your Spices');
-      expect(firstEpisode.author).to.equal('John Doe');
-      expect(firstEpisode.published).to.eql(utcDate(2014, 5, 15, 19, 0, 0));
-      expect(firstEpisode.image).to.equal('http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg');
-      expect(firstEpisode.guid).to.equal('http://example.com/podcasts/archive/aae20140615.m4a');
-      expect(firstEpisode.enclosure.filesize).to.equal(8727310);
-      expect(firstEpisode.enclosure.type).to.equal('audio/x-m4a');
-      expect(firstEpisode.enclosure.url).to.equal('http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a');
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'http://example.com/podcasts/archive/aae20140615.m4a',
+        title: 'Shake Shake Shake Your Spices',
+        published: utcDate(2014, 5, 15, 19, 0, 0),
+        image: 'http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg',
+        duration: 424,
+        enclosure: {
+          filesize: 8727310,
+          type: 'audio/x-m4a',
+          url: 'http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a'
+        }
+      });
 
       done();
     });
@@ -141,36 +144,49 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('JavaScript Air');
-      expect(data.link).to.equal('http://javascriptair.podbean.com');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('Copyright 2015 All rights reserved.');
-      expect(data.subtitle).to.equal('The live broadcast podcast all about JavaScript'); // note trimmed output
-      expect(data.description).to.equal('The live broadcast podcast all about JavaScript and the Web');
-      expect(data.owner.name).to.equal('Kent C. Dodds');
-      expect(data.owner.email).to.equal('javascriptair@gmail.com');
-      expect(data.image).to.equal('http://imglogo.podbean.com/image-logo/862611/2048.png');
-      expect(data.categories).to.eql([
-        'Technology',
-        'Technology>Podcasting'
-      ]);
-      expect(data.explicit).to.equal(false);
-      expect(data.episodes).to.have.length(8);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'JavaScript Air',
+        description: {
+          short: 'The live broadcast podcast all about JavaScript',
+          long: 'The live broadcast podcast all about JavaScript and the Web',
+        },
+        link: 'http://javascriptair.podbean.com',
+        image: 'http://imglogo.podbean.com/image-logo/862611/2048.png',
+        language: 'en-us',
+        updated: utcDate(2016, 0, 28, 0, 21, 35),
+        ttl: 1440,
+        owner: {
+          name: 'Kent C. Dodds',
+          email: 'javascriptair@gmail.com'
+        },
+        categories: [
+          'Technology',
+          'Technology>Podcasting'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(8);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco');
-      expect(firstEpisode.author).to.equal('Kent C. Dodds');
-      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 28, 0, 21, 35));
-      expect(firstEpisode.image).to.equal(null);
-      expect(firstEpisode.guid).to.equal('http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/');
-      expect(firstEpisode.enclosure.filesize).to.equal(56787979);
-      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
-      expect(firstEpisode.enclosure.url).to.equal('http://javascriptair.podbean.com/mf/feed/dk3eif/JavaScriptAirEpisode007-ChakraMicrosoftsOpenSourceJavaScriptEngine.mp3');
-      expect(firstEpisode.explicit).to.equal(false);
-      expect(firstEpisode.categories).to.eql([
-        'Uncategorized'
-      ]);
-      expect(firstEpisode.duration).to.eql(3550);
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/',
+        title: '007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco',
+        published: utcDate(2016, 0, 28, 0, 21, 35),
+        // no image
+        duration: 3550,
+        enclosure: {
+          filesize: 56787979,
+          type: 'audio/mpeg',
+          url: 'http://javascriptair.podbean.com/mf/feed/dk3eif/JavaScriptAirEpisode007-ChakraMicrosoftsOpenSourceJavaScriptEngine.mp3'
+        },
+        categories: [
+          'Uncategorized'
+        ]
+      });
 
       done();
     });
@@ -182,33 +198,45 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('Scale Your Code Podcast');
-      expect(data.link).to.equal('https://scaleyourcode.com/');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('℗ & © 2015 ScaleYourCode');
-      expect(data.subtitle).to.equal('Interviews of proven developers');
-      expect(data.description).to.equal('Learn from proven developers through interviews.');
-      expect(data.owner.name).to.equal('Christophe Limpalair');
-      expect(data.owner.email).to.equal('chris@scaleyourcode.com');
-      expect(data.image).to.equal('http://d1ngwfo98ojxvt.cloudfront.net/public/itunes/cover_art.jpg');
-      expect(data.categories).to.eql([
-        'Technology'
-      ]);
-      expect(data.explicit).to.equal(true);
-      expect(data.episodes).to.have.length(23);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'Scale Your Code Podcast',
+        description: {
+          short: 'Interviews of proven developers',
+          long: 'Learn from proven developers through interviews.',
+        },
+        link: 'https://scaleyourcode.com/',
+        image: 'http://d1ngwfo98ojxvt.cloudfront.net/public/itunes/cover_art.jpg',
+        language: 'en-us',
+        updated: utcDate(2016, 1, 2, 1, 5, 26),
+        owner: {
+          name: 'Christophe Limpalair',
+          email: 'chris@scaleyourcode.com'
+        },
+        categories: [
+          'Technology'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(23);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('Large scale image processing on the fly in 25ms with Google\'s first Network Engineer');
-      expect(firstEpisode.author).to.equal('Christophe Limpalair');
-      expect(firstEpisode.published).to.eql(utcDate(2016, 1, 2, 1, 5, 26));
-      expect(firstEpisode.image).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jack_levin/jack-levin_opt_hi.jpg');
-      expect(firstEpisode.guid).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3');
-      expect(firstEpisode.enclosure.filesize).to.equal(undefined);
-      expect(firstEpisode.enclosure.type).to.equal('audio/x-mp3');
-      expect(firstEpisode.enclosure.url).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3');
-      expect(firstEpisode.explicit).to.equal(false);
-      expect(firstEpisode.categories).to.eql([]);
-      expect(firstEpisode.duration).to.eql(undefined);
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3',
+        title: 'Large scale image processing on the fly in 25ms with Google\'s first Network Engineer',
+        published: utcDate(2016, 1, 2, 1, 5, 26),
+        image: 'https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jack_levin/jack-levin_opt_hi.jpg',
+        // no duration
+        enclosure: {
+          filesize: undefined, // filesize not set
+          type: 'audio/x-mp3',
+          url: 'https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3'
+        },
+        // no categories
+      });
 
       done();
     });
@@ -220,38 +248,50 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('Software Engineering Radio - The Podcast for Professional Software Developers');
-      expect(data.link).to.equal('http://www.se-radio.net');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('(c)2006-2015 SE-Radio Team. All content is licensed under the Creative Commons 2.5 license (see http://creativecommons.org/licenses/by-nc-nd/2.5/)');
-      expect(data.subtitle).to.equal('Information for Software Developers and Architects');
-      expect(data.description).to.equal('Software Engineering Radio is a podcast targeted at the professional software developer. The goal is to be a lasting educational resource, not a newscast. Every 10 days, a new episode is published that covers all topics software engineering. Episodes are either tutorials on a specific topic, or an interview with a well-known character from the software engineering world. All SE Radio episodes are original content — we do not record conferences or talks given in other venues. Each episode comprises two speakers to ensure a lively listening experience. SE Radio is an independent and non-commercial organization. All content is licensed under the Creative Commons 2.5 license.');
-      expect(data.owner.name).to.equal('SE-Radio Team');
-      expect(data.owner.email).to.equal('team@se-radio.net');
-      expect(data.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
-      expect(data.categories).to.eql([
-        'Technology',
-        'Technology>Software How-To'
-      ]);
-      expect(data.explicit).to.equal(false);
-      expect(data.episodes).to.have.length(249);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'Software Engineering Radio - The Podcast for Professional Software Developers',
+        description: {
+          short: 'Information for Software Developers and Architects',
+          long: 'Software Engineering Radio is a podcast targeted at the professional software developer. The goal is to be a lasting educational resource, not a newscast. Every 10 days, a new episode is published that covers all topics software engineering. Episodes are either tutorials on a specific topic, or an interview with a well-known character from the software engineering world. All SE Radio episodes are original content — we do not record conferences or talks given in other venues. Each episode comprises two speakers to ensure a lively listening experience. SE Radio is an independent and non-commercial organization. All content is licensed under the Creative Commons 2.5 license.',
+        },
+        link: 'http://www.se-radio.net',
+        image: 'http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg',
+        language: 'en-us',
+        updated: utcDate(2016, 0, 28, 18, 6, 52),
+        owner: {
+          name: 'SE-Radio Team',
+          email: 'team@se-radio.net'
+        },
+        categories: [
+          'Technology',
+          'Technology>Software How-To'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(249);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('SE-Radio Episode 248: Axel Rauschmayer on JavaScript and ECMAScript 6');
-      expect(firstEpisode.author).to.equal('se-radio team');
-      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 28, 18, 6, 52)); // GMT time
-      expect(firstEpisode.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
-      expect(firstEpisode.guid).to.equal('http://www.se-radio.net/?p=1939');
-      expect(firstEpisode.categories).to.eql([
-        'Episodes',
-        'ECMAScript',
-        'JavaScript'
-      ]);
-      expect(firstEpisode.duration).to.equal(3793); // 1:03:13
-      expect(firstEpisode.explicit).to.equal(false);
-      expect(firstEpisode.enclosure.filesize).to.equal(151772209);
-      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
-      expect(firstEpisode.enclosure.url).to.equal('http://feedproxy.google.com/~r/se-radio/~5/_V8a9ATpdxk/SE-Radio-Episode-248-Axel-Rauschmayer-on-JavaScript-and-ECMAScript-6.mp3');
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'http://www.se-radio.net/?p=1939',
+        title: 'SE-Radio Episode 248: Axel Rauschmayer on JavaScript and ECMAScript 6',
+        published: utcDate(2016, 0, 28, 18, 6, 52),
+        image: 'http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg',
+        duration: 3793,
+        enclosure: {
+          filesize: 151772209,
+          type: 'audio/mpeg',
+          url: 'http://feedproxy.google.com/~r/se-radio/~5/_V8a9ATpdxk/SE-Radio-Episode-248-Axel-Rauschmayer-on-JavaScript-and-ECMAScript-6.mp3'
+        },
+        categories: [
+          'Episodes',
+          'ECMAScript',
+          'JavaScript'
+        ]
+      });
 
       done();
     });
@@ -263,36 +303,48 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('Design Details');
-      expect(data.link).to.equal('http://spec.fm/show/design-details');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('All rights reserved');
-      expect(data.subtitle).to.equal('A show about the people who design our favorite products.');
-      expect(data.description).to.equal('A show about the people who design our favorite products. Hosted by Bryn Jackson and Brian Lovin.');
-      expect(data.owner.name).to.equal('Spec.FM');
-      expect(data.owner.email).to.equal('designdetailsfm@gmail.com');
-      expect(data.image).to.equal('https://media.simplecast.com/podcast/image/1034/1452553074-artwork.jpg');
-      expect(data.categories).to.eql([
-        'Arts',
-        'Arts>Design',
-        'Technology',
-        'Technology>Podcasting'
-      ]);
-      expect(data.explicit).to.equal(false);
-      expect(data.episodes).to.have.length(102);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'Design Details',
+        description: {
+          short: 'A show about the people who design our favorite products.',
+          long: 'A show about the people who design our favorite products. Hosted by Bryn Jackson and Brian Lovin.',
+        },
+        link: 'http://spec.fm/show/design-details',
+        image: 'https://media.simplecast.com/podcast/image/1034/1452553074-artwork.jpg',
+        language: 'en-us',
+        updated: utcDate(2016, 1, 1, 13, 0, 0),
+        owner: {
+          name: 'Spec.FM',
+          email: 'designdetailsfm@gmail.com'
+        },
+        categories: [
+          'Arts',
+          'Arts>Design',
+          'Technology',
+          'Technology>Podcasting'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(102);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('100: Goldilocks Fidelity (feat. Daniel Burka)');
-      expect(firstEpisode.author).to.equal('Spec');
-      expect(firstEpisode.published).to.eql(utcDate(2016, 1, 1, 13, 0, 0)); // GMT time
-      expect(firstEpisode.image).to.equal('https://media.simplecast.com/episode/image/25164/1454282072-artwork.jpg');
-      expect(firstEpisode.guid).to.equal('ea43eba3-3a9e-4593-a69b-1a78465d9e76');
-      expect(firstEpisode.categories).to.eql([]);
-      expect(firstEpisode.duration).to.equal(3932);
-      expect(firstEpisode.explicit).to.equal(true);
-      expect(firstEpisode.enclosure.filesize).to.equal(62948884);
-      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
-      expect(firstEpisode.enclosure.url).to.equal('https://audio.simplecast.com/25164.mp3');
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'ea43eba3-3a9e-4593-a69b-1a78465d9e76',
+        title: '100: Goldilocks Fidelity (feat. Daniel Burka)',
+        published: utcDate(2016, 1, 1, 13, 0, 0),
+        image: 'https://media.simplecast.com/episode/image/25164/1454282072-artwork.jpg',
+        duration: 3932,
+        enclosure: {
+          filesize: 62948884,
+          type: 'audio/mpeg',
+          url: 'https://audio.simplecast.com/25164.mp3'
+        },
+        // no categories
+      });
 
       done();
     });
@@ -304,33 +356,46 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.title).to.equal('Podcast on Graph Databases and Neo4j');
-      expect(data.link).to.equal('http://blog.bruggen.com');
-      expect(data.language).to.equal('en-us');
-      expect(data.copyright).to.equal('All rights reserved');
-      expect(data.subtitle).to.equal('Podcast by The Neo4j Graph Database Community');
-      expect(data.description).to.equal('Podcast by The Neo4j Graph Database Community');
-      expect(data.owner.name).to.equal('Graphistania');
-      expect(data.owner.email).to.equal('rik@neotechnology.com');
-      expect(data.image).to.equal('http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png');
-      expect(data.categories).to.eql([
-        'Technology'
-      ]);
-      expect(data.explicit).to.equal(false);
-      expect(data.episodes).to.have.length(54);
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
 
+      expect(podcast).to.eql({
+        title: 'Podcast on Graph Databases and Neo4j',
+        description: {
+          short: 'Podcast by The Neo4j Graph Database Community',
+          long: 'Podcast by The Neo4j Graph Database Community',
+        },
+        link: 'http://blog.bruggen.com',
+        image: 'http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png',
+        language: 'en-us',
+        ttl: 60,
+        updated: utcDate(2016, 0, 29, 8, 44, 0),
+        owner: {
+          name: 'Graphistania',
+          email: 'rik@neotechnology.com'
+        },
+        categories: [
+          'Technology'
+        ]
+      });
+
+      expect(data.episodes).to.have.length(54);
       const firstEpisode = data.episodes[0];
-      expect(firstEpisode.title).to.equal('Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis');
-      expect(firstEpisode.author).to.equal('The Neo4j Graph Database Community');
-      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 29, 0, 0, 0)); // GMT time
-      expect(firstEpisode.image).to.equal('http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png');
-      expect(firstEpisode.guid).to.equal('tag:soundcloud,2010:tracks/244374452');
-      expect(firstEpisode.categories).to.eql([]);
-      expect(firstEpisode.duration).to.equal(638);
-      expect(firstEpisode.explicit).to.equal(false);
-      expect(firstEpisode.enclosure.filesize).to.equal(6381794);
-      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
-      expect(firstEpisode.enclosure.url).to.equal('http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/244374452-graphistania-podcast-recording-with-stuart-begg-and-matt-byrne-independent-contractors-at-sensis.mp3');
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'tag:soundcloud,2010:tracks/244374452',
+        title: 'Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis',
+        published: utcDate(2016, 0, 29, 0, 0, 0),
+        image: 'http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png',
+        duration: 638,
+        enclosure: {
+          filesize: 6381794,
+          type: 'audio/mpeg',
+          url: 'http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/244374452-graphistania-podcast-recording-with-stuart-begg-and-matt-byrne-independent-contractors-at-sensis.mp3'
+        },
+        // no categories
+      });
 
       done();
     });
@@ -358,7 +423,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  xit('should process 2500 items per sec', function() {
+  it('should process 2500 items per sec', function() {
     this.timeout(1000);
     this.slow(1000);
     const n = 10; // se-radio feed has 249 items
