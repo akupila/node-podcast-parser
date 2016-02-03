@@ -130,10 +130,6 @@ These properties include:
 - episode image
 - etc
 
-### Windows users
-
-Under the hood this depends on `expat` for RSS parsing. Apparently there are some issues here on Windows but i'm not sure what they are & not able to test on Windows. Your milage may vary..
-
 ### Generic RSS feeds
 
 Use [node-feedparser](https://github.com/danmactough/node-feedparser)

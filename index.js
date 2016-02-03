@@ -1,22 +1,23 @@
 const _ = require('lodash');
-const expat = require('node-expat');
+const sax = require('sax');
 
 module.exports = function parse(feedXML, callback) {
-  const parser = new expat.Parser('UTF-8');
+  const parser = sax.parser({
+    strict: true,
+    lowercase: true
+  });
 
   // -----------------------------------------------------
 
-  const result = {
-    episodes: []
-  };
+  const result = {};
   var node = null;
 
   var tmpEpisode;
 
-  parser.on('startElement', function (name, attrs) {
+  parser.onopentag = function (nextNode) {
     node = {
-      name: name,
-      attrs: attrs,
+      name: nextNode.name,
+      attributes: nextNode.attributes,
       parent: node
     };
 
@@ -24,7 +25,7 @@ module.exports = function parse(feedXML, callback) {
       return;
     }
 
-    if (name === 'channel') {
+    if (node.name === 'channel') {
       // root channel
       node.target = result;
       node.textMap = {
@@ -48,19 +49,19 @@ module.exports = function parse(feedXML, callback) {
         'pubDate': text => { return { updated: new Date(text) }; },
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
-      result.image = attrs.href;
+      result.image = node.attributes.href;
     } else if (node.name === 'itunes:owner' && node.parent.name === 'channel') {
       result.owner = node.target = {};
       node.textMap = {
         'itunes:name': 'name',
         'itunes:email': 'email'
       };
-    } else if (name === 'itunes:category') {
-      const path = [attrs.text];
+    } else if (node.name === 'itunes:category') {
+      const path = [node.attributes.text];
       var tmp = node.parent;
       // go up to fill in parent categories
       while (tmp && tmp.name === 'itunes:category') {
-        path.unshift(tmp.attrs.text);
+        path.unshift(tmp.attributes.text);
         tmp = tmp.parent;
       }
 
@@ -68,7 +69,7 @@ module.exports = function parse(feedXML, callback) {
         result.categories = [];
       }
       result.categories.push(path.join('>'));
-    } else if (name === 'item' && node.parent.name === 'channel') {
+    } else if (node.name === 'item' && node.parent.name === 'channel') {
       // New item
       tmpEpisode = {
       };
@@ -97,48 +98,32 @@ module.exports = function parse(feedXML, callback) {
       };
     } else if (tmpEpisode) {
       // Episode specific attributes
-      if (name === 'itunes:image') {
+      if (node.name === 'itunes:image') {
         // episode image
-        tmpEpisode.image = attrs.href;
-      } else if (name === 'enclosure') {
+        tmpEpisode.image = node.attributes.href;
+      } else if (node.name === 'enclosure') {
         tmpEpisode.enclosure = {
-          filesize: attrs.length ? parseInt(attrs.length) : undefined,
-          type: attrs.type,
-          url: attrs.url
+          filesize: node.attributes.length ? parseInt(node.attributes.length) : undefined,
+          type: node.attributes.type,
+          url: node.attributes.url
         };
       }
     }
-  });
+  };
 
-  parser.on('endElement', function (name) {
+  parser.onclosetag = function (name) {
     node = node.parent;
 
     if (tmpEpisode && name === 'item') {
+      if (!result.episodes) {
+        result.episodes = [];
+      }
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
     }
+  };
 
-    if (node === null) {
-      // sort by date descending
-      result.episodes = result.episodes.sort((item1, item2) => {
-        return item2.published.getTime() - item1.published.getTime();
-      });
-
-      if (!result.updated) {
-        if (result.episodes.length > 0) {
-          result.updated = result.episodes[0].published;
-        } else {
-          result.updated = null;
-        }
-      }
-
-      result.categories = _.uniq(result.categories.sort());
-
-      callback(null, result);
-    }
-  })
-
-  parser.on('text', function (text) {
+  parser.ontext = parser.oncdata = function handleText(text) {
     text = text.trim();
     if (text.length === 0) {
       return;
@@ -173,11 +158,34 @@ module.exports = function parse(feedXML, callback) {
       }
       tmpEpisode.categories.push(text);
     }
-  })
+  };
 
-  parser.on('error', function (error) {
-    callback(error, result);
-  });
+  parser.onend = function() {
+    // sort by date descending
+    if (result.episodes) {
+      result.episodes = result.episodes.sort((item1, item2) => {
+        return item2.published.getTime() - item1.published.getTime();
+      });
+    }
 
-  parser.write(feedXML);
+    if (!result.updated) {
+      if (result.episodes && result.episodes.length > 0) {
+        result.updated = result.episodes[0].published;
+      } else {
+        result.updated = null;
+      }
+    }
+
+    result.categories = _.uniq(result.categories.sort());
+
+    callback(null, result);
+  }
+
+  // Annoyingly sax also emits an error
+  // https://github.com/isaacs/sax-js/pull/115
+  try {
+    parser.write(feedXML).close();
+  } catch (error) {
+    callback(error);
+  }
 }
