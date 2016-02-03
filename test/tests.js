@@ -424,7 +424,7 @@ describe('Podcast feed parser', () => {
   });
 
   it('should process 2500 items per sec', function() {
-    this.timeout(1000);
+    this.timeout(5000);
     this.slow(1000);
     const n = 10; // se-radio feed has 249 items
     for (var i = 0 ; i < n; i++) {
