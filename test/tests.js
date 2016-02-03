@@ -32,47 +32,65 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse feed', done => {
+  it('should return expected format', done => {
     parse(fixtures['apple-example'], (err, data) => {
       if (err) {
         return done(err);
       }
 
-      try {
-        expect(data).to.have.property('title');
-        expect(data).to.have.property('link');
-        expect(data).to.have.property('language');
-        expect(data).to.have.property('subtitle');
-        expect(data).to.have.property('description');
-        expect(data).to.have.property('image');
-        expect(data).to.have.property('copyright');
-        expect(data).to.have.property('categories');
-        expect(data).to.have.property('explicit');
-        expect(data).to.have.property('owner');
-        expect(data.owner).to.have.property('name');
-        expect(data.owner).to.have.property('email');
-        expect(data).to.have.property('episodes');
-        expect(data.episodes).to.be.an(Array);
+      expect(data).to.have.property('title');
+      expect(data).to.have.property('link');
+      expect(data).to.have.property('language');
+      expect(data).to.have.property('subtitle');
+      expect(data).to.have.property('description');
+      expect(data).to.have.property('image');
+      expect(data).to.have.property('copyright');
+      expect(data).to.have.property('categories');
+      expect(data).to.have.property('explicit');
+      expect(data).to.have.property('owner');
+      expect(data).to.have.property('episodes');
 
-        const episode = data.episodes[0];
-        expect(episode).to.have.property('guid');
-        expect(episode).to.have.property('title');
-        expect(episode).to.have.property('description');
-        expect(episode).to.have.property('published');
-        expect(episode).to.have.property('image');
-        expect(episode).to.have.property('author');
-        expect(episode).to.have.property('duration');
-        expect(episode).to.have.property('categories');
-        expect(episode).to.have.property('enclosure');
-        expect(episode.categories).to.be.an(Array);
-        expect(episode.enclosure).to.have.property('filesize');
-        expect(episode.enclosure).to.have.property('type');
-        expect(episode.enclosure).to.have.property('url');
-        expect(episode.published).to.be.a(Date);
-        done();
-      } catch (error) {
-        done(error);
-      }
+      expect(data.title).to.be.a('string');
+      expect(data.link).to.be.a('string');
+      expect(data.language).to.be.a('string');
+      expect(data.subtitle).to.be.a('string');
+      expect(data.description).to.be.a('string');
+      expect(data.image).to.be.a('string');
+      expect(data.copyright).to.be.a('string');
+      expect(data.categories).to.be.an(Array);
+      expect(data.explicit).to.be.a('boolean');
+      expect(data.episodes).to.be.an(Array);
+
+      expect(data.owner).to.have.property('name');
+      expect(data.owner).to.have.property('email');
+
+      const episode = data.episodes[0];
+      expect(episode).to.have.property('guid');
+      expect(episode).to.have.property('title');
+      expect(episode).to.have.property('description');
+      expect(episode).to.have.property('published');
+      expect(episode).to.have.property('image');
+      expect(episode).to.have.property('author');
+      expect(episode).to.have.property('duration');
+      expect(episode).to.have.property('categories');
+      expect(episode).to.have.property('enclosure');
+      expect(episode).to.have.property('explicit');
+
+      expect(episode.guid).to.be.a('string');
+      expect(episode.title).to.be.a('string');
+      expect(episode.description).to.be.a('string');
+      expect(episode.published).to.be.a(Date);
+      expect(episode.image).to.be.a('string');
+      expect(episode.author).to.be.a('string');
+      expect(episode.duration).to.be.a('number');
+      expect(episode.categories).to.be.an(Array);
+      expect(episode.explicit).to.be.a('boolean');
+
+      expect(episode.enclosure).to.have.property('filesize');
+      expect(episode.enclosure).to.have.property('type');
+      expect(episode.enclosure).to.have.property('url');
+
+      done();
     });
   });
 
@@ -147,6 +165,11 @@ describe('Podcast feed parser', () => {
       expect(firstEpisode.enclosure.filesize).to.equal(56787979);
       expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
       expect(firstEpisode.enclosure.url).to.equal('http://javascriptair.podbean.com/mf/feed/dk3eif/JavaScriptAirEpisode007-ChakraMicrosoftsOpenSourceJavaScriptEngine.mp3');
+      expect(firstEpisode.explicit).to.equal(false);
+      expect(firstEpisode.categories).to.eql([
+        'Uncategorized'
+      ]);
+      expect(firstEpisode.duration).to.eql(3550);
 
       done();
     });
@@ -181,6 +204,53 @@ describe('Podcast feed parser', () => {
       expect(firstEpisode.enclosure.filesize).to.equal(undefined);
       expect(firstEpisode.enclosure.type).to.equal('audio/x-mp3');
       expect(firstEpisode.enclosure.url).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3');
+      expect(firstEpisode.explicit).to.equal(false);
+      expect(firstEpisode.categories).to.eql([]);
+      expect(firstEpisode.duration).to.eql(undefined);
+
+      done();
+    });
+  });
+
+  it('should parse se-radio feed', done => {
+    parse(fixtures['se-radio'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      expect(data.title).to.equal('Software Engineering Radio - The Podcast for Professional Software Developers');
+      expect(data.link).to.equal('http://www.se-radio.net');
+      expect(data.language).to.equal('en-us');
+      expect(data.copyright).to.equal('(c)2006-2015 SE-Radio Team. All content is licensed under the Creative Commons 2.5 license (see http://creativecommons.org/licenses/by-nc-nd/2.5/)');
+      expect(data.subtitle).to.equal('Information for Software Developers and Architects');
+      expect(data.description).to.equal('Software Engineering Radio is a podcast targeted at the professional software developer. The goal is to be a lasting educational resource, not a newscast. Every 10 days, a new episode is published that covers all topics software engineering. Episodes are either tutorials on a specific topic, or an interview with a well-known character from the software engineering world. All SE Radio episodes are original content — we do not record conferences or talks given in other venues. Each episode comprises two speakers to ensure a lively listening experience. SE Radio is an independent and non-commercial organization. All content is licensed under the Creative Commons 2.5 license.');
+      expect(data.owner.name).to.equal('SE-Radio Team');
+      expect(data.owner.email).to.equal('team@se-radio.net');
+      expect(data.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
+      expect(data.categories).to.eql([{
+        name: 'Technology',
+        children: [{
+          name: 'Software How-To'
+        }]
+      }]);
+      expect(data.explicit).to.equal(false);
+      expect(data.episodes).to.have.length(249);
+
+      const firstEpisode = data.episodes[0];
+      expect(firstEpisode.title).to.equal('SE-Radio Episode 248: Axel Rauschmayer on JavaScript and ECMAScript 6');
+      expect(firstEpisode.author).to.equal('se-radio team');
+      expect(firstEpisode.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
+      expect(firstEpisode.guid).to.equal('http://www.se-radio.net/?p=1939');
+      expect(firstEpisode.categories).to.eql([
+        'Episodes',
+        'ECMAScript',
+        'JavaScript'
+      ]);
+      expect(firstEpisode.duration).to.equal(3793); // 1:03:13
+      expect(firstEpisode.explicit).to.equal(false);
+      expect(firstEpisode.enclosure.filesize).to.equal(151772209);
+      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
+      expect(firstEpisode.enclosure.url).to.equal('http://feedproxy.google.com/~r/se-radio/~5/_V8a9ATpdxk/SE-Radio-Episode-248-Axel-Rauschmayer-on-JavaScript-and-ECMAScript-6.mp3');
 
       done();
     });
@@ -192,44 +262,40 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      try {
-        expect(data.categories).to.eql([{
-          name: 'A1',
+      expect(data.categories).to.eql([{
+        name: 'A1',
+        children: [{
+          name: 'B1',
           children: [{
-            name: 'B1',
-            children: [{
-              name: 'C1'
-            }]
+            name: 'C1'
+          }]
+        }, {
+          name: 'B2'
+        }, {
+          name: 'B3',
+          children: [{
+            name: 'C1'
           }, {
-            name: 'B2'
+            name: 'C2'
           }, {
-            name: 'B3',
+            name: 'C3',
             children: [{
-              name: 'C1'
-            }, {
-              name: 'C2'
-            }, {
-              name: 'C3',
-              children: [{
-                name: 'D1'
-              }]
+              name: 'D1'
             }]
           }]
-        }]);
-      } catch (error) {
-        return done(error);
-      }
+        }]
+      }]);
 
       done();
     });
   });
 
-  it('should run 100 iterations per sec', function() {
+  xit('should process 2500 items per sec', function() {
     this.timeout(1000);
-    this.slow(1000); // allow 20ms per iteration
-    const n = 100;
+    this.slow(1000);
+    const n = 10; // se-radio feed has 249 items
     for (var i = 0 ; i < n; i++) {
-      parse(fixtures['javascript-air'], err => {
+      parse(fixtures['se-radio'], err => {
         if (err) {
           throw new Error(err);
         }

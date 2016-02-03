@@ -35,7 +35,7 @@ module.exports = function parse(feedXML, callback) {
       node.textMap = {
         'title': true,
         'link': true,
-        'language': true,
+        'language': text => { return { language: text.toLowerCase() }; },
         'copyright': true,
         'itunes:subtitle': 'subtitle',
         'description': true,
@@ -72,8 +72,10 @@ module.exports = function parse(feedXML, callback) {
     } else if (name === 'item' && node.parent.name === 'channel') {
       // New item
       tmpEpisode = {
-        image: null,   // optional
-        categories: [] // optional
+        // optional field have reasonable defaults
+        image: null,
+        categories: [],
+        explicit: false
       };
       node.target = tmpEpisode;
       node.textMap = {
@@ -82,8 +84,24 @@ module.exports = function parse(feedXML, callback) {
         'itunes:summary': 'description',
         'pubDate': text => { return { published: new Date(text) }; },
         'author': true,
-        'itunes:duration': text => { return { duration: parseInt(text) }; },
-        'itunes:author': 'author'
+        'itunes:duration': text => {
+          return {
+            // parse '1:03:13' into 3793 seconds
+            duration: text
+              .split(':')
+              .reverse()
+              .reduce((acc, val, index) => {
+                const steps = [60, 60, 24];
+                var muliplier = 1;
+                while (index--) {
+                  muliplier *= steps[index];
+                }
+                return acc + parseInt(val) * muliplier;
+              }, 0)
+          };
+        },
+        'itunes:author': 'author',
+        'itunes:explicit': text => { return { explicit: text === 'yes' }; }
       };
     } else if (tmpEpisode) {
       // Episode specific attributes
@@ -128,7 +146,11 @@ module.exports = function parse(feedXML, callback) {
       return;
     }
 
-    if (node && node.parent && node.parent.textMap) {
+    if (!node || !node.parent) {
+      return;
+    }
+
+    if (node.parent.textMap) {
       const key = node.parent.textMap[node.name];
       if (key) {
         if (typeof key === 'function') {
@@ -142,6 +164,10 @@ module.exports = function parse(feedXML, callback) {
           node.parent.target[keyName] = prevValue ? `${prevValue} ${text}` : text;
         }
       }
+    }
+
+    if (tmpEpisode && node.name === 'category') {
+      tmpEpisode.categories.push(text);
     }
   })
 
