@@ -109,14 +109,11 @@ describe('Podcast feed parser', () => {
       expect(data.owner.name).to.equal('John Doe');
       expect(data.owner.email).to.equal('john.doe@example.com');
       expect(data.image).to.equal('http://example.com/podcasts/everything/AllAboutEverything.jpg');
-      expect(data.categories).to.eql([{
-        name: 'Technology',
-        children: [{
-          name: 'Gadgets'
-        }]
-      }, {
-        name: 'TV & Film'
-      }]);
+      expect(data.categories).to.eql([
+        'TV & Film',
+        'Technology',
+        'Technology>Gadgets'
+      ]);
       expect(data.explicit).to.equal(false);
       expect(data.episodes).to.have.length(3);
 
@@ -149,12 +146,10 @@ describe('Podcast feed parser', () => {
       expect(data.owner.name).to.equal('Kent C. Dodds');
       expect(data.owner.email).to.equal('javascriptair@gmail.com');
       expect(data.image).to.equal('http://imglogo.podbean.com/image-logo/862611/2048.png');
-      expect(data.categories).to.eql([{
-        name: 'Technology',
-        children: [{
-          name: 'Podcasting'
-        }]
-      }]);
+      expect(data.categories).to.eql([
+        'Technology',
+        'Technology>Podcasting'
+      ]);
       expect(data.explicit).to.equal(false);
       expect(data.episodes).to.have.length(8);
 
@@ -192,9 +187,9 @@ describe('Podcast feed parser', () => {
       expect(data.owner.name).to.equal('Christophe Limpalair');
       expect(data.owner.email).to.equal('chris@scaleyourcode.com');
       expect(data.image).to.equal('http://d1ngwfo98ojxvt.cloudfront.net/public/itunes/cover_art.jpg');
-      expect(data.categories).to.eql([{
-        name: 'Technology'
-      }]);
+      expect(data.categories).to.eql([
+        'Technology'
+      ]);
       expect(data.explicit).to.equal(true);
       expect(data.episodes).to.have.length(23);
 
@@ -230,12 +225,10 @@ describe('Podcast feed parser', () => {
       expect(data.owner.name).to.equal('SE-Radio Team');
       expect(data.owner.email).to.equal('team@se-radio.net');
       expect(data.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
-      expect(data.categories).to.eql([{
-        name: 'Technology',
-        children: [{
-          name: 'Software How-To'
-        }]
-      }]);
+      expect(data.categories).to.eql([
+        'Technology',
+        'Technology>Software How-To'
+      ]);
       expect(data.explicit).to.equal(false);
       expect(data.episodes).to.have.length(249);
 
@@ -266,29 +259,17 @@ describe('Podcast feed parser', () => {
         return done(err);
       }
 
-      expect(data.categories).to.eql([{
-        name: 'A1',
-        children: [{
-          name: 'B1',
-          children: [{
-            name: 'C1'
-          }]
-        }, {
-          name: 'B2'
-        }, {
-          name: 'B3',
-          children: [{
-            name: 'C1'
-          }, {
-            name: 'C2'
-          }, {
-            name: 'C3',
-            children: [{
-              name: 'D1'
-            }]
-          }]
-        }]
-      }]);
+      expect(data.categories).to.eql([
+        'A',
+        'A>A1',
+        'A>A1>A11',
+        'A>A1>A11>A111',
+        'A>A2',
+        'B',
+        'B>B1',
+        'B>B2',
+        'B>B2>B21'
+      ]);
 
       done();
     });

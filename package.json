@@ -24,6 +24,7 @@
     "mocha": "2.4.5"
   },
   "dependencies": {
+    "lodash": "4.2.0",
     "node-expat": "2.3.13"
   }
 }

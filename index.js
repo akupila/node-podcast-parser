@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const expat = require('node-expat')
 const recursivelyRemoveKeys = require('./lib/recursivelyRemoveKeys');
 
@@ -13,7 +14,6 @@ module.exports = function parse(feedXML, callback) {
   };
   var node = null;
 
-  var tmpCategory;
   var tmpEpisode;
 
   parser.on('startElement', function (name, attrs) {
@@ -59,25 +59,15 @@ module.exports = function parse(feedXML, callback) {
         'itunes:email': 'email'
       };
     } else if (name === 'itunes:category') {
-      if (node.parent.name === 'channel') {
-        // root category
-        tmpCategory = {
-          name: attrs.text
-        };
-      } else if (node.parent.name === 'itunes:category') {
-        // sub category
-        if (tmpCategory) {
-          if (!tmpCategory.children) tmpCategory.children = [];
-          const subCategory = {
-            name: attrs.text,
-            parent: tmpCategory
-          };
-          tmpCategory.children.push(subCategory);
-          tmpCategory = subCategory;
-        }
-      } else {
-        // throw away stray genre
+      const path = [attrs.text];
+      var tmp = node.parent;
+      // go up to fill in parent categories
+      while (tmp && tmp.name === 'itunes:category') {
+        path.unshift(tmp.attrs.text);
+        tmp = tmp.parent;
       }
+
+      result.categories.push(path.join('>'));
     } else if (name === 'item' && node.parent.name === 'channel') {
       // New item
       tmpEpisode = {
@@ -130,20 +120,13 @@ module.exports = function parse(feedXML, callback) {
   parser.on('endElement', function (name) {
     node = node.parent;
 
-    if (name === 'itunes:category') {
-      if (tmpCategory && tmpCategory.parent) {
-        tmpCategory = tmpCategory.parent;
-      } else {
-        result.categories.push(tmpCategory);
-        tmpCategory = null;
-      }
-    } else if (tmpEpisode && name === 'item') {
+    if (tmpEpisode && name === 'item') {
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
     }
 
     if (node === null) {
-      result.categories = recursivelyRemoveKeys(result.categories, 'children', ['parent']);
+      result.categories = _.uniq(result.categories.sort());
 
       callback(null, result);
     }
