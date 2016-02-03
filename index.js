@@ -33,7 +33,18 @@ module.exports = function parse(feedXML, callback) {
       node.textMap = {
         'title': true,
         'link': true,
-        'language': text => { return { language: text.toLowerCase() }; },
+        'language': text => {
+          var lang = text;
+          if (!/\w\w-\w\w/i.test(text)) {
+            if (lang === 'en') {
+              // sloppy language does not conform to ISO 639
+              lang = 'en-us';
+            } else {
+              // de-de etc
+              lang = `${lang}-${lang}`;
+            }
+          }
+          return { language: lang.toLowerCase() }; },
         'copyright': true,
         'itunes:subtitle': 'subtitle',
         'description': true,

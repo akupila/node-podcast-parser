@@ -141,7 +141,7 @@ describe('Podcast feed parser', () => {
 
       expect(data.title).to.equal('JavaScript Air');
       expect(data.link).to.equal('http://javascriptair.podbean.com');
-      expect(data.language).to.equal('en');
+      expect(data.language).to.equal('en-us');
       expect(data.copyright).to.equal('Copyright 2015 All rights reserved.');
       expect(data.subtitle).to.equal('The live broadcast podcast all about JavaScript');
       expect(data.description).to.equal('The live broadcast podcast all about JavaScript and the Web');
