@@ -1,11 +1,11 @@
 {
   "name": "node-podcast-parser",
   "description": "Parse podcast feeds into objects",
+  "version": "0.0.0-semantic-release",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec",
-    "prepublish": "test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
