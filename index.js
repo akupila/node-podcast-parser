@@ -155,7 +155,10 @@ module.exports = function parse(feedXML, callback) {
       return;
     }
 
+    /* istanbul ignore if */
     if (!node || !node.parent) {
+      // This should never happen but it's here as a safety net
+      // I guess this might happen if a feed was incorrectly formatted
       return;
     }
 
