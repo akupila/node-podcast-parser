@@ -1,6 +1,7 @@
 # node-podcast-parser
 
 [![build status](https://travis-ci.org/akupila/node-podcast-parser.svg?branch=master)](https://travis-ci.org/akupila/node-podcast-parser)
+[![Coverage Status](https://coveralls.io/repos/github/akupila/node-podcast-parser/badge.svg?branch=master)](https://coveralls.io/github/akupila/node-podcast-parser?branch=master)
 
 Parses a podcast RSS feed and returns easy to use object
 

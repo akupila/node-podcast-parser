@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "cover": "istanbul cover _mocha -- -R spec",
+    "cover": "istanbul cover _mocha",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
