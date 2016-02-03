@@ -30,7 +30,8 @@ Output:
       "author":      "<Author name>",
       "duration":    120 // duration in seconds
       "categories":  [
-        "<Category>"
+        "Category",
+        "Category>Subcategory",
       ],
       "enclosure": {
         "filesize": 5650889, // bytes
