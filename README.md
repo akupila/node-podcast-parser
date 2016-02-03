@@ -1,5 +1,7 @@
 # node-podcast-parser
 
+[![build status](https://travis-ci.org/akupila/node-podcast-parser.svg?branch=master)](https://travis-ci.org/akupila/node-podcast-parser)
+
 Parses a podcast RSS feed and returns easy to use object
 
 ## Output format
