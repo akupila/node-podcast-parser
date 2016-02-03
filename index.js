@@ -1,6 +1,5 @@
 const _ = require('lodash');
-const expat = require('node-expat')
-const recursivelyRemoveKeys = require('./lib/recursivelyRemoveKeys');
+const expat = require('node-expat');
 
 module.exports = function parse(feedXML, callback) {
   const parser = new expat.Parser('UTF-8');
