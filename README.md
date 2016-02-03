@@ -24,7 +24,6 @@ Takes an opinionated view on what should be included so not everything is. The g
     "Category",
     "Category>Subcategory",
   ],
-  "explicit": false,
   "owner": {
     "name":  "<Author name>",
     "email": "<Author email>"
