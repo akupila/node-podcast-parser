@@ -7,7 +7,6 @@ module.exports = function parse(feedXML, callback) {
   // -----------------------------------------------------
 
   const result = {
-    categories: [],
     episodes: []
   };
   var node = null;
