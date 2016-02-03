@@ -123,6 +123,7 @@ describe('Podcast feed parser', () => {
       const firstEpisode = data.episodes[0];
       expect(firstEpisode.title).to.equal('Shake Shake Shake Your Spices');
       expect(firstEpisode.author).to.equal('John Doe');
+      expect(firstEpisode.published).to.eql(utcDate(2014, 5, 15, 19, 0, 0));
       expect(firstEpisode.image).to.equal('http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg');
       expect(firstEpisode.guid).to.equal('http://example.com/podcasts/archive/aae20140615.m4a');
       expect(firstEpisode.enclosure.filesize).to.equal(8727310);
@@ -160,6 +161,7 @@ describe('Podcast feed parser', () => {
       const firstEpisode = data.episodes[0];
       expect(firstEpisode.title).to.equal('007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco');
       expect(firstEpisode.author).to.equal('Kent C. Dodds');
+      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 28, 0, 21, 35));
       expect(firstEpisode.image).to.equal(null);
       expect(firstEpisode.guid).to.equal('http://audio.javascriptair.com/e/007-jsair-chakra-microsofts-open-source-javascript-engine-with-ed-maurer-gaurav-seth-and-steve-lucco/');
       expect(firstEpisode.enclosure.filesize).to.equal(56787979);
@@ -199,6 +201,7 @@ describe('Podcast feed parser', () => {
       const firstEpisode = data.episodes[0];
       expect(firstEpisode.title).to.equal('Large scale image processing on the fly in 25ms with Google\'s first Network Engineer');
       expect(firstEpisode.author).to.equal('Christophe Limpalair');
+      expect(firstEpisode.published).to.eql(utcDate(2016, 1, 2, 1, 5, 26));
       expect(firstEpisode.image).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jack_levin/jack-levin_opt_hi.jpg');
       expect(firstEpisode.guid).to.equal('https://d1ngwfo98ojxvt.cloudfront.net/public/mp3/interviews/jack_levin_23.mp3');
       expect(firstEpisode.enclosure.filesize).to.equal(undefined);
@@ -239,6 +242,7 @@ describe('Podcast feed parser', () => {
       const firstEpisode = data.episodes[0];
       expect(firstEpisode.title).to.equal('SE-Radio Episode 248: Axel Rauschmayer on JavaScript and ECMAScript 6');
       expect(firstEpisode.author).to.equal('se-radio team');
+      expect(firstEpisode.published).to.eql(utcDate(2016, 0, 28, 18, 6, 52)); // GMT time
       expect(firstEpisode.image).to.equal('http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg');
       expect(firstEpisode.guid).to.equal('http://www.se-radio.net/?p=1939');
       expect(firstEpisode.categories).to.eql([
@@ -325,3 +329,11 @@ describe('Podcast feed parser', () => {
     });
   });
 });
+
+// -----------------------------------------------------
+//
+// Helpers
+
+function utcDate(year, month, day, hour, minute, second) {
+  return new Date(Date.UTC(year, month, day, hour, minute, second));
+}
