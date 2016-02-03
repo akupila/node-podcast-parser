@@ -28,7 +28,7 @@
     "semantic-release": "^4.3.5"
   },
   "dependencies": {
-    "lodash": "4.2.0",
+    "lodash": "4.2.1",
     "sax": "1.1.5"
   },
   "engines": {
