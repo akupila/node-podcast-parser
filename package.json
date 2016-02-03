@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "coverage": "istanbul cover _mocha -- -R spec",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "cover": "istanbul cover _mocha -- -R spec",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "podcast",
@@ -19,9 +20,11 @@
   "author": "Antti Kupila <akupila@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "2.11.6",
     "expect.js": "0.3.1",
     "istanbul": "0.4.2",
     "mocha": "2.4.5",
+    "mocha-lcov-reporter": "1.0.0",
     "semantic-release": "^4.3.5"
   },
   "dependencies": {
