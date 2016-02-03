@@ -1,12 +1,12 @@
 {
   "name": "node-podcast-parser",
-  "version": "0.1.0",
   "description": "Parse podcast feeds into objects",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec",
-    "prepublish": "test"
+    "prepublish": "test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "podcast",
@@ -21,7 +21,8 @@
   "devDependencies": {
     "expect.js": "0.3.1",
     "istanbul": "0.4.2",
-    "mocha": "2.4.5"
+    "mocha": "2.4.5",
+    "semantic-release": "^4.3.5"
   },
   "dependencies": {
     "lodash": "4.2.0",
@@ -31,8 +32,8 @@
     "node": ">= 4.0.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/akupila/node-podcast-parser"
+    "type": "git",
+    "url": "https://github.com/akupila/node-podcast-parser"
   },
   "bugs": {
     "url": "https://github.com/akupila/node-podcast-parser/issues"
