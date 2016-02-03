@@ -7,7 +7,7 @@ describe('Podcast feed parser', () => {
 
   const fixtures = {};
 
-  before(done => {
+  before(function(done) {
     const fixturePath = path.join(__dirname, 'fixtures');
     fs.readdir(fixturePath, (err, files) => {
       if (err) {
@@ -32,7 +32,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should return expected format', done => {
+  it('should return expected format', function(done) {
     parse(fixtures['apple-example'], (err, data) => {
       if (err) {
         return done(err);
@@ -87,7 +87,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse apple feed', done => {
+  it('should parse apple feed', function(done) {
     parse(fixtures['apple-example'], (err, data) => {
       if (err) {
         return done(err);
@@ -138,7 +138,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse javascript air feed', done => {
+  it('should parse javascript air feed', function(done) {
     parse(fixtures['javascript-air'], (err, data) => {
       if (err) {
         return done(err);
@@ -192,7 +192,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse scale your code feed', done => {
+  it('should parse scale your code feed', function(done) {
     parse(fixtures['scale-your-code'], (err, data) => {
       if (err) {
         return done(err);
@@ -242,7 +242,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse se-radio feed', done => {
+  it('should parse se-radio feed', function(done) {
     parse(fixtures['se-radio'], (err, data) => {
       if (err) {
         return done(err);
@@ -297,7 +297,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse design details feed', done => {
+  it('should parse design details feed', function(done) {
     parse(fixtures['design-details'], (err, data) => {
       if (err) {
         return done(err);
@@ -350,7 +350,7 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should parse neo4j feed', done => {
+  it('should parse neo4j feed', function(done) {
     parse(fixtures['neo4j'], (err, data) => {
       if (err) {
         return done(err);
@@ -423,38 +423,23 @@ describe('Podcast feed parser', () => {
     });
   });
 
-  it('should process 2500 items per sec', function() {
-    this.timeout(5000);
-    this.slow(1000);
-    const n = 10; // se-radio feed has 249 items
-    for (var i = 0 ; i < n; i++) {
-      parse(fixtures['se-radio'], err => {
-        if (err) {
-          throw new Error(err);
-        }
-      });
-    }
+  it('should call callback', function(done) {
+    parse(fixtures['apple-example'], (err) => {
+      if (!err) {
+        return done(err);
+      }
+
+      done();
+    });
   });
 
-  describe('node callback', () =>{
-    it('should call callback', done => {
-      parse(fixtures['apple-example'], (err) => {
-        if (!err) {
-          return done(err);
-        }
+  it('should callback with error', function(done) {
+    parse('invalid xml', (err) => {
+      if (err) {
+        return done();
+      }
 
-        done();
-      });
-    });
-
-    it('should callback with error', done => {
-      parse('invalid xml', (err, data) => {
-        if (err) {
-          return done();
-        }
-
-        done('Error was not set');
-      });
+      done('Error was not set');
     });
   });
 });
