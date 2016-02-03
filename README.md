@@ -20,6 +20,7 @@ Takes an opinionated view on what should be included so not everything is. The g
   "image":      "<Podcast image>",
   "language":   "<ISO 639 language>",
   "copyright":  "<Podcast copyright>",
+  "updated":    "<pubDate or latest episode pubDate>",
   "categories": [
     "Category",
     "Category>Subcategory",
