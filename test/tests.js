@@ -253,6 +253,47 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse design details feed', done => {
+    parse(fixtures['design-details'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      expect(data.title).to.equal('Design Details');
+      expect(data.link).to.equal('http://spec.fm/show/design-details');
+      expect(data.language).to.equal('en-us');
+      expect(data.copyright).to.equal('All rights reserved');
+      expect(data.subtitle).to.equal('A show about the people who design our favorite products.');
+      expect(data.description).to.equal('A show about the people who design our favorite products. Hosted by Bryn Jackson and Brian Lovin.');
+      expect(data.owner.name).to.equal('Spec.FM');
+      expect(data.owner.email).to.equal('designdetailsfm@gmail.com');
+      expect(data.image).to.equal('https://media.simplecast.com/podcast/image/1034/1452553074-artwork.jpg');
+      expect(data.categories).to.eql([
+        'Arts',
+        'Arts>Design',
+        'Technology',
+        'Technology>Podcasting'
+      ]);
+      expect(data.explicit).to.equal(false);
+      expect(data.episodes).to.have.length(102);
+
+      const firstEpisode = data.episodes[0];
+      expect(firstEpisode.title).to.equal('100: Goldilocks Fidelity (feat. Daniel Burka)');
+      expect(firstEpisode.author).to.equal('Spec');
+      expect(firstEpisode.published).to.eql(utcDate(2016, 1, 1, 13, 0, 0)); // GMT time
+      expect(firstEpisode.image).to.equal('https://media.simplecast.com/episode/image/25164/1454282072-artwork.jpg');
+      expect(firstEpisode.guid).to.equal('ea43eba3-3a9e-4593-a69b-1a78465d9e76');
+      expect(firstEpisode.categories).to.eql([]);
+      expect(firstEpisode.duration).to.equal(3932);
+      expect(firstEpisode.explicit).to.equal(true);
+      expect(firstEpisode.enclosure.filesize).to.equal(62948884);
+      expect(firstEpisode.enclosure.type).to.equal('audio/mpeg');
+      expect(firstEpisode.enclosure.url).to.equal('https://audio.simplecast.com/25164.mp3');
+
+      done();
+    });
+  });
+
   it('should parse complex genres', function(done) {
     parse(fixtures['complex-genre'], (err, data) => {
       if (err) {
