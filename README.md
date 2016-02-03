@@ -17,10 +17,10 @@ Takes an opinionated view on what should be included so not everything is. The g
   "image":       "<Podcast image>",
   "language":    "<ISO 639 language>",
   "copyright":   "<Podcast copyright>",
-  "categories": [{
+  "categories": [
     "Category",
     "Category>Subcategory",
-  }],
+  ],
   "explicit": false,
   "owner": {
     "name":  "<Author name>",
@@ -33,7 +33,7 @@ Takes an opinionated view on what should be included so not everything is. The g
       "description": "<Episode description>",
       "image":       "<Episode image>",
       "published":   "<date>",
-      "duration":    120
+      "duration":    120,
       "categories":  [
         "Category"
       ],
