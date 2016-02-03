@@ -27,8 +27,6 @@ module.exports = function parse(feedXML, callback) {
       return;
     }
 
-    // console.log(`${node.parent.name} -> ${name}`);
-
     if (name === 'channel') {
       // root channel
       node.target = result;
