@@ -10,13 +10,13 @@ Takes an opinionated view on what should be included so not everything is. The g
 {
   "title":       "<Podcast title>",
   "description": {
-    "short": "<Podcast subtitle>",
+    "short":       "<Podcast subtitle>",
     "description": "<Podcast description>"
   },
-  "link":        "<Podcast link (usually website for podcast)>",
-  "image":       "<Podcast image>",
-  "language":    "<ISO 639 language>",
-  "copyright":   "<Podcast copyright>",
+  "link":       "<Podcast link (usually website for podcast)>",
+  "image":      "<Podcast image>",
+  "language":   "<ISO 639 language>",
+  "copyright":  "<Podcast copyright>",
   "categories": [
     "Category",
     "Category>Subcategory",
