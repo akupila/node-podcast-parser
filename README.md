@@ -106,7 +106,7 @@ npm run test
 
 ```js
 npm install
-npm run coverage
+npm run cover
 ```
 
 ## Special notes
