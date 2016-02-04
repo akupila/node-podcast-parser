@@ -50,6 +50,12 @@ Takes an opinionated view on what should be included so not everything is. The g
 }
 ```
 
+## Installation
+
+```
+npm install --save node-podcast-parser
+```
+
 ## Usage
 
 ```js
