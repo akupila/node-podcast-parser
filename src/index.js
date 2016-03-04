@@ -1,17 +1,15 @@
-'use strict';
-
-var _ = require('lodash');
-var sax = require('sax');
+const _ = require('lodash');
+const sax = require('sax');
 
 module.exports = function parse(feedXML, callback) {
-  var parser = sax.parser({
+  const parser = sax.parser({
     strict: true,
     lowercase: true
   });
 
   // -----------------------------------------------------
 
-  var result = {};
+  const result = {};
   var node = null;
 
   var tmpEpisode;
@@ -33,7 +31,7 @@ module.exports = function parse(feedXML, callback) {
       node.textMap = {
         'title': true,
         'link': true,
-        'language': function language(text) {
+        'language': text => {
           var lang = text;
           if (!/\w\w-\w\w/i.test(text)) {
             if (lang === 'en') {
@@ -41,19 +39,14 @@ module.exports = function parse(feedXML, callback) {
               lang = 'en-us';
             } else {
               // de-de etc
-              lang = lang + '-' + lang;
+              lang = `${lang}-${lang}`;
             }
           }
-          return { language: lang.toLowerCase() };
-        },
+          return { language: lang.toLowerCase() }; },
         'itunes:subtitle': 'description.short',
         'description': 'description.long',
-        'ttl': function ttl(text) {
-          return { ttl: parseInt(text) };
-        },
-        'pubDate': function pubDate(text) {
-          return { updated: new Date(text) };
-        }
+        'ttl': text => { return { ttl: parseInt(text) }; },
+        'pubDate': text => { return { updated: new Date(text) }; },
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
       result.image = node.attributes.href;
@@ -64,7 +57,7 @@ module.exports = function parse(feedXML, callback) {
         'itunes:email': 'email'
       };
     } else if (node.name === 'itunes:category') {
-      var path = [node.attributes.text];
+      const path = [node.attributes.text];
       var tmp = node.parent;
       // go up to fill in parent categories
       while (tmp && tmp.name === 'itunes:category') {
@@ -78,26 +71,28 @@ module.exports = function parse(feedXML, callback) {
       result.categories.push(path.join('>'));
     } else if (node.name === 'item' && node.parent.name === 'channel') {
       // New item
-      tmpEpisode = {};
+      tmpEpisode = {
+      };
       node.target = tmpEpisode;
       node.textMap = {
         'title': true,
         'guid': true,
         'itunes:summary': 'description',
-        'pubDate': function pubDate(text) {
-          return { published: new Date(text) };
-        },
-        'itunes:duration': function itunesDuration(text) {
+        'pubDate': text => { return { published: new Date(text) }; },
+        'itunes:duration': text => {
           return {
             // parse '1:03:13' into 3793 seconds
-            duration: text.split(':').reverse().reduce(function (acc, val, index) {
-              var steps = [60, 60, 24];
-              var muliplier = 1;
-              while (index--) {
-                muliplier *= steps[index];
-              }
-              return acc + parseInt(val) * muliplier;
-            }, 0)
+            duration: text
+              .split(':')
+              .reverse()
+              .reduce((acc, val, index) => {
+                const steps = [60, 60, 24];
+                var muliplier = 1;
+                while (index--) {
+                  muliplier *= steps[index];
+                }
+                return acc + parseInt(val) * muliplier;
+              }, 0)
           };
         }
       };
@@ -142,17 +137,17 @@ module.exports = function parse(feedXML, callback) {
     }
 
     if (node.parent.textMap) {
-      var key = node.parent.textMap[node.name];
+      const key = node.parent.textMap[node.name];
       if (key) {
         if (typeof key === 'function') {
           // value preprocessor
           Object.assign(node.parent.target, key(text));
         } else {
-          var keyName = key === true ? node.name : key;
-          var prevValue = node.parent.target[keyName];
+          const keyName = key === true ? node.name : key;
+          const prevValue = node.parent.target[keyName];
           // ontext can fire multiple times, if so append to previous value
           // this happens with "text &amp; other text"
-          _.set(node.parent.target, keyName, prevValue ? prevValue + ' ' + text : text);
+          _.set(node.parent.target, keyName, prevValue ? `${prevValue} ${text}` : text);
         }
       }
     }
@@ -165,10 +160,10 @@ module.exports = function parse(feedXML, callback) {
     }
   };
 
-  parser.onend = function () {
+  parser.onend = function() {
     // sort by date descending
     if (result.episodes) {
-      result.episodes = result.episodes.sort(function (item1, item2) {
+      result.episodes = result.episodes.sort((item1, item2) => {
         return item2.published.getTime() - item1.published.getTime();
       });
     }
@@ -184,7 +179,7 @@ module.exports = function parse(feedXML, callback) {
     result.categories = _.uniq(result.categories.sort());
 
     callback(null, result);
-  };
+  }
 
   // Annoyingly sax also emits an error
   // https://github.com/isaacs/sax-js/pull/115
@@ -193,4 +188,4 @@ module.exports = function parse(feedXML, callback) {
   } catch (error) {
     callback(error);
   }
-};
+}
