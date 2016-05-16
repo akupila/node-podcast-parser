@@ -176,7 +176,9 @@ module.exports = function parse(feedXML, callback) {
       }
     }
 
-    result.categories = _.uniq(result.categories.sort());
+    if(result.categories){
+      result.categories = _.uniq(result.categories.sort());  
+    }
 
     callback(null, result);
   }
