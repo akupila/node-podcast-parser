@@ -242,6 +242,36 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse rtve-podcast feed', function(done) {
+    parse(fixtures['rtve-podcast'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
+      
+       expect(podcast).to.eql({
+         title: 'Tiempo de valientes. El diario de Julián Martínez',
+        description: {
+          long: 'Al final del capítulo 9 de El Ministerio del Tiempo, vimos a Julián Martínez huir del ministerio por una puerta. ¿Qué sucedió con él? ¿Volverá? Descúbrelo en el diario sonoro de Julián Martínez en Cuba, la ficción sonora de RTVE.ES, Radio Nacional, Onza Entertainment y Cliffhanger TV protagonizada por Rodolfo Sancho.',
+        },
+        link: 'http://www.rtve.es/alacarta/audios/tiempo-de-valientes-el-diario-de-julian-martinez/',
+        image: 'http://img.rtve.es/imagenes/tiempo-valientes-diario-julian-martinez/1455556336980.jpg',
+        language: 'es-es',
+        updated: utcDate(2016, 4, 17, 12, 08, 49),
+        owner: {
+         
+        },
+        categories: [
+        ]
+      });
+      
+      done();
+    });
+  });
+
+
   it('should parse se-radio feed', function(done) {
     parse(fixtures['se-radio'], (err, data) => {
       if (err) {

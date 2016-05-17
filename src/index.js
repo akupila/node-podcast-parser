@@ -9,7 +9,9 @@ module.exports = function parse(feedXML, callback) {
 
   // -----------------------------------------------------
 
-  const result = {};
+  const result = {
+    categories: []
+  };
   var node = null;
 
   var tmpEpisode;
@@ -176,9 +178,9 @@ module.exports = function parse(feedXML, callback) {
       }
     }
 
-    if(result.categories){
-      result.categories = _.uniq(result.categories.sort());  
-    }
+    
+    result.categories = _.uniq(result.categories.sort());  
+    
 
     callback(null, result);
   }
