@@ -139,6 +139,8 @@ These properties include:
 - episode image
 - etc
 
+Episode categories are included as an empty array if the podcast doesn't contain any categories.
+
 ### Generic RSS feeds
 
 This module is specifically aimed at parsing RSS feeds and doesn't cater for more generic feeds from blogs etc.
