@@ -67,9 +67,6 @@ module.exports = function parse(feedXML, callback) {
         tmp = tmp.parent;
       }
 
-      if (!result.categories) {
-        result.categories = [];
-      }
       result.categories.push(path.join('>'));
     } else if (node.name === 'item' && node.parent.name === 'channel') {
       // New item
@@ -178,9 +175,7 @@ module.exports = function parse(feedXML, callback) {
       }
     }
 
-    
-    result.categories = _.uniq(result.categories.sort());  
-    
+    result.categories = _.uniq(result.categories.sort());
 
     callback(null, result);
   }
