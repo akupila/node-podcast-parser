@@ -111,9 +111,9 @@ describe('Podcast feed parser', () => {
           email: 'john.doe@example.com'
         },
         categories: [
-          'TV & Film',
           'Technology',
-          'Technology>Gadgets'
+          'Technology>Gadgets',
+          'TV & Film',
         ]
       });
 
@@ -247,10 +247,10 @@ describe('Podcast feed parser', () => {
       if (err) {
         return done(err);
       }
-      
+
       const podcast = Object.assign({}, data);
       delete podcast.episodes;
-      
+
        expect(podcast).to.eql({
          title: 'Tiempo de valientes. El diario de Julián Martínez',
         description: {
@@ -261,12 +261,12 @@ describe('Podcast feed parser', () => {
         language: 'es-es',
         updated: utcDate(2016, 4, 17, 12, 08, 49),
         owner: {
-         
+
         },
         categories: [
         ]
       });
-      
+
       done();
     });
   });
@@ -351,9 +351,9 @@ describe('Podcast feed parser', () => {
           email: 'designdetailsfm@gmail.com'
         },
         categories: [
+          'Technology',
           'Arts',
           'Arts>Design',
-          'Technology',
           'Technology>Podcasting'
         ]
       });
