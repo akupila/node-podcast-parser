@@ -67,7 +67,13 @@ module.exports = function parse(feedXML, callback) {
         tmp = tmp.parent;
       }
 
-      result.categories.push(path.join('>'));
+      const lastCategoryIndex = result.categories.length - 1;
+      if (result.categories[lastCategoryIndex] === path[0]) {
+        // overwrite last category because this one is more specific
+        result.categories[lastCategoryIndex] = path.join('>');
+      } else {
+        result.categories.push(path.join('>'));
+      }
     } else if (node.name === 'item' && node.parent.name === 'channel') {
       // New item
       tmpEpisode = {
