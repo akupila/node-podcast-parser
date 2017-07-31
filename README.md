@@ -14,7 +14,7 @@ Takes an opinionated view on what should be included so not everything is. The g
   "title":       "<Podcast title>",
   "description": {
     "short":       "<Podcast subtitle>",
-    "description": "<Podcast description>"
+    "long":        "<Podcast description>"
   },
   "link":       "<Podcast link (usually website for podcast)>",
   "image":      "<Podcast image>",
@@ -22,8 +22,7 @@ Takes an opinionated view on what should be included so not everything is. The g
   "copyright":  "<Podcast copyright>",
   "updated":    "<pubDate or latest episode pubDate>",
   "categories": [
-    "Category",
-    "Category>Subcategory",
+    "Category>Subcategory"
   ],
   "owner": {
     "name":  "<Author name>",

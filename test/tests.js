@@ -111,9 +111,8 @@ describe('Podcast feed parser', () => {
           email: 'john.doe@example.com'
         },
         categories: [
+          'Technology>Gadgets',
           'TV & Film',
-          'Technology',
-          'Technology>Gadgets'
         ]
       });
 
@@ -163,7 +162,6 @@ describe('Podcast feed parser', () => {
           email: 'javascriptair@gmail.com'
         },
         categories: [
-          'Technology',
           'Technology>Podcasting'
         ]
       });
@@ -247,10 +245,10 @@ describe('Podcast feed parser', () => {
       if (err) {
         return done(err);
       }
-      
+
       const podcast = Object.assign({}, data);
       delete podcast.episodes;
-      
+
        expect(podcast).to.eql({
          title: 'Tiempo de valientes. El diario de Julián Martínez',
         description: {
@@ -261,12 +259,12 @@ describe('Podcast feed parser', () => {
         language: 'es-es',
         updated: utcDate(2016, 4, 17, 12, 08, 49),
         owner: {
-         
+
         },
         categories: [
         ]
       });
-      
+
       done();
     });
   });
@@ -296,7 +294,6 @@ describe('Podcast feed parser', () => {
           email: 'team@se-radio.net'
         },
         categories: [
-          'Technology',
           'Technology>Software How-To'
         ]
       });
@@ -351,9 +348,8 @@ describe('Podcast feed parser', () => {
           email: 'designdetailsfm@gmail.com'
         },
         categories: [
-          'Arts',
-          'Arts>Design',
           'Technology',
+          'Arts>Design',
           'Technology>Podcasting'
         ]
       });
@@ -438,12 +434,10 @@ describe('Podcast feed parser', () => {
       }
 
       expect(data.categories).to.eql([
-        'A',
         'A>A1',
         'A>A1>A11',
         'A>A1>A11>A111',
         'A>A2',
-        'B',
         'B>B1',
         'B>B2',
         'B>B2>B21'
