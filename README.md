@@ -21,6 +21,7 @@ Takes an opinionated view on what should be included so not everything is. The g
   "language":   "<ISO 639 language>",
   "copyright":  "<Podcast copyright>",
   "updated":    "<pubDate or latest episode pubDate>",
+  "explicit":   "<Podcast is explicit, true/false>",
   "categories": [
     "Category>Subcategory"
   ],
@@ -33,6 +34,7 @@ Takes an opinionated view on what should be included so not everything is. The g
       "guid":        "<Unique id>",
       "title":       "<Episode title>",
       "description": "<Episode description>",
+      "explicit":    "<Episodeis is explicit, true/false>",
       "image":       "<Episode image>",
       "published":   "<date>",
       "duration":    120,

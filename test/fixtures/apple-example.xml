@@ -14,6 +14,7 @@
       <itunes:email>john.doe@example.com</itunes:email>
     </itunes:owner>
     <itunes:image href="http://example.com/podcasts/everything/AllAboutEverything.jpg"/>
+    <itunes:explicit>yes</itunes:explicit>
     <itunes:category text="Technology">
       <itunes:category text="Gadgets"/>
     </itunes:category>
@@ -30,6 +31,7 @@
       <guid>http://example.com/podcasts/archive/aae20140615.m4a</guid>
       <pubDate>Wed, 15 Jun 2014 19:00:00 GMT</pubDate>
       <itunes:duration>7:04</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
       <title>Socket Wrench Shootout</title>
@@ -41,6 +43,7 @@
       <guid>http://example.com/podcasts/archive/aae20140608.mp3</guid>
       <pubDate>Wed, 8 Jun 2014 19:00:00 GMT</pubDate>
       <itunes:duration>4:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
     </item>
     <item>
       <title>Red,Whine, &amp; Blue</title>
@@ -52,6 +55,7 @@
       <guid>http://example.com/podcasts/archive/aae20140601.mp3</guid>
       <pubDate>Wed, 1 Jun 2014 19:00:00 GMT</pubDate>
       <itunes:duration>3:59</itunes:duration>
+      <itunes:explicit>yes</itunes:explicit>
     </item>
   </channel>
 </rss>

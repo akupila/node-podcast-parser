@@ -49,6 +49,7 @@ module.exports = function parse(feedXML, callback) {
         'description': 'description.long',
         'ttl': text => { return { ttl: parseInt(text) }; },
         'pubDate': text => { return { updated: new Date(text) }; },
+        'itunes:explicit': isExplicit,
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
       result.image = node.attributes.href;
@@ -100,7 +101,8 @@ module.exports = function parse(feedXML, callback) {
                 return acc + parseInt(val) * muliplier;
               }, 0)
           };
-        }
+        },
+        'itunes:explicit': isExplicit,
       };
     } else if (tmpEpisode) {
       // Episode specific attributes
@@ -196,4 +198,10 @@ module.exports = function parse(feedXML, callback) {
   } catch (error) {
     callback(error);
   }
+}
+
+function isExplicit(text) {
+  return {
+    explicit: (text || '').toLowerCase() === 'yes',
+  };
 }
