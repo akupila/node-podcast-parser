@@ -440,6 +440,7 @@ describe('Podcast feed parser', () => {
       expect(firstEpisode).to.eql({
         guid: '1bdba530eb7cd0fb6241a945fda4db95',
         title: 'Episode 128',
+        description: '<p>Frank and Erik travel the world.</p> <p>Outro: 20/20 - Yellow Pills</p> <p>646-434-8528</p> <p>frankanderik.com</p>',
         published: utcDate(2017, 3, 21, 3, 12, 13),
         image: 'http://static.libsyn.com/p/assets/0/a/0/1/0a015c5ace601833/InternetFamousArt.jpg',
         duration: 5702,

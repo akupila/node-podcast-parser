@@ -82,7 +82,8 @@ module.exports = function parse(feedXML, callback) {
       node.textMap = {
         'title': true,
         'guid': true,
-        'itunes:summary': 'description',
+        'itunes:summary': 'description.primary',
+        'description': 'description.alternate',
         'pubDate': text => { return { published: new Date(text) }; },
         'itunes:duration': text => {
           return {
@@ -123,6 +124,8 @@ module.exports = function parse(feedXML, callback) {
       if (!result.episodes) {
         result.episodes = [];
       }
+      // coalesce descriptions (no breaking change)
+      tmpEpisode.description = tmpEpisode.description.primary || tmpEpisode.description.alternate;
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
     }
