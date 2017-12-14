@@ -427,6 +427,34 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse libsyn example feed episode', function(done) {
+    parse(fixtures['libsyn-example-podcast'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      const podcast = Object.assign({}, data);
+
+      const firstEpisode = data.episodes[0];
+
+      expect(firstEpisode).to.eql({
+        guid: '1bdba530eb7cd0fb6241a945fda4db95',
+        title: 'Episode 128',
+        published: utcDate(2017, 3, 21, 3, 12, 13),
+        image: 'http://static.libsyn.com/p/assets/0/a/0/1/0a015c5ace601833/InternetFamousArt.jpg',
+        duration: 5702,
+        enclosure: {
+          filesize: 45813708,
+          type: 'audio/mpeg',
+          url: 'http://traffic.libsyn.com/frankanderik/Internet_Famous_Ep128.mp3?dest-id=30697'
+        },
+        // no categories
+      });
+
+      done();
+    });
+  });
+
   it('should parse complex genres', function(done) {
     parse(fixtures['complex-genre'], (err, data) => {
       if (err) {
