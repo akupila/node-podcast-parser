@@ -127,7 +127,11 @@ module.exports = function parse(feedXML, callback) {
         result.episodes = [];
       }
       // coalesce descriptions (no breaking change)
-      tmpEpisode.description = tmpEpisode.description.primary || tmpEpisode.description.alternate;
+      let description = '';
+      if (tmpEpisode.description) {
+        description = tmpEpisode.description.primary || tmpEpisode.description.alternate || '';
+      }
+      tmpEpisode.description = description;
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
     }
