@@ -48,6 +48,7 @@ describe('Podcast feed parser', () => {
       expect(data).to.have.property('categories');
       expect(data).to.have.property('owner');
       expect(data).to.have.property('updated');
+      expect(data).to.have.property('explicit');
       expect(data).to.have.property('episodes');
 
       expect(data.title).to.be.a('string');
@@ -56,6 +57,7 @@ describe('Podcast feed parser', () => {
       expect(data.description.short).to.be.a('string');
       expect(data.description.long).to.be.a('string');
       expect(data.image).to.be.a('string');
+      expect(data.explicit).to.be.a('boolean');
       expect(data.categories).to.be.an(Array);
       expect(data.updated).to.be.a(Date);
       expect(data.episodes).to.be.an(Array);
@@ -70,6 +72,7 @@ describe('Podcast feed parser', () => {
       expect(episode).to.have.property('published');
       expect(episode).to.have.property('image');
       expect(episode).to.have.property('duration');
+      expect(episode).to.have.property('explicit');
       expect(episode).to.have.property('enclosure');
 
       expect(episode.guid).to.be.a('string');
@@ -77,6 +80,7 @@ describe('Podcast feed parser', () => {
       expect(episode.description).to.be.a('string');
       expect(episode.published).to.be.a(Date);
       expect(episode.image).to.be.a('string');
+      expect(episode.explicit).to.be.a('boolean');
       expect(episode.duration).to.be.a('number');
 
       expect(episode.enclosure).to.have.property('filesize');
@@ -110,6 +114,7 @@ describe('Podcast feed parser', () => {
           name: 'John Doe',
           email: 'john.doe@example.com'
         },
+        explicit: true,
         categories: [
           'Technology>Gadgets',
           'TV & Film',
@@ -126,6 +131,7 @@ describe('Podcast feed parser', () => {
         published: utcDate(2014, 5, 15, 19, 0, 0),
         image: 'http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg',
         duration: 424,
+        explicit: false,
         enclosure: {
           filesize: 8727310,
           type: 'audio/x-m4a',
@@ -161,6 +167,7 @@ describe('Podcast feed parser', () => {
           name: 'Kent C. Dodds',
           email: 'javascriptair@gmail.com'
         },
+        explicit: false,
         categories: [
           'Technology>Podcasting'
         ]
@@ -175,12 +182,14 @@ describe('Podcast feed parser', () => {
         title: '007 jsAir - Chakra, Microsoft’s Open Source JavaScript Engine with Ed Maurer, Gaurav Seth, and Steve Lucco',
         published: utcDate(2016, 0, 28, 0, 21, 35),
         // no image
+        explicit: false,
         duration: 3550,
         enclosure: {
           filesize: 56787979,
           type: 'audio/mpeg',
           url: 'http://javascriptair.podbean.com/mf/feed/dk3eif/JavaScriptAirEpisode007-ChakraMicrosoftsOpenSourceJavaScriptEngine.mp3'
         },
+        explicit: false,
         categories: [
           'Uncategorized'
         ]
@@ -213,6 +222,7 @@ describe('Podcast feed parser', () => {
           name: 'Christophe Limpalair',
           email: 'chris@scaleyourcode.com'
         },
+        explicit: true,
         categories: [
           'Technology'
         ]
@@ -227,6 +237,7 @@ describe('Podcast feed parser', () => {
         title: 'Large scale image processing on the fly in 25ms with Google\'s first Network Engineer',
         published: utcDate(2016, 1, 2, 1, 5, 26),
         image: 'https://d1ngwfo98ojxvt.cloudfront.net/images/interviews/jack_levin/jack-levin_opt_hi.jpg',
+        // no explicit
         // no duration
         enclosure: {
           filesize: undefined, // filesize not set
@@ -261,6 +272,7 @@ describe('Podcast feed parser', () => {
         owner: {
 
         },
+        explicit: false,
         categories: [
         ]
       });
@@ -293,9 +305,11 @@ describe('Podcast feed parser', () => {
           name: 'SE-Radio Team',
           email: 'team@se-radio.net'
         },
+        explicit: false,
         categories: [
           'Technology>Software How-To'
-        ]
+        ],
+        explicit: false,
       });
 
       expect(data.episodes).to.have.length(249);
@@ -307,12 +321,14 @@ describe('Podcast feed parser', () => {
         title: 'SE-Radio Episode 248: Axel Rauschmayer on JavaScript and ECMAScript 6',
         published: utcDate(2016, 0, 28, 18, 6, 52),
         image: 'http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg',
+        explicit: false,
         duration: 3793,
         enclosure: {
           filesize: 151772209,
           type: 'audio/mpeg',
           url: 'http://feedproxy.google.com/~r/se-radio/~5/_V8a9ATpdxk/SE-Radio-Episode-248-Axel-Rauschmayer-on-JavaScript-and-ECMAScript-6.mp3'
         },
+        explicit: false,
         categories: [
           'Episodes',
           'ECMAScript',
@@ -347,6 +363,7 @@ describe('Podcast feed parser', () => {
           name: 'Spec.FM',
           email: 'designdetailsfm@gmail.com'
         },
+        explicit: false,
         categories: [
           'Technology',
           'Arts>Design',
@@ -364,6 +381,7 @@ describe('Podcast feed parser', () => {
         published: utcDate(2016, 1, 1, 13, 0, 0),
         image: 'https://media.simplecast.com/episode/image/25164/1454282072-artwork.jpg',
         duration: 3932,
+        explicit: true,
         enclosure: {
           filesize: 62948884,
           type: 'audio/mpeg',
@@ -400,9 +418,11 @@ describe('Podcast feed parser', () => {
           name: 'Graphistania',
           email: 'rik@neotechnology.com'
         },
+        explicit: false,
         categories: [
           'Technology'
-        ]
+        ],
+        explicit: false,
       });
 
       expect(data.episodes).to.have.length(54);
@@ -414,6 +434,7 @@ describe('Podcast feed parser', () => {
         title: 'Podcast Interview With Stuart Begg And Matt Byrne, Independent Contractors at Sensis',
         published: utcDate(2016, 0, 29, 0, 0, 0),
         image: 'http://i1.sndcdn.com/avatars-000135096101-qekfg1-original.png',
+        explicit: false,
         duration: 638,
         enclosure: {
           filesize: 6381794,
@@ -422,6 +443,51 @@ describe('Podcast feed parser', () => {
         },
         // no categories
       });
+
+      done();
+    });
+  });
+
+  it('should parse libsyn example feed episode', function(done) {
+    parse(fixtures['libsyn-example-podcast'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      const podcast = Object.assign({}, data);
+
+      const firstEpisode = data.episodes[0];
+
+      expect(firstEpisode).to.eql({
+        guid: '1bdba530eb7cd0fb6241a945fda4db95',
+        title: 'Episode 128',
+        description: '<p>Frank and Erik travel the world.</p> <p>Outro: 20/20 - Yellow Pills</p> <p>646-434-8528</p> <p>frankanderik.com</p>',
+        published: utcDate(2017, 3, 21, 3, 12, 13),
+        image: 'http://static.libsyn.com/p/assets/0/a/0/1/0a015c5ace601833/InternetFamousArt.jpg',
+        explicit: false,
+        duration: 5702,
+        enclosure: {
+          filesize: 45813708,
+          type: 'audio/mpeg',
+          url: 'http://traffic.libsyn.com/frankanderik/Internet_Famous_Ep128.mp3?dest-id=30697'
+        },
+        // no categories
+      });
+
+      done();
+    });
+  });
+
+  it('should parse isExplicit', function(done) {
+    parse(fixtures['libsyn-example-podcast'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      const podcast = Object.assign({}, data);
+      const firstEpisode = data.episodes[0];
+
+      expect(podcast.explicit).to.equal(true);
+      expect(firstEpisode.explicit).to.equal(false);
 
       done();
     });

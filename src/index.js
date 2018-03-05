@@ -49,6 +49,7 @@ module.exports = function parse(feedXML, callback) {
         'description': 'description.long',
         'ttl': text => { return { ttl: parseInt(text) }; },
         'pubDate': text => { return { updated: new Date(text) }; },
+        'itunes:explicit': isExplicit,
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
       result.image = node.attributes.href;
@@ -82,7 +83,8 @@ module.exports = function parse(feedXML, callback) {
       node.textMap = {
         'title': true,
         'guid': true,
-        'itunes:summary': 'description',
+        'itunes:summary': 'description.primary',
+        'description': 'description.alternate',
         'pubDate': text => { return { published: new Date(text) }; },
         'itunes:duration': text => {
           return {
@@ -99,7 +101,8 @@ module.exports = function parse(feedXML, callback) {
                 return acc + parseInt(val) * muliplier;
               }, 0)
           };
-        }
+        },
+        'itunes:explicit': isExplicit,
       };
     } else if (tmpEpisode) {
       // Episode specific attributes
@@ -123,6 +126,12 @@ module.exports = function parse(feedXML, callback) {
       if (!result.episodes) {
         result.episodes = [];
       }
+      // coalesce descriptions (no breaking change)
+      let description = '';
+      if (tmpEpisode.description) {
+        description = tmpEpisode.description.primary || tmpEpisode.description.alternate || '';
+      }
+      tmpEpisode.description = description;
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
     }
@@ -193,4 +202,10 @@ module.exports = function parse(feedXML, callback) {
   } catch (error) {
     callback(error);
   }
+}
+
+function isExplicit(text) {
+  return {
+    explicit: (text || '').toLowerCase() === 'yes',
+  };
 }
