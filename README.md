@@ -54,7 +54,7 @@ Takes an opinionated view on what should be included so not everything is. The g
 ## Installation
 
 ```
-npm install --save node-podcast-parser
+yarn add node-podcast-parser
 ```
 
 ## Usage
@@ -105,15 +105,15 @@ request('<podcast url>', (err, res, data) => {
 ## Testing
 
 ```js
-npm install
-npm run test
+yarn install
+yarn run test
 ```
 
 ## Test coverage
 
 ```js
-npm install
-npm run cover
+yarn install
+yarn run cover
 ```
 
 ## Special notes
