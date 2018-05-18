@@ -45,6 +45,7 @@ module.exports = function parse(feedXML, callback) {
             }
           }
           return { language: lang.toLowerCase() }; },
+        'itunes:author': 'author',
         'itunes:subtitle': 'description.short',
         'description': 'description.long',
         'ttl': text => { return { ttl: parseInt(text) }; },
