@@ -46,6 +46,7 @@ describe('Podcast feed parser', () => {
       expect(data.description).to.have.property('long');
       expect(data).to.have.property('image');
       expect(data).to.have.property('categories');
+      expect(data).to.have.property('author');
       expect(data).to.have.property('owner');
       expect(data).to.have.property('updated');
       expect(data).to.have.property('explicit');
@@ -61,6 +62,7 @@ describe('Podcast feed parser', () => {
       expect(data.categories).to.be.an(Array);
       expect(data.updated).to.be.a(Date);
       expect(data.episodes).to.be.an(Array);
+      expect(data.author).to.be.a('string');
 
       expect(data.owner).to.have.property('name');
       expect(data.owner).to.have.property('email');
@@ -110,6 +112,7 @@ describe('Podcast feed parser', () => {
         image: 'http://example.com/podcasts/everything/AllAboutEverything.jpg',
         language: 'en-us',
         updated: utcDate(2014, 5, 15, 19, 0, 0),
+        author: 'John Doe',
         owner: {
           name: 'John Doe',
           email: 'john.doe@example.com'
@@ -163,6 +166,7 @@ describe('Podcast feed parser', () => {
         language: 'en-us',
         updated: utcDate(2016, 0, 28, 0, 21, 35),
         ttl: 1440,
+        author: 'Kent C. Dodds',
         owner: {
           name: 'Kent C. Dodds',
           email: 'javascriptair@gmail.com'
@@ -218,6 +222,7 @@ describe('Podcast feed parser', () => {
         image: 'http://d1ngwfo98ojxvt.cloudfront.net/public/itunes/cover_art.jpg',
         language: 'en-us',
         updated: utcDate(2016, 1, 2, 1, 5, 26),
+        author: 'Christophe Limpalair',
         owner: {
           name: 'Christophe Limpalair',
           email: 'chris@scaleyourcode.com'
@@ -301,6 +306,7 @@ describe('Podcast feed parser', () => {
         image: 'http://media.computer.org/sponsored/podcast/se-radio/se-radio-logo-1400x1475.jpg',
         language: 'en-us',
         updated: utcDate(2016, 0, 28, 18, 6, 52),
+        author: 'SE-Radio Team',
         owner: {
           name: 'SE-Radio Team',
           email: 'team@se-radio.net'
@@ -359,6 +365,7 @@ describe('Podcast feed parser', () => {
         image: 'https://media.simplecast.com/podcast/image/1034/1452553074-artwork.jpg',
         language: 'en-us',
         updated: utcDate(2016, 1, 1, 13, 0, 0),
+        author: 'Spec',
         owner: {
           name: 'Spec.FM',
           email: 'designdetailsfm@gmail.com'
@@ -414,6 +421,7 @@ describe('Podcast feed parser', () => {
         language: 'en-us',
         ttl: 60,
         updated: utcDate(2016, 0, 29, 8, 44, 0),
+        author: 'The Neo4j Graph Database Community',
         owner: {
           name: 'Graphistania',
           email: 'rik@neotechnology.com'
