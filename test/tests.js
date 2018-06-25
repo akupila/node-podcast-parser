@@ -456,6 +456,55 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse iOS 11 feeds from coding blocks', function(done) {
+    parse(fixtures['coding-blocks'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
+
+      expect(podcast).to.eql({
+        categories: [],
+        title: 'Coding Blocks Podcast',
+        description: {
+          long: 'The world of computer programming is vast in scope. There are literally thousands of topics to cover and no one person could ever reach them all. One of the goals of the Coding Blocks podcast is to introduce a number of these topics to the audience so they can learn during their commute or while cutting the grass. We will cover topics such as best programming practices, design patterns, coding for performance, object oriented coding, database design and implementation, tips, tricks and a whole lot of other things. You\'ll be exposed to broad areas of information as well as deep dives into the guts of a programming language. While Microsoft.NET is the development platform we\'re using, most topics discussed are relevant in any number of Object Oriented programming languages. We are all web and database programmers and will be providing useful information on a full spectrum of technologies and are open to any suggestions anyone might have for a topic. So please join us, subscribe, and invite your computer programming friends to come along for the ride.',
+        },
+        link: 'http://www.codingblocks.net/',
+        language: 'en-us',
+        image: 'https://ssl-static.libsyn.com/p/assets/4/d/e/0/4de099a806af9ddd/1400x1400bb.jpg',
+        explicit: false,
+        updated: utcDate(2018, 5, 11, 1, 20, 48),
+        type: 'episodic',
+      });
+
+      expect(data.episodes).to.have.length(83);
+      const firstEpisode = data.episodes[0];
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        title: 'Search Driven Apps',
+        published: utcDate(2018, 5, 11, 1, 20, 48),
+        guid: 'c964777d603943dab53f36ccc17a742e',
+        image: 'https://ssl-static.libsyn.com/p/assets/2/e/a/d/2ead1e2293797364/Coding_Blocks_-_Blockhead_Chipping.jpeg',
+        enclosure:
+        {
+          filesize: 66692288,
+          type: 'audio/mpeg',
+          url: 'https://traffic.libsyn.com/secure/codingblocks/coding-blocks-episode-83.mp3?dest-id=171666'
+        },
+        duration: 8318,
+        explicit: false,
+        season: 1,
+        episode: 83,
+        episodeType: 'full',
+      });
+
+      done();
+    });
+  });
+
   it('should parse libsyn example feed episode', function(done) {
     parse(fixtures['libsyn-example-podcast'], (err, data) => {
       if (err) {
