@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Image With Children Channel</title>
+    <link>https://www.example.com/channel-link</link>
+    <description>This channel has an image that also has title and link information.</description>
+    <image>
+      <title>Image Title</title>
+      <url>https://www.example.com/channel-image.png</url>
+      <link>https://www.example.com/channel-link</link>
+    </image>
+    <language>en-nz</language>
+    <copyright>(C) Example 2018</copyright>
+  </channel>
+</rss>

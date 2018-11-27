@@ -535,6 +535,31 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse image with children feed', function(done) {
+    parse(fixtures['image-with-children'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
+
+      expect(podcast).to.eql({
+        title: 'Image With Children Channel',
+        description: {
+          long: 'This channel has an image that also has title and link information.'
+        },
+        link: 'https://www.example.com/channel-link',
+        image: 'https://www.example.com/channel-image.png',
+        language: 'en-nz',
+        updated: null,
+        categories: []
+      });
+
+      done();
+    });
+  });
+
   it('should parse isExplicit', function(done) {
     parse(fixtures['libsyn-example-podcast'], (err, data) => {
       if (err) {

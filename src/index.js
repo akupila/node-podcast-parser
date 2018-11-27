@@ -55,6 +55,11 @@ module.exports = function parse(feedXML, callback) {
       };
     } else if (node.name === 'itunes:image' && node.parent.name === 'channel') {
       result.image = node.attributes.href;
+    } else if (node.name === 'image' && node.parent.name === 'channel' && !result.image) {
+      result.image = node.target = {};
+      node.textMap = {
+        'url': true,
+      };
     } else if (node.name === 'itunes:owner' && node.parent.name === 'channel') {
       result.owner = node.target = {};
       node.textMap = {
@@ -139,6 +144,9 @@ module.exports = function parse(feedXML, callback) {
       tmpEpisode.description = description;
       result.episodes.push(tmpEpisode);
       tmpEpisode = null;
+    }
+    if (name === 'image' && result.hasOwnProperty('image') && result.image.hasOwnProperty('url')) {
+      result.image = result.image.url;
     }
   };
 
