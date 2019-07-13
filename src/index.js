@@ -182,8 +182,9 @@ module.exports = function parse(feedXML, callback) {
   parser.onend = function() {
     // sort by date descending
     if (result.episodes) {
-      result.episodes = result.episodes.sort((item1, item2) => {
-        return item2.published.getTime() - item1.published.getTime();
+      const noDate = new Date(0);
+      result.episodes = result.episodes.sort(function (item1, item2) {
+        return (item2.published || noDate).getTime() - (item1.published || noDate).getTime();
       });
     }
 

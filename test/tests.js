@@ -146,6 +146,58 @@ describe('Podcast feed parser', () => {
     });
   });
 
+  it('should parse feed when items have no pubdate', function(done) {
+    parse(fixtures['no-pubdate'], (err, data) => {
+      if (err) {
+        return done(err);
+      }
+
+      const podcast = Object.assign({}, data);
+      delete podcast.episodes;
+
+      expect(podcast).to.eql({
+        title: 'All About Everything',
+        description: {
+          short: 'A show about everything',
+          long: 'All About Everything is a show about everything. Each week we dive into any subject known to man and talk about it as much as we can. Look for our podcast in the Podcasts app or in the iTunes Store',
+        },
+        link: 'http://www.example.com/podcasts/everything/index.html',
+        image: 'http://example.com/podcasts/everything/AllAboutEverything.jpg',
+        language: 'en-us',
+        updated: undefined,
+        author: 'John Doe',
+        owner: {
+          name: 'John Doe',
+          email: 'john.doe@example.com'
+        },
+        explicit: true,
+        categories: [
+          'Technology>Gadgets',
+          'TV & Film',
+        ]
+      });
+
+      expect(data.episodes).to.have.length(3);
+      const firstEpisode = data.episodes[0];
+      delete firstEpisode.description;
+
+      expect(firstEpisode).to.eql({
+        guid: 'http://example.com/podcasts/archive/aae20140615.m4a',
+        title: 'Shake Shake Shake Your Spices',
+        image: 'http://example.com/podcasts/everything/AllAboutEverything/Episode1.jpg',
+        duration: 424,
+        explicit: false,
+        enclosure: {
+          filesize: 8727310,
+          type: 'audio/x-m4a',
+          url: 'http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a'
+        }
+      });
+
+      done();
+    });
+  });
+
   it('should parse javascript air feed', function(done) {
     parse(fixtures['javascript-air'], (err, data) => {
       if (err) {
